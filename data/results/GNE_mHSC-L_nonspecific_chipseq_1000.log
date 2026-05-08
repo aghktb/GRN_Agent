@@ -1,0 +1,45 @@
+2025-11-03 09:29:35,762 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-03 09:29:35,762 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_nonspecific_chipseq_1000
+2025-11-03 09:29:35,865 - INFO - Loaded 1000 genes from expression data
+2025-11-03 09:29:35,867 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-03 09:29:35,867 - INFO - Filtered to 83 TFs present in expression data
+2025-11-03 09:29:35,867 - WARNING - Excluded 1395 TFs not in expression data
+2025-11-03 09:29:35,900 - INFO - Loaded 831 known positive pairs (filtered to expression data)
+2025-11-03 09:29:35,900 - INFO - All TFs are present in expression data
+2025-11-03 09:29:35,900 - INFO - Creating master splits...
+2025-11-03 09:29:35,901 - INFO - Positive splits - Train: 581, Val: 125, Test: 125
+2025-11-03 09:29:35,939 - INFO - Generated negative universe with 82086 candidates
+2025-11-03 09:29:35,943 - INFO - Master splits created:
+2025-11-03 09:29:35,943 - INFO -   Train: 581 pos, 581 neg
+2025-11-03 09:29:35,943 - INFO -   Val: 125 pos, 125 neg
+2025-11-03 09:29:35,943 - INFO -   Test: 125 pos, 125 neg
+2025-11-03 09:29:35,943 - INFO - Saving master splits...
+2025-11-03 09:29:35,948 - INFO - Master splits saved successfully
+2025-11-03 09:29:35,993 - INFO - Registering training negatives for GNE: 706 pairs
+2025-11-03 09:29:35,994 - INFO - Saved training negatives to fair_evaluation_output/GNE_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:05,696 - INFO - Creating clean evaluation pool...
+2025-11-03 09:30:05,718 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:05,738 - INFO - Loaded training negatives from STGRNS_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:05,758 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:05,779 - INFO - Loaded training negatives from GNNLink_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:05,799 - INFO - Loaded training negatives from GNE_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:05,799 - INFO - Total training negatives across all methods: 706 (loaded from 1 current + CSV files)
+2025-11-03 09:30:06,788 - INFO - Clean evaluation pool (all pairs) size: 997463
+2025-11-03 09:30:07,296 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-03 09:30:34,215 - INFO - Evaluating method: GNE
+2025-11-03 09:30:34,215 - INFO - Creating clean evaluation pool...
+2025-11-03 09:30:34,236 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:34,256 - INFO - Loaded training negatives from STGRNS_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:34,276 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:34,295 - INFO - Loaded training negatives from GNNLink_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:34,316 - INFO - Loaded training negatives from GNE_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 09:30:34,316 - INFO - Total training negatives across all methods: 706 (loaded from 1 current + CSV files)
+2025-11-03 09:30:35,149 - INFO - Clean evaluation pool (all pairs) size: 997463
+2025-11-03 09:30:35,630 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-03 09:31:03,896 - INFO - Results for GNE: AUROC=0.6594, AUPR=0.0002
+2025-11-03 09:31:04,129 - INFO - Saving evaluation results...
+2025-11-03 09:31:04,131 - INFO - Evaluation results saved successfully
+[Diag] Test positives: 125, predicted: 125 (100.0%)
+[Diag] Eval negatives: 997463, predicted: 997463 (100.0%)
+[Diag] No overlap between test positives and negative pool
+GNE Results: {'auroc': 0.6593693761071839, 'aupr': 0.00022927064932041084, 'n_positives': 125, 'n_negatives': 997463, 'n_neg_samples': 997463, 'seed': 42, 'method': 'GNE'}

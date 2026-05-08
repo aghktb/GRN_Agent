@@ -1,0 +1,39 @@
+2025-11-13 10:18:38,724 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-13 10:18:38,724 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mESC_string_tf500
+2025-11-13 10:18:38,814 - INFO - Loaded 500 genes from expression data
+2025-11-13 10:18:38,828 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-13 10:18:38,828 - INFO - Filtered to 46 TFs present in expression data
+2025-11-13 10:18:38,828 - WARNING - Excluded 1432 TFs not in expression data
+2025-11-13 10:18:38,852 - INFO - Loaded 264 known positive pairs (filtered to expression data)
+2025-11-13 10:18:38,852 - INFO - All TFs are present in expression data
+2025-11-13 10:18:38,852 - INFO - Creating master splits...
+2025-11-13 10:18:38,853 - INFO - Positive splits - Train: 184, Val: 40, Test: 40
+2025-11-13 10:18:38,883 - INFO - Generated negative universe with 22690 candidates
+2025-11-13 10:18:38,884 - INFO - Master splits created:
+2025-11-13 10:18:38,884 - INFO -   Train: 184 pos, 184 neg
+2025-11-13 10:18:38,884 - INFO -   Val: 40 pos, 40 neg
+2025-11-13 10:18:38,884 - INFO -   Test: 40 pos, 40 neg
+2025-11-13 10:18:38,884 - INFO - Saving master splits...
+2025-11-13 10:18:38,901 - INFO - Master splits saved successfully
+2025-11-13 10:18:38,938 - INFO - Registering training negatives for LEAP: 224 pairs
+2025-11-13 10:18:38,939 - INFO - Saved training negatives to fair_evaluation_output/LEAP_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,587 - INFO - Evaluating method: LEAP
+2025-11-13 10:18:48,587 - INFO - Creating clean evaluation pool...
+2025-11-13 10:18:48,599 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,608 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,616 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,625 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,647 - INFO - Loaded training negatives from GNE_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,655 - INFO - Loaded training negatives from PPCOR_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,674 - INFO - Loaded training negatives from PIDC_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,683 - INFO - Loaded training negatives from LEAP_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,692 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,700 - INFO - Loaded training negatives from CNNC_training_negatives_mESC_string_tf500.csv
+2025-11-13 10:18:48,700 - INFO - Total training negatives across all methods: 224 (loaded from 1 current + CSV files)
+2025-11-13 10:18:49,189 - INFO - Clean evaluation pool (all pairs) size: 249012
+2025-11-13 10:18:49,350 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-13 10:18:58,159 - INFO - Results for LEAP: AUROC=0.7380, AUPR=0.0012
+2025-11-13 10:18:58,230 - INFO - Saving evaluation results...
+2025-11-13 10:18:58,235 - INFO - Evaluation results saved successfully
+LEAP prediction statistics: 249500 pairs, score range [0.047810, 1.000000], mean 0.369721
+LEAP Results: {'auroc': 0.7379748767127688, 'aupr': 0.0011591685993806496, 'n_positives': 40, 'n_negatives': 249012, 'n_neg_samples': 249012, 'seed': 42, 'method': 'LEAP'}

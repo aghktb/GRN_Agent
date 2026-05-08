@@ -1,0 +1,40 @@
+workflow:
+  data_root: Data/DataContext
+  out_root: artifacts/blind_tf_eager_neg1/mESC_mHSC-L
+  reuse_acquisition_root: artifacts/blind_tf_eager/mESC_mHSC-L
+  checkpoint: artifacts/multicontext_tf_eager/all_datacontext_contexts_neg1/tf_eager/tf_eager_bootstrap_v2.pt
+  cells: mESC,mHSC-L
+  variants: ""
+  seed: 42
+  force: true
+
+acquisition:
+  skip_acquisition: false
+  force_acquisition: false
+  skip_atac_search: false
+  skip_motif: false
+  strict: true
+  min_promoter_coverage: 0.6
+  coverage_denominator: rnaseq_expressed
+  max_atac_candidates: 5
+
+build_windows:
+  devices: cpu
+  device: cpu
+  tf_workers: 8
+  force_windows: false
+  max_neighbors_per_tf: 200
+  subgraph_bootstraps: 5
+  corr_threshold: 0.1
+
+infer_tf_eager:
+  devices: cuda:0,cuda:1
+  device: cuda
+  threshold: 0.01
+  topk_per_tf: 100
+
+evaluation:
+  parallel_workers: 2
+  negative_ratios: "1,2,5,10"
+  negative_repeats: 100
+  k_values: "10,50,100"

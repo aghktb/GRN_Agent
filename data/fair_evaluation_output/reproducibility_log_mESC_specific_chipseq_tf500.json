@@ -1,0 +1,16 @@
+{
+  "random_seed": 42,
+  "creation_time": "2025-11-13T10:15:21.744075",
+  "framework_version": "1.0.0",
+  "method_results": {
+    "LEAP": {
+      "auroc": 0.7916965449287876,
+      "aupr": 0.0051590493952210735,
+      "n_positives": 392,
+      "n_negatives": 244672,
+      "n_neg_samples": 244672,
+      "seed": 42,
+      "method": "LEAP"
+    }
+  }
+}

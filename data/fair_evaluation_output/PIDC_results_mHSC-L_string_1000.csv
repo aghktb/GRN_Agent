@@ -1,0 +1,2 @@
+auroc,aupr,n_positives,n_negatives,n_neg_samples,seed,method
+0.765850203653412,0.006609353067358671,81,998007,998007,42,PIDC

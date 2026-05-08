@@ -1,0 +1,35 @@
+2025-11-03 12:44:55,228 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-03 12:44:55,228 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mESC_string_tf500
+2025-11-03 12:44:55,257 - INFO - Loaded 500 genes from expression data
+2025-11-03 12:44:55,258 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-03 12:44:55,258 - INFO - Filtered to 46 TFs present in expression data
+2025-11-03 12:44:55,258 - WARNING - Excluded 1432 TFs not in expression data
+2025-11-03 12:44:55,269 - INFO - Loaded 264 known positive pairs (filtered to expression data)
+2025-11-03 12:44:55,269 - INFO - All TFs are present in expression data
+2025-11-03 12:44:55,269 - INFO - Creating master splits...
+2025-11-03 12:44:55,270 - INFO - Positive splits - Train: 184, Val: 40, Test: 40
+2025-11-03 12:44:55,282 - INFO - Generated negative universe with 22690 candidates
+2025-11-03 12:44:55,283 - INFO - Master splits created:
+2025-11-03 12:44:55,283 - INFO -   Train: 184 pos, 184 neg
+2025-11-03 12:44:55,283 - INFO -   Val: 40 pos, 40 neg
+2025-11-03 12:44:55,283 - INFO -   Test: 40 pos, 40 neg
+2025-11-03 12:44:55,283 - INFO - Saving master splits...
+2025-11-03 12:44:55,286 - INFO - Master splits saved successfully
+2025-11-03 12:44:55,301 - INFO - Registering training negatives for PPCOR: 224 pairs
+2025-11-03 12:44:55,302 - INFO - Saved training negatives to fair_evaluation_output/PPCOR_training_negatives_mESC_string_tf500.csv
+2025-11-03 12:45:02,779 - INFO - Evaluating method: PPCOR
+2025-11-03 12:45:02,779 - INFO - Creating clean evaluation pool...
+2025-11-03 12:45:02,788 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_string_tf500.csv
+2025-11-03 12:45:02,795 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_string_tf500.csv
+2025-11-03 12:45:02,802 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_string_tf500.csv
+2025-11-03 12:45:02,808 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_string_tf500.csv
+2025-11-03 12:45:02,815 - INFO - Loaded training negatives from GNE_training_negatives_mESC_string_tf500.csv
+2025-11-03 12:45:02,822 - INFO - Loaded training negatives from PPCOR_training_negatives_mESC_string_tf500.csv
+2025-11-03 12:45:02,822 - INFO - Total training negatives across all methods: 224 (loaded from 1 current + CSV files)
+2025-11-03 12:45:03,129 - INFO - Clean evaluation pool (all pairs) size: 249012
+2025-11-03 12:45:03,239 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-03 12:45:10,110 - INFO - Results for PPCOR: AUROC=0.5573, AUPR=0.0002
+2025-11-03 12:45:10,147 - INFO - Saving evaluation results...
+2025-11-03 12:45:10,150 - INFO - Evaluation results saved successfully
+Loaded predictions from /home/aghktb/Beeline/outputs/example/mESC_string_tf500/PPCOR/outFile.txt
+PPCOR Results: {'auroc': 0.5572753521918622, 'aupr': 0.00019739734208558906, 'n_positives': 40, 'n_negatives': 249012, 'n_neg_samples': 249012, 'seed': 42, 'method': 'PPCOR'}

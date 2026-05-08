@@ -1,0 +1,76 @@
+2025-11-06 00:55:26,285 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-06 00:55:26,285 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mESC_specific_chipseq_500
+2025-11-06 00:55:26,315 - INFO - Loaded 500 genes from expression data
+2025-11-06 00:55:26,316 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-06 00:55:26,316 - INFO - Filtered to 46 TFs present in expression data
+2025-11-06 00:55:26,316 - WARNING - Excluded 1432 TFs not in expression data
+2025-11-06 00:55:26,411 - INFO - Loaded 2610 known positive pairs (filtered to expression data)
+2025-11-06 00:55:26,411 - INFO - All TFs are present in expression data
+2025-11-06 00:55:26,412 - INFO - Creating master splits...
+2025-11-06 00:55:26,413 - INFO - Positive splits - Train: 1827, Val: 391, Test: 392
+2025-11-06 00:55:26,424 - INFO - Generated negative universe with 21040 candidates
+2025-11-06 00:55:26,426 - INFO - Master splits created:
+2025-11-06 00:55:26,426 - INFO -   Train: 1827 pos, 1827 neg
+2025-11-06 00:55:26,426 - INFO -   Val: 391 pos, 391 neg
+2025-11-06 00:55:26,426 - INFO -   Test: 392 pos, 392 neg
+2025-11-06 00:55:26,426 - INFO - Saving master splits...
+2025-11-06 00:55:26,434 - INFO - Master splits saved successfully
+2025-11-06 00:55:26,557 - INFO - Registering training negatives for GNNLink: 2218 pairs
+2025-11-06 00:55:26,559 - INFO - Saved training negatives to fair_evaluation_output/GNNLink_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:37,828 - INFO - Creating clean evaluation pool...
+2025-11-06 01:00:37,887 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:37,945 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:38,004 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:38,063 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:38,122 - INFO - Loaded training negatives from GNE_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:38,182 - INFO - Loaded training negatives from PPCOR_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:38,241 - INFO - Loaded training negatives from PIDC_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:38,301 - INFO - Loaded training negatives from LEAP_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:38,361 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:38,361 - INFO - Total training negatives across all methods: 2218 (loaded from 1 current + CSV files)
+2025-11-06 01:00:38,672 - INFO - Clean evaluation pool (all pairs) size: 244672
+2025-11-06 01:00:38,775 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-06 01:00:45,185 - INFO - Creating clean evaluation pool...
+2025-11-06 01:00:45,245 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,305 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,365 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,423 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,483 - INFO - Loaded training negatives from GNE_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,542 - INFO - Loaded training negatives from PPCOR_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,600 - INFO - Loaded training negatives from PIDC_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,659 - INFO - Loaded training negatives from LEAP_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,718 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:45,718 - INFO - Total training negatives across all methods: 2218 (loaded from 1 current + CSV files)
+2025-11-06 01:00:46,056 - INFO - Clean evaluation pool (all pairs) size: 244672
+2025-11-06 01:00:46,161 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-06 01:00:53,094 - INFO - Evaluating method: GNNLink
+2025-11-06 01:00:53,094 - INFO - Creating clean evaluation pool...
+2025-11-06 01:00:53,155 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,215 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,273 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,333 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,392 - INFO - Loaded training negatives from GNE_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,450 - INFO - Loaded training negatives from PPCOR_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,509 - INFO - Loaded training negatives from PIDC_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,567 - INFO - Loaded training negatives from LEAP_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,625 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mESC_specific_chipseq_500.csv
+2025-11-06 01:00:53,625 - INFO - Total training negatives across all methods: 2218 (loaded from 1 current + CSV files)
+2025-11-06 01:00:53,964 - INFO - Clean evaluation pool (all pairs) size: 244672
+2025-11-06 01:00:54,068 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-06 01:01:00,550 - INFO - Results for GNNLink: AUROC=0.8537, AUPR=0.0064
+2025-11-06 01:01:00,585 - INFO - Saving evaluation results...
+2025-11-06 01:01:00,587 - INFO - Evaluation results saved successfully
+Running: python main.py --exp_file ../../inputs/examples/mESC_specific_chipseq_500/ExpressionData.csv --train_file ../../inputs/examples/mESC_specific_chipseq_500/Train_set.csv --test_file ../../inputs/examples/mESC_specific_chipseq_500/Test_set.csv --val_file ../../inputs/examples/mESC_specific_chipseq_500/Validation_set.csv
+GNNLink completed successfully
+Loaded 500 genes from gene list
+Loaded prediction matrix of shape (500, 500)
+Generated predictions for ALL 250000 gene pairs
+GNNLink metrics saved to ../../inputs/examples/mESC_specific_chipseq_500/GNNLink_metrics_new.csv
+Saved GNNLink predictions to ../../outputs/mESC_specific_chipseq_500/GNNLink_predictions.csv
+[Diag] Test positives: 392, predicted: 392 (100.0%)
+[Diag] Eval negatives: 244672, predicted: 244672 (100.0%)
+[Diag] No overlap between test positives and negative pool
+[EvalOpt] Using clean evaluation pool negatives: 244672
+[EvalOpt] Direct AUROC=0.8537, AUPR=0.0064
+[EvalOpt] Shuffled baseline AUROC=0.5024, AUPR=0.001580
+GNNLink Results: {'auroc': 0.8537405512819829, 'aupr': 0.006365355672490054, 'n_positives': 392, 'n_negatives': 244672, 'n_neg_samples': 244672, 'seed': 42, 'method': 'GNNLink'}

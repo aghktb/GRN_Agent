@@ -1,0 +1,75 @@
+run_id: mESC_tf500_tf_eager_train
+artifact_root: artifacts
+seed: 42
+eval_track: track1_no_literature
+split_id: mESC_tf500
+disable_priors: false
+use_ortholog_lookup: true
+
+dataset:
+  mode: beeline_csv
+  dataset_id: mESC_tf500
+  species: mouse
+  expression_path: Data/sc-RNA-seq/mESC/mESC_nonspecific_chipseq_tf500ExpressionData.csv
+  tf_file: Data/sc-RNA-seq/mESC/mESC_nonspecific_chipseq_tf500TFs.csv
+  modalities:
+    - scrna
+
+cell_context:
+  use_scanpy: false
+  cell_type: embryonic stem cell
+
+candidates:
+  mode: tf_centered_window
+  corr_threshold: 0.1
+  negative_ratio: 5
+  train_window_neighbors: 100
+  train_include_positives: true
+  expr_weak_percentile: 0.3
+  expr_probable_percentile: 0.6
+  motif_score_threshold: 0.0
+  accessibility_threshold: 0.0
+  linkage_threshold: 0.0
+  rescue_motif: true
+  rescue_accessibility: true
+  rescue_max_per_tf: 100
+
+train:
+  frac: 0.8
+
+scoring:
+  device: cuda
+
+build_device: cuda
+prior_device: cuda
+
+multimodal_manifest: artifacts/acquire/mESC_tf500/multimodal_manifest.json
+
+tf_eager:
+  gold_edges: Data/sc-RNA-seq/mESC/mESC_tf500_gold_edges.csv
+  split_manifest: conf/mESC_tf500_split_manifest.csv
+  strategy: leave_one_tf_out
+  fold_id: mESC_tf500_f1
+  subset: train
+  windows_jsonl: artifacts/mESC_tf500_holdout/tf_eager/train_windows.jsonl
+  checkpoint: artifacts/mESC_tf500_holdout/tf_eager/tf_eager.pt
+  window_size: 100
+  prior_train_frac: 0.8
+  prior_bootstrap: 8
+  train:
+    epochs: 100
+    lr: 0.0003
+    weight_decay: 0.01
+    val_frac: 0.1
+    device: cuda
+    early_stopping_patience: 10
+    early_stopping_min_delta: 0.0001
+  infer:
+    windows_jsonl: artifacts/mESC_tf500_holdout/tf_eager/test_windows.jsonl
+    checkpoint: artifacts/mESC_tf500_holdout/tf_eager/tf_eager.pt
+    scored_csv: artifacts/mESC_tf500_holdout/tf_eager/test_scored_edges.csv
+    network_csv: artifacts/mESC_tf500_holdout/tf_eager/test_network.csv
+    evidence_jsonl: artifacts/mESC_tf500_holdout/tf_eager/test_flat_evidence.jsonl
+    threshold: 0.5
+    topk_per_tf: 100
+    device: cuda

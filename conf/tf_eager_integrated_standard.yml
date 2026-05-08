@@ -1,0 +1,148 @@
+workflow:
+  id: tf_eager_integrated_run
+  seed: 42
+  artifact_root: artifacts
+  single_artifact_dir: true
+
+acquisition:
+  enabled: false
+  reuse_if_exists: true
+  expr: Data/sc-RNA-seq/Example/ExpressionData.csv
+  species: mouse
+  cell_type: example cell type
+  cell_line: ""
+  cell_context: ""
+  dataset_id: example_dataset
+  out_manifest: artifacts/tf_eager_integrated_run/acquisition/multimodal_manifest.json
+  gold_network: ""
+  genome: mm10
+  strict: true
+  min_promoter_coverage: 0.6
+  coverage_denominator: rnaseq_expressed
+  max_atac_candidates: 5
+  skip_atac_search: false
+  skip_motif: false
+
+dataset:
+  mode: beeline_csv
+  dataset_id: example_dataset
+  species: mouse
+  expression_path: Data/sc-RNA-seq/Example/ExpressionData.csv
+  tf_file: Data/sc-RNA-seq/Example/TFs.csv
+  modalities:
+    - scrna
+    - atac
+
+cell_context:
+  use_scanpy: false
+  cell_type: example cell type
+
+candidates:
+  mode: tf_centered_window
+  expression_transform: arcsinh
+  corr_threshold: 0.25
+  negative_ratio: 5
+  train_window_neighbors: 200
+  train_subgraph_bootstraps: 5
+  val_subgraph_bootstraps: 5
+  test_subgraph_bootstraps: 5
+  train_include_positives: true
+  blind_ensure_coverage: true
+  eval_ensure_coverage: true
+  blind_exhaustive_all_pairs: false
+  expr_weak_percentile: 0.3
+  expr_probable_percentile: 0.6
+  motif_score_threshold: 0.0
+  accessibility_threshold: 0.0
+  linkage_threshold: 0.0
+  rescue_motif: true
+  rescue_accessibility: true
+  rescue_max_per_tf: 100
+
+disable_priors: true
+use_ortholog_lookup: false
+
+scoring:
+  device: cuda
+
+build_device: cpu
+prior_device: cpu
+
+split:
+  enabled: false
+  gold_edges: ""
+  out: artifacts/tf_eager_integrated_run/splits/split_manifest.csv
+  fold_id: example_f1
+  node_split_mode: expression
+  target_gene_policy: audit
+  train_ratio: 0.7
+  val_ratio: 0.1
+  test_ratio: 0.2
+
+tf_eager:
+  strategy: leave_one_tf_out
+  fold_id: example_f1
+  checkpoint: artifacts/tf_eager_integrated_run/tf_eager/tf_eager.pt
+  train_windows_jsonl: artifacts/tf_eager_integrated_run/tf_eager/train_windows.jsonl
+  test_windows_jsonl: artifacts/tf_eager_integrated_run/tf_eager/test_windows.jsonl
+  window_size: 100
+  prior_train_frac: 0.8
+  prior_bootstrap: 8
+
+build_train_windows:
+  enabled: false
+  subset: train
+  reuse_if_exists: true
+  tf_workers: 8
+
+train_tf_eager:
+  enabled: false
+  reuse_if_exists: false
+  epochs: 100
+  lr: 0.001
+  weight_decay: 0.05
+  dropout: 0.2
+  val_frac: 0.1
+  device: cuda
+  batch_size: 8
+  num_workers: 0
+  early_stopping_patience: 10
+  early_stopping_min_delta: 0.0001
+  checkpoint_metric: val_auprc
+  seed: 42
+  wandb: false
+  wandb_project: grn-agent-tf-eager
+  wandb_run_name: tf_eager_integrated_run_train
+
+build_test_windows:
+  enabled: true
+  subset: test
+  reuse_if_exists: true
+  tf_workers: 8
+  build_device: cpu
+
+infer_tf_eager:
+  enabled: true
+  reuse_if_exists: false
+  scored_csv: artifacts/tf_eager_integrated_run/tf_eager/test_scored_edges.csv
+  network_csv: artifacts/tf_eager_integrated_run/tf_eager/test_network.csv
+  evidence_jsonl: artifacts/tf_eager_integrated_run/tf_eager/test_flat_evidence.jsonl
+  threshold: 0.5
+  topk_per_tf: 100
+  aggregation_vote_threshold: 0.3
+  device: cuda
+
+evaluation:
+  enabled: true
+  reuse_if_exists: false
+  gold_edges: ""
+  strategy: leave_one_tf_out
+  fold_id: example_f1
+  subset: test
+  negative_ratios: "1,2,5,10"
+  negative_repeats: 1
+  k_values: "10,50,100"
+  out_report: artifacts/tf_eager_integrated_run/evaluation/eval_test_by_ratio.json
+  wandb: false
+  wandb_project: grn-agent-tf-eager
+  wandb_run_name: tf_eager_integrated_run_eval

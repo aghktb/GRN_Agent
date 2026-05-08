@@ -1,0 +1,48 @@
+# ============================================================
+# Combined training config
+# Datasets: hESC + hHep + mDC + mHSC-E + mHSC-GM
+# Infer on: mESC + mHSC-L  (see mESC_infer.yml, mHSC-L_infer.yml)
+#
+# Usage:
+#   conda run --live-stream -n om-agent \
+#     python3 scripts/run_combined_training.py \
+#     --config conf/datasets/combined_train.yml
+#
+# Individual per-dataset acquisition commands are embedded in each
+# dataset config under the "Multimodal acquisition" comment block.
+# Run all acquisitions before enabling multimodal_manifest lines.
+# ============================================================
+
+run_id: combined_train
+artifact_root: artifacts/combined_train
+seed: 42
+eval_track: track1_no_literature
+split_id: combined_fold
+disable_priors: false
+use_ortholog_lookup: true
+
+# Per-dataset configs consumed by run_combined_training.py
+train_configs:
+  - conf/datasets/hESC.yml
+  - conf/datasets/hHep.yml
+  - conf/datasets/mDC.yml
+  - conf/datasets/mHSC-E.yml
+  - conf/datasets/mHSC-GM.yml
+
+infer_configs:
+  - conf/datasets/mESC_infer.yml
+  - conf/datasets/mHSC-L_infer.yml
+
+train:
+  frac: 0.8
+
+calibration:
+  temperature: 1.0
+
+decode:
+  max_regulators_per_target: 10
+  min_confidence: 0.0
+
+scoring:
+  checkpoint: artifacts/eager/eager.pt
+  device: cpu

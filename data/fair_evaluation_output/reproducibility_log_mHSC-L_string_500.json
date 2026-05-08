@@ -1,0 +1,16 @@
+{
+  "random_seed": 42,
+  "creation_time": "2025-11-13T11:53:20.122306",
+  "framework_version": "1.0.0",
+  "method_results": {
+    "PIDC": {
+      "auroc": 0.6953266402525913,
+      "aupr": 0.028589236527238708,
+      "n_positives": 12,
+      "n_negatives": 249362,
+      "n_neg_samples": 249362,
+      "seed": 42,
+      "method": "PIDC"
+    }
+  }
+}

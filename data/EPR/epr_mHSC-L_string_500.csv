@@ -1,0 +1,11 @@
+Dataset,Method,epr@100,epr@500,epr@1000,epr@2000,gt_k,epr@gt
+mHSC-L_string_500,CNNC,0.0,0.0,0.0,0.0,12,0.0
+mHSC-L_string_500,GNE,0.0,0.0,0.0,0.0005,12,0.0
+mHSC-L_string_500,GNNLink,0.0,0.0,0.0,0.0,12,0.0
+mHSC-L_string_500,LEAP,0.02,0.014,0.007,0.0035,12,0.0
+mHSC-L_string_500,PIDC,0.07,0.014,0.008,0.004,12,0.0
+mHSC-L_string_500,PPCOR,0.0,0.0,0.001,0.0005,12,0.0
+mHSC-L_string_500,scGREAT,0.0,0.0,0.0,0.0,12,0.0
+mHSC-L_string_500,SINCERITIES,0.0,0.0,0.0,0.0,12,0.0
+mHSC-L_string_500,STGRNS,0.0,0.0,0.0,0.0,12,0.0
+mHSC-L_string_500,GRNFormer,0.0,0.0,0.001,0.0035,12,0.0

@@ -1,0 +1,2 @@
+auroc,aupr,n_positives,n_negatives,n_neg_samples,seed,method
+0.4239036671481303,7.876578777778175e-05,22,249240,249240,42,scGREAT

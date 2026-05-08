@@ -1,0 +1,41 @@
+2025-11-06 14:07:08,257 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-06 14:07:08,257 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mESC_nonspecific_chipseq_1000
+2025-11-06 14:07:08,313 - INFO - Loaded 1000 genes from expression data
+2025-11-06 14:07:08,315 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-06 14:07:08,315 - INFO - Filtered to 81 TFs present in expression data
+2025-11-06 14:07:08,315 - WARNING - Excluded 1397 TFs not in expression data
+2025-11-06 14:07:08,347 - INFO - Loaded 853 known positive pairs (filtered to expression data)
+2025-11-06 14:07:08,347 - INFO - All TFs are present in expression data
+2025-11-06 14:07:08,348 - INFO - Creating master splits...
+2025-11-06 14:07:08,349 - INFO - Positive splits - Train: 597, Val: 128, Test: 128
+2025-11-06 14:07:08,385 - INFO - Generated negative universe with 80066 candidates
+2025-11-06 14:07:08,389 - INFO - Master splits created:
+2025-11-06 14:07:08,389 - INFO -   Train: 597 pos, 597 neg
+2025-11-06 14:07:08,389 - INFO -   Val: 128 pos, 128 neg
+2025-11-06 14:07:08,389 - INFO -   Test: 128 pos, 128 neg
+2025-11-06 14:07:08,389 - INFO - Saving master splits...
+2025-11-06 14:07:08,394 - INFO - Master splits saved successfully
+2025-11-06 14:07:08,440 - INFO - Registering training negatives for SINCERITIES: 725 pairs
+2025-11-06 14:07:08,441 - INFO - Saved training negatives to fair_evaluation_output/SINCERITIES_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,525 - INFO - Evaluating method: SINCERITIES
+2025-11-06 14:07:38,525 - INFO - Creating clean evaluation pool...
+2025-11-06 14:07:38,547 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,567 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,588 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,608 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,629 - INFO - Loaded training negatives from GNE_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,649 - INFO - Loaded training negatives from CNNC_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,669 - INFO - Loaded training negatives from PPCOR_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,689 - INFO - Loaded training negatives from PIDC_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,710 - INFO - Loaded training negatives from LEAP_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,730 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mESC_nonspecific_chipseq_1000.csv
+2025-11-06 14:07:38,730 - INFO - Total training negatives across all methods: 725 (loaded from 1 current + CSV files)
+2025-11-06 14:07:39,775 - INFO - Clean evaluation pool (all pairs) size: 997422
+2025-11-06 14:07:40,274 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-06 14:08:08,570 - INFO - Results for SINCERITIES: AUROC=0.4064, AUPR=0.0001
+2025-11-06 14:08:08,829 - INFO - Saving evaluation results...
+2025-11-06 14:08:08,831 - INFO - Evaluation results saved successfully
+Loaded 999000 SINCERITIES predictions from /home/aghktb/Beeline/outputs/example/mESC_nonspecific_chipseq_1000/SINCERITIES/rankedEdges.csv
+Normalized 51298 gene pairs (dots → dashes, removed X prefix)
+Skipped 1000 self-loops (not in evaluation pool)
+SINCERITIES Results: {'auroc': 0.4063913252740565, 'aupr': 0.00011635888939046057, 'n_positives': 128, 'n_negatives': 997422, 'n_neg_samples': 997422, 'seed': 42, 'method': 'SINCERITIES'}

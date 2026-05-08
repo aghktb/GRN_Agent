@@ -1,0 +1,38 @@
+2025-11-02 22:19:08,076 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-02 22:19:08,077 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mESC_nonspecific_chipseq_500
+2025-11-02 22:19:08,105 - INFO - Loaded 500 genes from expression data
+2025-11-02 22:19:08,106 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-02 22:19:08,106 - INFO - Filtered to 46 TFs present in expression data
+2025-11-02 22:19:08,106 - WARNING - Excluded 1432 TFs not in expression data
+2025-11-02 22:19:08,117 - INFO - Loaded 264 known positive pairs (filtered to expression data)
+2025-11-02 22:19:08,117 - INFO - All TFs are present in expression data
+2025-11-02 22:19:08,117 - INFO - Creating master splits...
+2025-11-02 22:19:08,118 - INFO - Positive splits - Train: 184, Val: 40, Test: 40
+2025-11-02 22:19:08,129 - INFO - Generated negative universe with 22690 candidates
+2025-11-02 22:19:08,131 - INFO - Master splits created:
+2025-11-02 22:19:08,131 - INFO -   Train: 184 pos, 184 neg
+2025-11-02 22:19:08,131 - INFO -   Val: 40 pos, 40 neg
+2025-11-02 22:19:08,131 - INFO -   Test: 40 pos, 40 neg
+2025-11-02 22:19:08,131 - INFO - Saving master splits...
+2025-11-02 22:19:08,134 - INFO - Master splits saved successfully
+2025-11-02 22:19:08,149 - INFO - Registering training negatives for scGREAT: 224 pairs
+2025-11-02 22:19:08,150 - INFO - Saved training negatives to fair_evaluation_output/scGREAT_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-02 22:19:08,150 - INFO - Creating clean evaluation pool...
+2025-11-02 22:19:08,157 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-02 22:19:08,164 - INFO - Loaded training negatives from GNE_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-02 22:19:08,171 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-02 22:19:08,178 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-02 22:19:08,185 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-02 22:19:08,185 - INFO - Total training negatives across all methods: 224 (loaded from 1 current + CSV files)
+2025-11-02 22:19:08,387 - INFO - Clean evaluation pool (all pairs) size: 249012
+2025-11-02 22:19:08,541 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-02 22:19:15,345 - INFO - Saved clean evaluation pool (all pairs) to fair_evaluation_output/clean_evaluation_pool_all_pairs_mESC_nonspecific_chipseq_500.csv
+  File "/home/aghktb/GRNformer_update/Benchmarks/scGREAT/main_with_predictions.py", line 475
+    base_dir = "inputs/examples"
+    ^
+IndentationError: expected an indented block after 'else' statement on line 473
+Regenerating bio_name.txt to include all genes from evaluation pool...
+Loaded 500 genes from ExpressionData.csv
+Added 249012 pairs from evaluation pool (filtered from 249012 total pairs to genes in expression data)
+bio_name.txt already has all 500 required genes
+Error running scGREAT script: Command '['python', 'Benchmarks/scGREAT/main_with_predictions.py', 'inputs/examples/mESC_nonspecific_chipseq_500']' returned non-zero exit status 1.

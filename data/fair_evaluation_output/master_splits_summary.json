@@ -1,0 +1,10 @@
+{
+  "train_positives": 375,
+  "train_negatives": 375,
+  "val_positives": 81,
+  "val_negatives": 81,
+  "test_positives": 81,
+  "test_negatives": 81,
+  "random_seed": 42,
+  "creation_time": "2025-11-20T15:45:38.375880"
+}

@@ -1,0 +1,40 @@
+2025-11-06 14:13:28,587 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-06 14:13:28,587 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mESC_string_tf500
+2025-11-06 14:13:28,619 - INFO - Loaded 500 genes from expression data
+2025-11-06 14:13:28,620 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-06 14:13:28,620 - INFO - Filtered to 46 TFs present in expression data
+2025-11-06 14:13:28,621 - WARNING - Excluded 1432 TFs not in expression data
+2025-11-06 14:13:28,631 - INFO - Loaded 264 known positive pairs (filtered to expression data)
+2025-11-06 14:13:28,631 - INFO - All TFs are present in expression data
+2025-11-06 14:13:28,631 - INFO - Creating master splits...
+2025-11-06 14:13:28,632 - INFO - Positive splits - Train: 184, Val: 40, Test: 40
+2025-11-06 14:13:28,644 - INFO - Generated negative universe with 22690 candidates
+2025-11-06 14:13:28,645 - INFO - Master splits created:
+2025-11-06 14:13:28,645 - INFO -   Train: 184 pos, 184 neg
+2025-11-06 14:13:28,645 - INFO -   Val: 40 pos, 40 neg
+2025-11-06 14:13:28,645 - INFO -   Test: 40 pos, 40 neg
+2025-11-06 14:13:28,645 - INFO - Saving master splits...
+2025-11-06 14:13:28,648 - INFO - Master splits saved successfully
+2025-11-06 14:13:28,663 - INFO - Registering training negatives for SINCERITIES: 224 pairs
+2025-11-06 14:13:28,664 - INFO - Saved training negatives to fair_evaluation_output/SINCERITIES_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,144 - INFO - Evaluating method: SINCERITIES
+2025-11-06 14:13:36,144 - INFO - Creating clean evaluation pool...
+2025-11-06 14:13:36,152 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,158 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,165 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,172 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,179 - INFO - Loaded training negatives from GNE_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,186 - INFO - Loaded training negatives from PPCOR_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,192 - INFO - Loaded training negatives from PIDC_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,199 - INFO - Loaded training negatives from LEAP_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,206 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mESC_string_tf500.csv
+2025-11-06 14:13:36,206 - INFO - Total training negatives across all methods: 224 (loaded from 1 current + CSV files)
+2025-11-06 14:13:36,458 - INFO - Clean evaluation pool (all pairs) size: 249012
+2025-11-06 14:13:36,571 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-06 14:13:43,371 - INFO - Results for SINCERITIES: AUROC=0.4106, AUPR=0.0001
+2025-11-06 14:13:43,408 - INFO - Saving evaluation results...
+2025-11-06 14:13:43,411 - INFO - Evaluation results saved successfully
+Loaded 249500 SINCERITIES predictions from /home/aghktb/Beeline/outputs/example/mESC_string_tf500/SINCERITIES/rankedEdges.csv
+Normalized 17658 gene pairs (dots → dashes, removed X prefix)
+Skipped 500 self-loops (not in evaluation pool)
+SINCERITIES Results: {'auroc': 0.41061781159140925, 'aupr': 0.00014507418075439135, 'n_positives': 40, 'n_negatives': 249012, 'n_neg_samples': 249012, 'seed': 42, 'method': 'SINCERITIES'}

@@ -1,0 +1,122 @@
+workflow:
+  id: multicontext_tf_eager/all_datacontext_contexts
+  seed: 42
+  artifact_root: artifacts
+
+common:
+  modalities:
+    - scrna
+    - atac
+
+acquisition:
+  enabled: true
+  reuse_if_exists: true
+  skip_atac_search: false
+  skip_motif: false
+  strict: true
+  min_promoter_coverage: 0.6
+  coverage_denominator: rnaseq_expressed
+  max_atac_candidates: 5
+
+split:
+  split_name: leave_one_tf_out
+  node_split_mode: expression
+  target_gene_policy: audit
+  train_ratio: 0.7
+  val_ratio: 0.1
+  test_ratio: 0.2
+
+build_windows:
+  devices: cpu
+  tf_workers: 8
+  candidates:
+    mode: tf_centered_window
+    expression_transform: arcsinh
+    corr_threshold: 0.25
+    negative_ratio: 5
+    train_window_neighbors: 200
+    train_subgraph_bootstraps: 5
+    val_subgraph_bootstraps: 5
+    test_subgraph_bootstraps: 5
+    motif_score_threshold: 0.0
+    accessibility_threshold: 0.0
+    linkage_threshold: 0.0
+    rescue_motif: true
+    rescue_accessibility: true
+
+disable_priors: true
+use_ortholog_lookup: false
+
+scoring:
+  device: cuda
+build_device: cpu
+prior_device: cpu
+
+context_groups:
+  - base_dir: Data/DataContext
+    require_all: true
+    variants:
+      - nonspecific_chipseq_500
+      - nonspecific_chipseq_1000
+      - nonspecific_chipseq_tf500
+      - nonspecific_chipseq_tf1000
+      - specific_chipseq_500
+      - specific_chipseq_1000
+      - specific_chipseq_tf500
+      - specific_chipseq_tf1000
+      - string_500
+      - string_tf500
+      - string_tf1000
+    cells:
+      - prefix: hHep
+        species: human
+        cell_type: hepatocyte
+      - prefix: hESC
+        species: human
+        cell_type: embryonic stem cell
+      - prefix: mDC
+        species: mouse
+        cell_type: dendritic cell
+      - prefix: mHSC-E
+        species: mouse
+        cell_type: hematopoietic stem cell erythroid
+      - prefix: mHSC-GM
+        species: mouse
+        cell_type: hematopoietic stem cell granulocyte macrophage
+
+train_tf_eager:
+  enabled: true
+  model:
+    token_layout: edge_compact
+    gene_vocab: 1024
+  epochs: 100
+  lr: 0.0001
+  weight_decay: 0.05
+  dropout: 0.3
+  # Ignored by the multi-context runner because it passes explicit combined val windows.
+  val_frac: 0.0
+  device: cuda
+  batch_size: 32
+  num_workers: 8
+  early_stopping_patience: 10
+  early_stopping_min_delta: 0.0001
+  wandb: true
+  wandb_project: grn-agent-tf-eager
+  wandb_run_name: all_datacontext_contexts
+  distributed:
+    nproc_per_node: 2
+    backend: nccl
+    standalone: true
+
+infer_tf_eager:
+  enabled: true
+  devices: cuda:0,cuda:1
+  threshold: 0.05
+  topk_per_tf: 100
+  device: cuda
+
+evaluation:
+  enabled: true
+  parallel_workers: 2
+  negative_ratios: "1,2,5,10"
+  k_values: "10,50,100"

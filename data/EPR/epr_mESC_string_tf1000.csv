@@ -1,0 +1,11 @@
+Dataset,Method,epr@100,epr@500,epr@1000,epr@2000,gt_k,epr@gt
+mESC_string_tf1000,CNNC,0.0,0.0,0.0,0.0,100,0.0
+mESC_string_tf1000,GNE,0.0,0.0,0.001,0.0005,100,0.0
+mESC_string_tf1000,GNNLink,0.0,0.0,0.0,0.0,100,0.0
+mESC_string_tf1000,LEAP,0.0,0.004,0.004,0.003,100,0.0
+mESC_string_tf1000,PIDC,0.01,0.004,0.003,0.002,100,0.01
+mESC_string_tf1000,PPCOR,0.0,0.0,0.001,0.0005,100,0.0
+mESC_string_tf1000,scGREAT,0.0,0.0,0.0,0.0,100,0.0
+mESC_string_tf1000,SINCERITIES,0.0,0.0,0.0,0.0,100,0.0
+mESC_string_tf1000,STGRNS,0.0,0.0,0.0,0.0,100,0.0
+mESC_string_tf1000,GRNFormer,0.0,0.0,0.001,0.001,100,0.0

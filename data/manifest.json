@@ -1,0 +1,139 @@
+{
+  "dataset_id": "mouse_mouse_brain",
+  "species": "mouse",
+  "cell_type": "mouse brain",
+  "genome_build": "mm10",
+  "rna": {
+    "source": "user_provided",
+    "accession": "GSM4156610",
+    "files": [],
+    "n_replicates": 1,
+    "n_genes": 3536
+  },
+  "accessibility": {
+    "source": "GEO",
+    "accession": "GSM4156599",
+    "assay": "ATAC-seq",
+    "files": [
+      "/home/aghktb/GRN_Agent/data/mouse_mouse_brain/GSM4156599_brain.peaks.bed.gz"
+    ],
+    "n_replicates": 1,
+    "promoter_coverage_of_rnaseq_genes": 0.9428733031674208,
+    "promoter_peak_fraction": 0.025119089059225636,
+    "frip": null,
+    "tss_enrichment": null,
+    "has_peak_file": true,
+    "has_signal_file": false
+  },
+  "motifs": {
+    "database": "JASPAR2026",
+    "tf_motif_count": 85,
+    "tf_overlap_with_rnaseq": 0.24566473988439305
+  },
+  "qc": {
+    "pass": true,
+    "biological_match": "pass",
+    "technical_match": "pass",
+    "feature_compatibility": "pass",
+    "accessibility_coverage": "pass",
+    "accessibility_qc": {
+      "score": 0.6325000000000001,
+      "decision": "conditional_accept",
+      "weights": {
+        "signal": 0.2,
+        "tss": 0.2,
+        "promoter_coverage": 0.15,
+        "peak_distribution": 0.1,
+        "replicate_concordance": 0.15,
+        "biological_match": 0.15,
+        "usability": 0.05
+      },
+      "components": {
+        "Q_signal": 0.5,
+        "Q_TSS": 0.5,
+        "Q_prom": 1.0,
+        "Q_peakdist": 0.3,
+        "Q_rep": 0.5,
+        "Q_match": 0.9500000000000001,
+        "Q_usable": 0.7000000000000001
+      },
+      "subcomponents": {
+        "M_species": 1.0,
+        "M_celltype": 1.0,
+        "M_condition": 1.0,
+        "M_development": 0.5,
+        "M_protocol": 1.0,
+        "F_peaks": 1.0,
+        "F_signal": 0.0,
+        "F_metadata": 1.0,
+        "F_genome": 1.0
+      },
+      "metrics": {
+        "frip": null,
+        "tss_enrichment": null,
+        "promoter_coverage": 0.9428733031674208,
+        "promoter_peak_fraction": 0.025119089059225636,
+        "replicate_jaccard": null
+      },
+      "hard_rejects": []
+    },
+    "rejection_reasons": [],
+    "warnings": []
+  },
+  "qc_report": {
+    "pass": true,
+    "biological_match": "pass",
+    "technical_match": "pass",
+    "feature_compatibility": "pass",
+    "accessibility_coverage": "pass",
+    "accessibility_qc": {
+      "score": 0.6325000000000001,
+      "decision": "conditional_accept",
+      "weights": {
+        "signal": 0.2,
+        "tss": 0.2,
+        "promoter_coverage": 0.15,
+        "peak_distribution": 0.1,
+        "replicate_concordance": 0.15,
+        "biological_match": 0.15,
+        "usability": 0.05
+      },
+      "components": {
+        "Q_signal": 0.5,
+        "Q_TSS": 0.5,
+        "Q_prom": 1.0,
+        "Q_peakdist": 0.3,
+        "Q_rep": 0.5,
+        "Q_match": 0.9500000000000001,
+        "Q_usable": 0.7000000000000001
+      },
+      "subcomponents": {
+        "M_species": 1.0,
+        "M_celltype": 1.0,
+        "M_condition": 1.0,
+        "M_development": 0.5,
+        "M_protocol": 1.0,
+        "F_peaks": 1.0,
+        "F_signal": 0.0,
+        "F_metadata": 1.0,
+        "F_genome": 1.0
+      },
+      "metrics": {
+        "frip": null,
+        "tss_enrichment": null,
+        "promoter_coverage": 0.9428733031674208,
+        "promoter_peak_fraction": 0.025119089059225636,
+        "replicate_jaccard": null
+      },
+      "hard_rejects": []
+    },
+    "rejection_reasons": [],
+    "warnings": []
+  },
+  "paths": {
+    "expression_matrix": "/home/aghktb/GRN_Agent/Data/sc-RNA-seq/mouseBrain/GSM4156610_brain_rna_counts_expression_cpm.csv",
+    "gene_symbols": "data/mouse_mouse_brain/genes.txt",
+    "promoter_accessibility": "data/mouse_mouse_brain/promoter_accessibility.bed",
+    "motif_hits": "data/mouse_mouse_brain/motif_hits.tsv"
+  }
+}

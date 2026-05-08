@@ -1,0 +1,2 @@
+auroc,aupr,n_positives,n_negatives,n_neg_samples,seed,method
+0.47093416407628264,0.0010336260488478315,269,246191,246191,42,PPCOR

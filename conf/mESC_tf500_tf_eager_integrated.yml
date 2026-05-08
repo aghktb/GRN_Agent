@@ -1,0 +1,119 @@
+workflow:
+  id: mESC_tf500_tf_eager_integrated
+  seed: 42
+  artifact_root: artifacts
+  single_artifact_dir: true
+
+acquisition:
+  enabled: true
+  reuse_if_exists: true
+  expr: Data/sc-RNA-seq/mESC/mESC_nonspecific_chipseq_tf500ExpressionData.csv
+  species: mouse
+  cell_type: embryonic stem cell
+  cell_line: ES-E14
+  gold_network: Data/sc-RNA-seq/mESC/mESC_tf500_gold_edges.csv
+  out_manifest: artifacts/mESC_tf500_tf_eager_integrated/acquisition/multimodal_manifest.json
+  # Set skip_motif: true when FIMO/bedtools/genome assets are unavailable.
+  skip_motif: false
+
+dataset:
+  mode: beeline_csv
+  dataset_id: mESC_tf500
+  species: mouse
+  expression_path: Data/sc-RNA-seq/mESC/mESC_nonspecific_chipseq_tf500ExpressionData.csv
+  tf_file: Data/sc-RNA-seq/mESC/mESC_nonspecific_chipseq_tf500TFs.csv
+  modalities:
+    - scrna
+    - atac
+
+cell_context:
+  use_scanpy: false
+  cell_type: embryonic stem cell
+
+candidates:
+  mode: tf_centered_window
+  corr_threshold: 0.1
+  negative_ratio: 5
+  train_window_neighbors: 100
+  train_include_positives: true
+  expr_weak_percentile: 0.3
+  expr_probable_percentile: 0.6
+  motif_score_threshold: 0.0
+  accessibility_threshold: 0.0
+  linkage_threshold: 0.0
+  rescue_motif: true
+  rescue_accessibility: true
+  rescue_max_per_tf: 100
+
+disable_priors: false
+use_ortholog_lookup: true
+
+scoring:
+  device: cuda
+
+build_device: cuda
+prior_device: cuda
+
+split:
+  enabled: true
+  gold_edges: Data/sc-RNA-seq/mESC/mESC_tf500_gold_edges.csv
+  out: conf/mESC_tf500_split_manifest.csv
+  fold_id: mESC_tf500_f1
+  node_split_mode: expression
+  target_gene_policy: audit
+  train_ratio: 0.7
+  val_ratio: 0.1
+  test_ratio: 0.2
+
+tf_eager:
+  strategy: leave_one_tf_out
+  fold_id: mESC_tf500_f1
+  checkpoint: artifacts/mESC_tf500_tf_eager_integrated/tf_eager/tf_eager.pt
+  train_windows_jsonl: artifacts/mESC_tf500_tf_eager_integrated/tf_eager/train_windows.jsonl
+  test_windows_jsonl: artifacts/mESC_tf500_tf_eager_integrated/tf_eager/test_windows.jsonl
+  window_size: 100
+  prior_train_frac: 0.8
+  prior_bootstrap: 8
+
+build_train_windows:
+  enabled: true
+  subset: train
+  reuse_if_exists: true
+
+train_tf_eager:
+  enabled: true
+  epochs: 200
+  lr: 0.0003
+  weight_decay: 0.05
+  dropout: 0.2
+  val_frac: 0.1
+  device: cuda
+  early_stopping_patience: 20
+  early_stopping_min_delta: 0.0001
+  seed: 42
+
+build_test_windows:
+  enabled: true
+  subset: test
+  reuse_if_exists: true
+
+infer_tf_eager:
+  enabled: true
+  scored_csv: artifacts/mESC_tf500_tf_eager_integrated/tf_eager/test_scored_edges.csv
+  network_csv: artifacts/mESC_tf500_tf_eager_integrated/tf_eager/test_network.csv
+  evidence_jsonl: artifacts/mESC_tf500_tf_eager_integrated/tf_eager/test_flat_evidence.jsonl
+  threshold: 0.5
+  topk_per_tf: 100
+  device: cuda
+
+evaluation:
+  enabled: true
+  gold_edges: Data/sc-RNA-seq/mESC/mESC_tf500_gold_edges.csv
+  strategy: leave_one_tf_out
+  fold_id: mESC_tf500_f1
+  subset: test
+  negative_ratios: "1,2,5,10"
+  out_report: artifacts/mESC_tf500_tf_eager_integrated/evaluation/eval_test_by_ratio.json
+  wandb: true
+  wandb_project: grn-agent-tf-eager
+  wandb_run_name: mESC_tf500_tf_eager_integrated_eval

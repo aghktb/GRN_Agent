@@ -1,0 +1,34 @@
+2025-11-03 00:44:14,221 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-03 00:44:14,222 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_nonspecific_chipseq_1000
+2025-11-03 00:44:14,319 - INFO - Loaded 1000 genes from expression data
+2025-11-03 00:44:14,320 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-03 00:44:14,320 - INFO - Filtered to 83 TFs present in expression data
+2025-11-03 00:44:14,320 - WARNING - Excluded 1395 TFs not in expression data
+2025-11-03 00:44:14,353 - INFO - Loaded 831 known positive pairs (filtered to expression data)
+2025-11-03 00:44:14,353 - INFO - All TFs are present in expression data
+2025-11-03 00:44:14,353 - INFO - Creating master splits...
+2025-11-03 00:44:14,354 - INFO - Positive splits - Train: 581, Val: 125, Test: 125
+2025-11-03 00:44:14,394 - INFO - Generated negative universe with 82086 candidates
+2025-11-03 00:44:14,399 - INFO - Master splits created:
+2025-11-03 00:44:14,400 - INFO -   Train: 581 pos, 581 neg
+2025-11-03 00:44:14,400 - INFO -   Val: 125 pos, 125 neg
+2025-11-03 00:44:14,400 - INFO -   Test: 125 pos, 125 neg
+2025-11-03 00:44:14,400 - INFO - Saving master splits...
+2025-11-03 00:44:14,404 - INFO - Master splits saved successfully
+2025-11-03 00:44:14,449 - INFO - Registering training negatives for GRNFormer: 706 pairs
+2025-11-03 00:44:14,450 - INFO - Saved training negatives to fair_evaluation_output/GRNFormer_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 00:44:41,295 - INFO - Evaluating method: GRNFormer
+2025-11-03 00:44:41,295 - INFO - Creating clean evaluation pool...
+2025-11-03 00:44:41,315 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 00:44:41,334 - INFO - Loaded training negatives from STGRNS_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 00:44:41,352 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 00:44:41,352 - INFO - Total training negatives across all methods: 706 (loaded from 1 current + CSV files)
+2025-11-03 00:44:42,369 - INFO - Clean evaluation pool (all pairs) size: 997463
+2025-11-03 00:44:42,859 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-03 00:45:08,680 - INFO - Saved clean evaluation pool (all pairs) to fair_evaluation_output/clean_evaluation_pool_all_pairs_mHSC-L_nonspecific_chipseq_1000.csv
+2025-11-03 00:45:10,489 - INFO - Results for GRNFormer: AUROC=0.8126, AUPR=0.0020
+2025-11-03 00:45:10,743 - INFO - Saving evaluation results...
+2025-11-03 00:45:10,746 - INFO - Evaluation results saved successfully
+Loading GRNFormer predictions from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_nonspecific_chipseq_1000/GRNFormer_output1.csv
+Loaded 1000000 GRNFormer predictions
+GRNFormer Results: {'auroc': 0.8126495158216397, 'aupr': 0.0020254745977794546, 'n_positives': 125, 'n_negatives': 997463, 'n_neg_samples': 997463, 'seed': 42, 'method': 'GRNFormer'}

@@ -1,0 +1,11 @@
+Dataset,Method,epr@100,epr@500,epr@1000,epr@2000,gt_k,epr@gt
+mHSC-L_nonspecific_chipseq_tf500,CNNC,0.0,0.002,0.003,0.0015,95,0.010526315789473684
+mHSC-L_nonspecific_chipseq_tf500,GNE,0.02,0.006,0.004,0.0045,95,0.021052631578947368
+mHSC-L_nonspecific_chipseq_tf500,GNNLink,0.0,0.0,0.0,0.0,95,0.0
+mHSC-L_nonspecific_chipseq_tf500,LEAP,0.0,0.004,0.005,0.003,95,0.0
+mHSC-L_nonspecific_chipseq_tf500,PIDC,0.01,0.01,0.006,0.0035,95,0.010526315789473684
+mHSC-L_nonspecific_chipseq_tf500,PPCOR,0.0,0.0,0.0,0.0,95,0.0
+mHSC-L_nonspecific_chipseq_tf500,scGREAT,0.0,0.0,0.0,0.0,95,0.0
+mHSC-L_nonspecific_chipseq_tf500,SINCERITIES,0.0,0.0,0.0,0.0,95,0.0
+mHSC-L_nonspecific_chipseq_tf500,STGRNS,0.0,0.0,0.0,0.0015,95,0.0
+mHSC-L_nonspecific_chipseq_tf500,GRNFormer,0.0,0.0,0.001,0.0025,95,0.0

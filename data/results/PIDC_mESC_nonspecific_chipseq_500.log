@@ -1,0 +1,39 @@
+2025-11-13 09:49:07,182 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-13 09:49:07,183 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mESC_nonspecific_chipseq_500
+2025-11-13 09:49:07,223 - INFO - Loaded 500 genes from expression data
+2025-11-13 09:49:07,238 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-13 09:49:07,238 - INFO - Filtered to 46 TFs present in expression data
+2025-11-13 09:49:07,238 - WARNING - Excluded 1432 TFs not in expression data
+2025-11-13 09:49:07,252 - INFO - Loaded 264 known positive pairs (filtered to expression data)
+2025-11-13 09:49:07,252 - INFO - All TFs are present in expression data
+2025-11-13 09:49:07,252 - INFO - Creating master splits...
+2025-11-13 09:49:07,254 - INFO - Positive splits - Train: 184, Val: 40, Test: 40
+2025-11-13 09:49:07,272 - INFO - Generated negative universe with 22690 candidates
+2025-11-13 09:49:07,273 - INFO - Master splits created:
+2025-11-13 09:49:07,273 - INFO -   Train: 184 pos, 184 neg
+2025-11-13 09:49:07,273 - INFO -   Val: 40 pos, 40 neg
+2025-11-13 09:49:07,273 - INFO -   Test: 40 pos, 40 neg
+2025-11-13 09:49:07,273 - INFO - Saving master splits...
+2025-11-13 09:49:07,278 - INFO - Master splits saved successfully
+2025-11-13 09:49:07,297 - INFO - Registering training negatives for PIDC: 224 pairs
+2025-11-13 09:49:07,298 - INFO - Saved training negatives to fair_evaluation_output/PIDC_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,714 - INFO - Evaluating method: PIDC
+2025-11-13 09:49:16,714 - INFO - Creating clean evaluation pool...
+2025-11-13 09:49:16,725 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,734 - INFO - Loaded training negatives from GNE_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,743 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,752 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,761 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,772 - INFO - Loaded training negatives from CNNC_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,781 - INFO - Loaded training negatives from PPCOR_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,790 - INFO - Loaded training negatives from PIDC_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,800 - INFO - Loaded training negatives from LEAP_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,809 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mESC_nonspecific_chipseq_500.csv
+2025-11-13 09:49:16,809 - INFO - Total training negatives across all methods: 224 (loaded from 1 current + CSV files)
+2025-11-13 09:49:17,271 - INFO - Clean evaluation pool (all pairs) size: 249012
+2025-11-13 09:49:17,449 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-13 09:49:25,859 - INFO - Results for PIDC: AUROC=0.7577, AUPR=0.0004
+2025-11-13 09:49:25,893 - INFO - Saving evaluation results...
+2025-11-13 09:49:25,895 - INFO - Evaluation results saved successfully
+PIDC prediction statistics: 249500 pairs, score range [0.000012, 2.000000], mean 1.024286
+PIDC Results: {'auroc': 0.7576907940179589, 'aupr': 0.00042515895815649796, 'n_positives': 40, 'n_negatives': 249012, 'n_neg_samples': 249012, 'seed': 42, 'method': 'PIDC'}

@@ -1,0 +1,39 @@
+2025-11-13 11:53:42,264 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-13 11:53:42,264 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_string_1000
+2025-11-13 11:53:42,404 - INFO - Loaded 1000 genes from expression data
+2025-11-13 11:53:42,406 - INFO - Loaded 1639 TFs from TFs.csv
+2025-11-13 11:53:42,406 - INFO - Filtered to 53 TFs present in expression data
+2025-11-13 11:53:42,406 - WARNING - Excluded 1586 TFs not in expression data
+2025-11-13 11:53:42,438 - INFO - Loaded 537 known positive pairs (filtered to expression data)
+2025-11-13 11:53:42,438 - INFO - All TFs are present in expression data
+2025-11-13 11:53:42,439 - INFO - Creating master splits...
+2025-11-13 11:53:42,440 - INFO - Positive splits - Train: 375, Val: 81, Test: 81
+2025-11-13 11:53:42,480 - INFO - Generated negative universe with 52791 candidates
+2025-11-13 11:53:42,484 - INFO - Master splits created:
+2025-11-13 11:53:42,484 - INFO -   Train: 375 pos, 375 neg
+2025-11-13 11:53:42,484 - INFO -   Val: 81 pos, 81 neg
+2025-11-13 11:53:42,484 - INFO -   Test: 81 pos, 81 neg
+2025-11-13 11:53:42,484 - INFO - Saving master splits...
+2025-11-13 11:53:42,491 - INFO - Master splits saved successfully
+2025-11-13 11:53:42,545 - INFO - Registering training negatives for PIDC: 456 pairs
+2025-11-13 11:53:42,546 - INFO - Saved training negatives to fair_evaluation_output/PIDC_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,277 - INFO - Evaluating method: PIDC
+2025-11-13 11:54:24,277 - INFO - Creating clean evaluation pool...
+2025-11-13 11:54:24,307 - INFO - Loaded training negatives from GNNLink_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,327 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,347 - INFO - Loaded training negatives from CNNC_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,389 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,417 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,451 - INFO - Loaded training negatives from GNE_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,487 - INFO - Loaded training negatives from STGRNS_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,524 - INFO - Loaded training negatives from LEAP_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,559 - INFO - Loaded training negatives from PPCOR_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,619 - INFO - Loaded training negatives from PIDC_training_negatives_mHSC-L_string_1000.csv
+2025-11-13 11:54:24,619 - INFO - Total training negatives across all methods: 456 (loaded from 1 current + CSV files)
+2025-11-13 11:54:26,643 - INFO - Clean evaluation pool (all pairs) size: 998007
+2025-11-13 11:54:27,265 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-13 11:55:03,596 - INFO - Results for PIDC: AUROC=0.7659, AUPR=0.0066
+2025-11-13 11:55:03,901 - INFO - Saving evaluation results...
+2025-11-13 11:55:03,904 - INFO - Evaluation results saved successfully
+PIDC prediction statistics: 999000 pairs, score range [0.000000, 1.999997], mean 1.018991
+PIDC Results: {'auroc': 0.765850203653412, 'aupr': 0.006609353067358671, 'n_positives': 81, 'n_negatives': 998007, 'n_neg_samples': 998007, 'seed': 42, 'method': 'PIDC'}

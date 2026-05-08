@@ -1,0 +1,16 @@
+{
+  "random_seed": 42,
+  "creation_time": "2025-11-20T15:45:38.167138",
+  "framework_version": "1.0.0",
+  "method_results": {
+    "GNNLink": {
+      "auroc": 0.7323608668124955,
+      "aupr": 0.00015711173996265092,
+      "n_positives": 81,
+      "n_negatives": 998007,
+      "n_neg_samples": 998007,
+      "seed": 42,
+      "method": "GNNLink"
+    }
+  }
+}

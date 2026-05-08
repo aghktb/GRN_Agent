@@ -1,0 +1,66 @@
+{
+  "human:ASF1B": [
+    "ASF1B",
+    "CIA-II",
+    "anti-silencing function 1B histone chaperone"
+  ],
+  "human:FOS": [
+    "FOS",
+    "AP-1",
+    "C-FOS",
+    "p55",
+    "Fos proto-oncogene, AP-1 transcription factor subunit"
+  ],
+  "human:HDAC2": [
+    "HDAC2",
+    "HD2",
+    "KDAC2",
+    "RPD3",
+    "YAF1",
+    "histone deacetylase 2"
+  ],
+  "human:JUN": [
+    "JUN",
+    "AP-1",
+    "AP1",
+    "c-Jun",
+    "cJUN",
+    "p39",
+    "Jun proto-oncogene, AP-1 transcription factor subunit"
+  ],
+  "human:LYN": [
+    "LYN",
+    "JTK8",
+    "SAIDV",
+    "p53Lyn",
+    "p56Lyn",
+    "LYN proto-oncogene, Src family tyrosine kinase"
+  ],
+  "human:MYB": [
+    "MYB",
+    "Cmyb",
+    "c-myb",
+    "c-myb_CDS",
+    "efg",
+    "MYB proto-oncogene, transcription factor"
+  ],
+  "human:PRPS1": [
+    "PRPS1",
+    "ARTS",
+    "CMTX5",
+    "DFN2",
+    "DFNX1",
+    "PPRibP",
+    "PRS-I",
+    "PRSI",
+    "phosphoribosyl pyrophosphate synthetase 1"
+  ],
+  "human:ZKSCAN17": [
+    "ZNF496",
+    "NIZP1",
+    "ZFP496",
+    "ZKSCAN17",
+    "ZSCAN49",
+    "zinc finger protein 496"
+  ]
+}

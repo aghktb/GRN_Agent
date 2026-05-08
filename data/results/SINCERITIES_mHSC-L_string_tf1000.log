@@ -1,0 +1,21 @@
+2025-11-06 14:21:07,252 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-06 14:21:07,252 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_string_tf1000
+2025-11-06 14:21:07,374 - INFO - Loaded 1124 genes from expression data
+2025-11-06 14:21:07,375 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-06 14:21:07,375 - INFO - Filtered to 124 TFs present in expression data
+2025-11-06 14:21:07,375 - WARNING - Excluded 1354 TFs not in expression data
+2025-11-06 14:21:07,405 - INFO - Loaded 740 known positive pairs (filtered to expression data)
+2025-11-06 14:21:07,405 - INFO - All TFs are present in expression data
+2025-11-06 14:21:07,405 - INFO - Creating master splits...
+2025-11-06 14:21:07,406 - INFO - Positive splits - Train: 518, Val: 111, Test: 111
+2025-11-06 14:21:07,494 - INFO - Generated negative universe with 138512 candidates
+2025-11-06 14:21:07,501 - INFO - Master splits created:
+2025-11-06 14:21:07,501 - INFO -   Train: 518 pos, 518 neg
+2025-11-06 14:21:07,501 - INFO -   Val: 111 pos, 111 neg
+2025-11-06 14:21:07,501 - INFO -   Test: 111 pos, 111 neg
+2025-11-06 14:21:07,501 - INFO - Saving master splits...
+2025-11-06 14:21:07,506 - INFO - Master splits saved successfully
+2025-11-06 14:21:07,553 - INFO - Registering training negatives for SINCERITIES: 629 pairs
+2025-11-06 14:21:07,554 - INFO - Saved training negatives to fair_evaluation_output/SINCERITIES_training_negatives_mHSC-L_string_tf1000.csv
+Predictions not found: /home/aghktb/Beeline/outputs/example/mHSC-L_string_tf1000/SINCERITIES/rankedEdges.csv
+SINCERITIES Results: {'auroc': 0.0, 'aupr': 0.0}

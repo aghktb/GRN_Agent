@@ -1,0 +1,155 @@
+workflow:
+  id: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000
+  seed: 42
+  artifact_root: .
+  single_artifact_dir: true
+
+acquisition:
+  enabled: true
+  reuse_if_exists: true
+
+  expr: Data/DataContext/mHSC-GM_nonspecific_chipseq_tf1000/ExpressionData.csv
+  species: mouse
+  cell_type: hematopoietic stem cell granulocyte macrophage
+  cell_line: ""
+  cell_context: ""
+  dataset_id: mHSC-GM_nonspecific_chipseq_tf1000
+  multimodal_manifest: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/acquisition/multimodal_manifest_exponly.json
+  gold_network: ""
+  genome: mm10
+  strict: true
+  min_promoter_coverage: 0.6
+  coverage_denominator: rnaseq_expressed
+  max_atac_candidates: 5
+  skip_atac_search: true
+  skip_motif: true
+
+dataset:
+  mode: beeline_csv
+  dataset_id: mHSC-GM_nonspecific_chipseq_tf1000
+  species: mouse
+  expression_path: Data/DataContext/mHSC-GM_nonspecific_chipseq_tf1000/ExpressionData.csv
+  tf_file: Data/DataContext/mHSC-GM_nonspecific_chipseq_tf1000/TFs.csv
+  modalities:
+    - scrna
+    
+
+cell_context:
+  use_scanpy: false
+  cell_type: hematopoietic stem cell granulocyte macrophage
+
+candidates:
+  mode: tf_centered_window
+  expression_transform: arcsinh
+  corr_threshold: 0.25
+  negative_ratio: 5
+  train_window_neighbors: 200
+  train_subgraph_bootstraps: 5
+  val_subgraph_bootstraps: 5
+  test_subgraph_bootstraps: 5
+  train_include_positives: true
+  blind_ensure_coverage: true
+  eval_ensure_coverage: true
+  blind_exhaustive_all_pairs: false
+  expr_weak_percentile: 0.3
+  expr_probable_percentile: 0.6
+  motif_score_threshold: 0.0
+  accessibility_threshold: 0.0
+  linkage_threshold: 0.0
+  rescue_motif: false
+  rescue_accessibility: false
+  rescue_max_per_tf: 0
+
+disable_priors: true
+use_ortholog_lookup: false
+
+scoring:
+  device: cpu
+
+build_device: cpu
+prior_device: cpu
+
+split:
+  enabled: true
+  gold_edges: "Data/DataContext/mHSC-GM_nonspecific_chipseq_tf1000/refNetwork.csv"
+  out: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/splits/split_manifest.csv
+  fold_id: mHSC-GM_nonspecific_chipseq_tf1000_f1
+  node_split_mode: expression
+  target_gene_policy: audit
+  train_ratio: 0.7
+  val_ratio: 0.1
+  test_ratio: 0.2
+
+tf_eager:
+  strategy: leave_one_tf_out
+  fold_id: mHSC-GM_nonspecific_chipseq_tf1000_f1
+  checkpoint: trainings/tf_eager copy/tf_eager_bootstrap_v2.pt
+  train_windows_jsonl: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/tf_eager/train_windows.jsonl
+  test_windows_jsonl: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/tf_eager/test_windows_exponly.jsonl
+  window_size: 100
+  prior_train_frac: 0.8
+  prior_bootstrap: 8
+
+build_train_windows:
+  enabled: false
+  subset: train
+  reuse_if_exists: true
+  tf_workers: 8
+
+train_tf_eager:
+  enabled: false
+  reuse_if_exists: false
+  epochs: 100
+  lr: 0.001
+  weight_decay: 0.05
+  dropout: 0.2
+  val_frac: 0.1
+  device: cuda
+  batch_size: 8
+  num_workers: 0
+  early_stopping_patience: 10
+  early_stopping_min_delta: 0.0001
+  checkpoint_metric: val_auprc
+  seed: 42
+  wandb: false
+  wandb_project: grn-agent-tf-eager
+  wandb_run_name: mHSC-GM_nonspecific_chipseq_tf1000_train
+
+build_test_windows:
+  enabled: true
+  subset: test
+  reuse_if_exists: false
+  tf_workers: 8
+  build_device: cpu
+
+infer_tf_eager:
+  enabled: true
+  reuse_if_exists: false
+  scored_csv: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/tf_eager/test_scored_edges_exponly.csv
+  network_csv: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/tf_eager/test_network_exponly.csv
+  evidence_jsonl: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/tf_eager/test_flat_evidence_exponly.jsonl
+  threshold: 0.5
+  topk_per_tf: 100
+  aggregation_vote_threshold: 0.3
+  device: cpu
+
+evaluation:
+  enabled: true
+  reuse_if_exists: false
+  gold_edges: "Data/DataContext/mHSC-GM_nonspecific_chipseq_tf1000/refNetwork.csv"
+  strategy: leave_one_tf_out
+  fold_id: mHSC-GM_nonspecific_chipseq_tf1000_f1
+  subset: test
+  negative_ratios: "1,2,5,10"
+  negative_repeats: 1
+  k_values: "10,50,100"
+  out_report: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/evaluation/eval_test_by_ratio_exponly.json
+  wandb: false
+  wandb_project: grn-agent-tf-eager
+  wandb_run_name: mHSC-GM_nonspecific_chipseq_tf1000_eval
+
+literature_validation:
+  enabled: true
+  cell_type: hematopoietic stem cell granulocyte macrophage
+  min_p: 0.5        
+  limit: 50          

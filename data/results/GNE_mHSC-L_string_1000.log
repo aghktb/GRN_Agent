@@ -1,0 +1,149 @@
+2025-11-10 12:43:26,024 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-10 12:43:26,024 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_string_1000
+2025-11-10 12:43:26,149 - INFO - Loaded 1000 genes from expression data
+2025-11-10 12:43:26,152 - INFO - Loaded 1639 TFs from TFs.csv
+2025-11-10 12:43:26,152 - INFO - Filtered to 53 TFs present in expression data
+2025-11-10 12:43:26,152 - WARNING - Excluded 1586 TFs not in expression data
+2025-11-10 12:43:26,178 - INFO - Loaded 537 known positive pairs (filtered to expression data)
+2025-11-10 12:43:26,179 - INFO - All TFs are present in expression data
+2025-11-10 12:43:26,179 - INFO - Creating master splits...
+2025-11-10 12:43:26,181 - INFO - Positive splits - Train: 375, Val: 81, Test: 81
+2025-11-10 12:43:26,217 - INFO - Generated negative universe with 52791 candidates
+2025-11-10 12:43:26,222 - INFO - Master splits created:
+2025-11-10 12:43:26,222 - INFO -   Train: 375 pos, 375 neg
+2025-11-10 12:43:26,222 - INFO -   Val: 81 pos, 81 neg
+2025-11-10 12:43:26,222 - INFO -   Test: 81 pos, 81 neg
+2025-11-10 12:43:26,222 - INFO - Saving master splits...
+2025-11-10 12:43:26,228 - INFO - Master splits saved successfully
+2025-11-10 12:43:26,303 - INFO - Registering training negatives for GNE: 456 pairs
+2025-11-10 12:43:26,305 - INFO - Saved training negatives to fair_evaluation_output/GNE_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 12:43:27.823024: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1762800207.844617 4155987 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1762800207.851302 4155987 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1762800207.868854 4155987 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762800207.868927 4155987 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762800207.868933 4155987 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762800207.868937 4155987 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-11-10 12:43:27.874106: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From /home/aghktb/miniconda3/envs/grnformer_env/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/aghktb/miniconda3/envs/grnformer_env/lib/python3.11/site-packages/tensorflow/python/util/dispatch.py:1260: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+I0000 00:00:1762800226.776965 4155987 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22177 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:21:00.0, compute capability: 8.0
+I0000 00:00:1762800226.802525 4155987 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 13731 MB memory:  -> device: 1, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:81:00.0, compute capability: 8.0
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1762800226.902298 4155987 mlir_graph_optimization_pass.cc:425] MLIR V1 optimization pass is not enabled
+2025-11-10 12:43:48.139479: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.208182: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.222722: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.266588: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.484334: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.572019: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.727158: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.735716: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.781446: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.820806: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.825174: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.829128: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.969191: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:48.998590: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.020562: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.053513: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.060458: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.065636: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.074872: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.083286: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.100270: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.611602: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:49.626583: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.041885: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.098588: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.108678: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.170523: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.174812: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.185179: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.190161: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.193109: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.195346: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2025-11-10 12:43:50.778946: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:187] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+Processing inputs/examples/mHSC-L_string_1000
+Created inputs/examples/mHSC-L_string_1000/expression_data_scaled.tsv
+Dimension of attributes: 847
+Number of genes: 1000
+Making adjacency matrix symmetric since the graph is undirected.
+{'id_embedding_size': 128, 'attr_embedding_size': 128, 'representation_size': 128, 'alpha': 1, 'n_neg_samples': 10, 'epoch': 50, 'batch_size': 256, 'learning_rate': 0.005}
+Using structure and attribute embedding
+Epoch:      1, Train-Batch Loss: 13.372998238, Validation AUC: 0.642127724 *
+Epoch:      2, Train-Batch Loss: 11.455699921, Validation AUC: 0.653101661 *
+Epoch:      3, Train-Batch Loss: 11.618610859, Validation AUC: 0.666971498 *
+Epoch:      4, Train-Batch Loss: 10.480583191, Validation AUC: 0.681527206 *
+Epoch:      5, Train-Batch Loss: 11.225177288, Validation AUC: 0.694558756 *
+Epoch:      6, Train-Batch Loss: 10.426791668, Validation AUC: 0.707209267 *
+Epoch:      7, Train-Batch Loss: 10.092223644, Validation AUC: 0.719402530 *
+Epoch:      8, Train-Batch Loss: 8.447785378, Validation AUC: 0.733424783 *
+Epoch:      9, Train-Batch Loss: 8.325644970, Validation AUC: 0.747599451 *
+Epoch:     10, Train-Batch Loss: 8.429917336, Validation AUC: 0.759792715 *
+Epoch:     11, Train-Batch Loss: 6.508455992, Validation AUC: 0.770919067 *
+Epoch:     12, Train-Batch Loss: 7.121098042, Validation AUC: 0.779682975 *
+Epoch:     13, Train-Batch Loss: 6.806847572, Validation AUC: 0.787151349 *
+Epoch:     14, Train-Batch Loss: 6.115262985, Validation AUC: 0.795458009 *
+Epoch:     15, Train-Batch Loss: 6.037190199, Validation AUC: 0.802392928 *
+Epoch:     16, Train-Batch Loss: 5.703338146, Validation AUC: 0.811461667 *
+Epoch:     17, Train-Batch Loss: 5.950633049, Validation AUC: 0.811766499 *
+Epoch:     18, Train-Batch Loss: 4.114906549, Validation AUC: 0.818015546 *
+Epoch:     19, Train-Batch Loss: 4.238628507, Validation AUC: 0.823654931 *
+Epoch:     20, Train-Batch Loss: 5.540580273, Validation AUC: 0.825407712 *
+Epoch:     21, Train-Batch Loss: 3.805394292, Validation AUC: 0.830361225 *
+Epoch:     22, Train-Batch Loss: 3.445822239, Validation AUC: 0.832876086 *
+Epoch:     23, Train-Batch Loss: 3.863152504, Validation AUC: 0.836610273 *
+Epoch:     24, Train-Batch Loss: 3.072308064, Validation AUC: 0.840115836 *
+Epoch:     25, Train-Batch Loss: 3.286896229, Validation AUC: 0.841944825 *
+Epoch:     26, Train-Batch Loss: 2.997180104, Validation AUC: 0.837753391 
+Epoch:     27, Train-Batch Loss: 3.873563290, Validation AUC: 0.840573083 
+Epoch:     28, Train-Batch Loss: 3.084215164, Validation AUC: 0.842859320 *
+Epoch:     29, Train-Batch Loss: 5.019429922, Validation AUC: 0.846822131 *
+Epoch:     30, Train-Batch Loss: 3.552714825, Validation AUC: 0.846136260 
+Epoch:     31, Train-Batch Loss: 4.766927719, Validation AUC: 0.845831428 
+Epoch:     32, Train-Batch Loss: 2.130178273, Validation AUC: 0.847965249 *
+Epoch:     33, Train-Batch Loss: 1.881953359, Validation AUC: 0.844535894 
+Epoch:     34, Train-Batch Loss: 2.478231549, Validation AUC: 0.845831428 
+Epoch:     35, Train-Batch Loss: 2.857299447, Validation AUC: 0.845831428 
+No improvement found in a while, stopping optimization.
+Created inputs/examples/mHSC-L_string_1000/embeddings.pkl
+GNE Test ROC Score: 0.7743, GNE Test AP score: 0.8138
+Saved metrics to inputs/examples/mHSC-L_string_1000/GNE_metrics_new.csv
+Generating predictions for ALL possible gene pairs...
+Generated predictions for ALL 1000000 gene pairs
+Saved GNE predictions to outputs/mHSC-L_string_1000/GNE_predictions.csv
+2025-11-10 13:00:17,298 - INFO - Creating clean evaluation pool...
+2025-11-10 13:00:17,317 - INFO - Loaded training negatives from GNNLink_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:17,335 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:17,352 - INFO - Loaded training negatives from CNNC_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:17,369 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:17,386 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:17,403 - INFO - Loaded training negatives from GNE_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:17,403 - INFO - Total training negatives across all methods: 456 (loaded from 1 current + CSV files)
+2025-11-10 13:00:18,885 - INFO - Clean evaluation pool (all pairs) size: 998007
+2025-11-10 13:00:19,465 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-10 13:00:52,646 - INFO - Evaluating method: GNE
+2025-11-10 13:00:52,646 - INFO - Creating clean evaluation pool...
+2025-11-10 13:00:52,667 - INFO - Loaded training negatives from GNNLink_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:52,684 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:52,702 - INFO - Loaded training negatives from CNNC_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:52,720 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:52,738 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:52,755 - INFO - Loaded training negatives from GNE_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:00:52,755 - INFO - Total training negatives across all methods: 456 (loaded from 1 current + CSV files)
+2025-11-10 13:00:54,586 - INFO - Clean evaluation pool (all pairs) size: 998007
+2025-11-10 13:00:55,238 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-10 13:01:31,253 - INFO - Results for GNE: AUROC=0.8953, AUPR=0.0045
+2025-11-10 13:01:31,544 - INFO - Saving evaluation results...
+2025-11-10 13:01:31,548 - INFO - Evaluation results saved successfully
+[Diag] Test positives: 81, predicted: 81 (100.0%)
+[Diag] Eval negatives: 998007, predicted: 998007 (100.0%)
+[Diag] No overlap between test positives and negative pool
+GNE Results: {'auroc': 0.8952583300988004, 'aupr': 0.004535734218706226, 'n_positives': 81, 'n_negatives': 998007, 'n_neg_samples': 998007, 'seed': 42, 'method': 'GNE'}

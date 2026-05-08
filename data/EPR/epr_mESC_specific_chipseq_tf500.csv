@@ -1,0 +1,11 @@
+Dataset,Method,epr@100,epr@500,epr@1000,epr@2000,gt_k,epr@gt
+mESC_specific_chipseq_tf500,CNNC,0.0,0.0,0.0,0.0,392,0.0
+mESC_specific_chipseq_tf500,GNE,0.08,0.04,0.027,0.0185,392,0.05102040816326531
+mESC_specific_chipseq_tf500,GNNLink,0.0,0.02,0.012,0.008,392,0.015306122448979591
+mESC_specific_chipseq_tf500,LEAP,0.01,0.006,0.007,0.0055,392,0.007653061224489796
+mESC_specific_chipseq_tf500,PIDC,0.0,0.0,0.0,0.0,392,0.0
+mESC_specific_chipseq_tf500,PPCOR,0.0,0.002,0.002,0.002,392,0.002551020408163265
+mESC_specific_chipseq_tf500,scGREAT,0.0,0.0,0.0,0.0,392,0.0
+mESC_specific_chipseq_tf500,SINCERITIES,0.0,0.0,0.0,0.0,392,0.0
+mESC_specific_chipseq_tf500,STGRNS,0.0,0.0,0.0,0.0,392,0.0
+mESC_specific_chipseq_tf500,GRNFormer,0.05,0.018,0.023,0.0195,392,0.030612244897959183

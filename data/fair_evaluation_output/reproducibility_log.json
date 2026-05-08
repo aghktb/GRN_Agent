@@ -1,0 +1,16 @@
+{
+  "random_seed": 42,
+  "creation_time": "2025-11-02T22:13:20.929337",
+  "framework_version": "1.0.0",
+  "method_results": {
+    "STGRNS": {
+      "auroc": 0.3220820588526842,
+      "aupr": 0.0017176818640907729,
+      "n_positives": 984,
+      "n_negatives": 376624,
+      "n_neg_samples": 376624,
+      "seed": 42,
+      "method": "STGRNS"
+    }
+  }
+}

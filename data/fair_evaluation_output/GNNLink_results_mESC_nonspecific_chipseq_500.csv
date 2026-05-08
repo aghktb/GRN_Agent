@@ -1,0 +1,2 @@
+auroc,aupr,n_positives,n_negatives,n_neg_samples,seed,method
+0.7484792399563074,0.00033830801635083556,40,249012,249012,42,GNNLink

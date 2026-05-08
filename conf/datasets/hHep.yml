@@ -1,0 +1,71 @@
+# ============================================================
+# hHep  —  Human Mature Hepatocytes  (TRAIN)
+# RNA: 425 cells, multiple time points (day 0/6/8/14/21)
+#      iPSC → hepatocyte-like cells (2D culture)
+# Gold: hHep ChIP-seq network
+# Species: human  /  Genome: hg38
+# GEO: GSE81252  GSE96981
+# ============================================================
+
+run_id: hHep_train
+artifact_root: artifacts
+seed: 42
+eval_track: track1_no_literature
+split_id: hHep_fold
+disable_priors: false
+use_ortholog_lookup: true
+
+# ------------------------------------------------------------------
+# Multimodal acquisition
+# Run the command below once, then uncomment multimodal_manifest.
+#
+# conda run --live-stream -n om-agent python3 scripts/acquire_multimodal_data.py \
+#   --expr        Data/sc-RNA-seq/hHep/ExpressionData.csv \
+#   --species     human \
+#   --genome      hg38 \
+#   --cell-type   "hepatocyte" \
+#   --lineage     "hepatocyte differentiation" \
+#   --state       "differentiated" \
+#   --cell-context \
+#     "Human iPSC-derived hepatocyte-like cells: scRNA-seq from iPSCs in 2D culture \
+#      differentiating to mature hepatocyte-like (MH) cells at days 0 (iPSC), 6, 8, 14, \
+#      and 21; GSE81252 GSE96981" \
+#   --gold-network  Data/sc-RNA-seq/hHep/hHep-ChIP-seq-network.csv \
+#   --out-manifest  artifacts/acquire/hHep/multimodal_manifest.json \
+#   --strict \
+#   --jaspar-release 2026 \
+#   --use-semantic-slm
+#
+# multimodal_manifest: artifacts/acquire/hHep/multimodal_manifest.json
+# ------------------------------------------------------------------
+
+dataset:
+  mode: beeline_csv
+  dataset_id: hHep
+  species: human
+  expression_path: Data/sc-RNA-seq/hHep/ExpressionData.csv
+  gold_edges_path: Data/sc-RNA-seq/hHep/hHep-ChIP-seq-network.csv
+  tf_file: Data/sc-RNA-seq/hHep/TFs.csv
+  modalities: ["scrna"]
+
+cell_context:
+  use_scanpy: false
+  cell_type: "hepatocyte"
+
+candidates:
+  min_pearson: 0.1
+  max_edges_per_tf: 50
+
+train:
+  frac: 0.8
+
+calibration:
+  temperature: 1.0
+
+decode:
+  max_regulators_per_target: 10
+  min_confidence: 0.0
+
+scoring:
+  checkpoint: artifacts/eager/eager.pt
+  device: cpu

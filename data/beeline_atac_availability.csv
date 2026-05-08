@@ -1,0 +1,6 @@
+dataset_id,rna_accession,atac_accession,pairing_quality,species,cell_type,stage,notes
+mESC,GSE98664 (BEELINE),GSE148746 (external),medium,mouse,embryonic stem cell,naive/primed ESC,"GSE148746: multi-omic (scRNA+scATAC) mESC, same lineage but not same study as BEELINE RNA"
+mHSC,GSE81682 (BEELINE),GSE148746 (external),high,mouse,hematopoietic stem cell,adult bone marrow,"GSE148746: includes mHSC with matched scRNA+scATAC, high pairing quality for integration"
+hESC-hHep,GSE106540 (BEELINE),GSE156021 (external),medium,human,hepatocyte (hESC-derived),differentiation trajectory,"GSE156021: hESC→endoderm→hepatocyte scRNA+scATAC; same lineage, external study"
+mESC (alternative),GSE98664 (BEELINE),ENCODE ENCSR000CGE (external),low,mouse,embryonic stem cell,naive ESC,"ENCODE bulk DNase-seq on mESC; bulk vs single-cell mismatch, lower integration quality"
+hESC-hHep (alternative),GSE106540 (BEELINE),ENCODE ENCSR000CJH (external),low,human,hepatocyte,adult liver,"ENCODE bulk DNase-seq on primary hepatocytes; not ESC-derived, bulk vs single-cell"

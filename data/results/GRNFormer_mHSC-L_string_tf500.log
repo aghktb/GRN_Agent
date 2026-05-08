@@ -1,0 +1,34 @@
+2025-11-03 00:50:01,457 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-03 00:50:01,457 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_string_tf500
+2025-11-03 00:50:01,520 - INFO - Loaded 624 genes from expression data
+2025-11-03 00:50:01,521 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-03 00:50:01,521 - INFO - Filtered to 124 TFs present in expression data
+2025-11-03 00:50:01,522 - WARNING - Excluded 1354 TFs not in expression data
+2025-11-03 00:50:01,538 - INFO - Loaded 387 known positive pairs (filtered to expression data)
+2025-11-03 00:50:01,538 - INFO - All TFs are present in expression data
+2025-11-03 00:50:01,538 - INFO - Creating master splits...
+2025-11-03 00:50:01,539 - INFO - Positive splits - Train: 270, Val: 58, Test: 59
+2025-11-03 00:50:01,573 - INFO - Generated negative universe with 76865 candidates
+2025-11-03 00:50:01,577 - INFO - Master splits created:
+2025-11-03 00:50:01,577 - INFO -   Train: 270 pos, 270 neg
+2025-11-03 00:50:01,577 - INFO -   Val: 58 pos, 58 neg
+2025-11-03 00:50:01,577 - INFO -   Test: 59 pos, 59 neg
+2025-11-03 00:50:01,577 - INFO - Saving master splits...
+2025-11-03 00:50:01,581 - INFO - Master splits saved successfully
+2025-11-03 00:50:01,605 - INFO - Registering training negatives for GRNFormer: 328 pairs
+2025-11-03 00:50:01,606 - INFO - Saved training negatives to fair_evaluation_output/GRNFormer_training_negatives_mHSC-L_string_tf500.csv
+2025-11-03 00:50:12,422 - INFO - Evaluating method: GRNFormer
+2025-11-03 00:50:12,422 - INFO - Creating clean evaluation pool...
+2025-11-03 00:50:12,433 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_string_tf500.csv
+2025-11-03 00:50:12,443 - INFO - Loaded training negatives from STGRNS_training_negatives_mHSC-L_string_tf500.csv
+2025-11-03 00:50:12,452 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_string_tf500.csv
+2025-11-03 00:50:12,452 - INFO - Total training negatives across all methods: 328 (loaded from 1 current + CSV files)
+2025-11-03 00:50:12,829 - INFO - Clean evaluation pool (all pairs) size: 388037
+2025-11-03 00:50:13,008 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-03 00:50:23,068 - INFO - Saved clean evaluation pool (all pairs) to fair_evaluation_output/clean_evaluation_pool_all_pairs_mHSC-L_string_tf500.csv
+2025-11-03 00:50:23,696 - INFO - Results for GRNFormer: AUROC=0.8364, AUPR=0.0017
+2025-11-03 00:50:23,765 - INFO - Saving evaluation results...
+2025-11-03 00:50:23,769 - INFO - Evaluation results saved successfully
+Loading GRNFormer predictions from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_string_tf500/GRNFormer_output1.csv
+Loaded 389376 GRNFormer predictions
+GRNFormer Results: {'auroc': 0.8364153462038807, 'aupr': 0.0016753926369560065, 'n_positives': 59, 'n_negatives': 388037, 'n_neg_samples': 388037, 'seed': 42, 'method': 'GRNFormer'}

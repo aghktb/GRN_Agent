@@ -1,0 +1,68 @@
+# ============================================================
+# mHSC-E  —  Mouse Haematopoietic Stem Cells (Erythroid)  (TRAIN)
+# RNA: Beeline benchmark, HSC → erythroid lineage
+# Gold: mHSC-E ChIP-seq network
+# Species: mouse  /  Genome: mm10
+# ============================================================
+
+run_id: mHSC-E_train
+artifact_root: artifacts
+seed: 42
+eval_track: track1_no_literature
+split_id: mHSC-E_fold
+disable_priors: false
+use_ortholog_lookup: true
+
+# ------------------------------------------------------------------
+# Multimodal acquisition
+# Run the command below once, then uncomment multimodal_manifest.
+#
+# conda run --live-stream -n om-agent python3 scripts/acquire_multimodal_data.py \
+#   --expr        Data/sc-RNA-seq/mHSC-E/ExpressionData.csv \
+#   --species     mouse \
+#   --genome      mm10 \
+#   --cell-type   "hematopoietic stem cell" \
+#   --lineage     "erythroid" \
+#   --state       "differentiated" \
+#   --cell-context \
+#     "Mouse hematopoietic stem cells differentiating along the erythroid lineage (mHSC-E); \
+#      scRNA-seq Beeline benchmark dataset" \
+#   --gold-network  Data/sc-RNA-seq/mHSC-E/mHSC-E-ChIP-seq-network.csv \
+#   --out-manifest  artifacts/acquire/mHSC-E/multimodal_manifest.json \
+#   --strict \
+#   --jaspar-release 2026 \
+#   --use-semantic-slm
+#
+# multimodal_manifest: artifacts/acquire/mHSC-E/multimodal_manifest.json
+# ------------------------------------------------------------------
+
+dataset:
+  mode: beeline_csv
+  dataset_id: mHSC-E
+  species: mouse
+  expression_path: Data/sc-RNA-seq/mHSC-E/ExpressionData.csv
+  gold_edges_path: Data/sc-RNA-seq/mHSC-E/mHSC-E-ChIP-seq-network.csv
+  tf_file: Data/sc-RNA-seq/mHSC-E/TFs.csv
+  modalities: ["scrna"]
+
+cell_context:
+  use_scanpy: false
+  cell_type: "hematopoietic stem cell"
+
+candidates:
+  min_pearson: 0.1
+  max_edges_per_tf: 50
+
+train:
+  frac: 0.8
+
+calibration:
+  temperature: 1.0
+
+decode:
+  max_regulators_per_target: 10
+  min_confidence: 0.0
+
+scoring:
+  checkpoint: artifacts/eager/eager.pt
+  device: cpu

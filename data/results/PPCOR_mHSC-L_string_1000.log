@@ -1,0 +1,38 @@
+2025-11-10 13:13:30,059 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-10 13:13:30,060 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_string_1000
+2025-11-10 13:13:30,186 - INFO - Loaded 1000 genes from expression data
+2025-11-10 13:13:30,188 - INFO - Loaded 1639 TFs from TFs.csv
+2025-11-10 13:13:30,188 - INFO - Filtered to 53 TFs present in expression data
+2025-11-10 13:13:30,189 - WARNING - Excluded 1586 TFs not in expression data
+2025-11-10 13:13:30,214 - INFO - Loaded 537 known positive pairs (filtered to expression data)
+2025-11-10 13:13:30,215 - INFO - All TFs are present in expression data
+2025-11-10 13:13:30,215 - INFO - Creating master splits...
+2025-11-10 13:13:30,217 - INFO - Positive splits - Train: 375, Val: 81, Test: 81
+2025-11-10 13:13:30,252 - INFO - Generated negative universe with 52791 candidates
+2025-11-10 13:13:30,259 - INFO - Master splits created:
+2025-11-10 13:13:30,259 - INFO -   Train: 375 pos, 375 neg
+2025-11-10 13:13:30,259 - INFO -   Val: 81 pos, 81 neg
+2025-11-10 13:13:30,259 - INFO -   Test: 81 pos, 81 neg
+2025-11-10 13:13:30,259 - INFO - Saving master splits...
+2025-11-10 13:13:30,265 - INFO - Master splits saved successfully
+2025-11-10 13:13:30,306 - INFO - Registering training negatives for PPCOR: 456 pairs
+2025-11-10 13:13:30,308 - INFO - Saved training negatives to fair_evaluation_output/PPCOR_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,648 - INFO - Evaluating method: PPCOR
+2025-11-10 13:14:08,648 - INFO - Creating clean evaluation pool...
+2025-11-10 13:14:08,666 - INFO - Loaded training negatives from GNNLink_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,682 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,699 - INFO - Loaded training negatives from CNNC_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,715 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,731 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,747 - INFO - Loaded training negatives from GNE_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,763 - INFO - Loaded training negatives from STGRNS_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,780 - INFO - Loaded training negatives from LEAP_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,796 - INFO - Loaded training negatives from PPCOR_training_negatives_mHSC-L_string_1000.csv
+2025-11-10 13:14:08,796 - INFO - Total training negatives across all methods: 456 (loaded from 1 current + CSV files)
+2025-11-10 13:14:10,238 - INFO - Clean evaluation pool (all pairs) size: 998007
+2025-11-10 13:14:10,841 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-10 13:14:47,390 - INFO - Results for PPCOR: AUROC=0.5187, AUPR=0.0001
+2025-11-10 13:14:47,747 - INFO - Saving evaluation results...
+2025-11-10 13:14:47,750 - INFO - Evaluation results saved successfully
+Loaded predictions from /home/aghktb/Beeline/outputs/example/mHSC-L_string_1000/PPCOR/outFile.txt
+PPCOR Results: {'auroc': 0.5187132028206288, 'aupr': 9.872689097367929e-05, 'n_positives': 81, 'n_negatives': 998007, 'n_neg_samples': 998007, 'seed': 42, 'method': 'PPCOR'}

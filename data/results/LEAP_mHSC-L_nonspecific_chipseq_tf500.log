@@ -1,0 +1,39 @@
+2025-11-13 11:34:25,724 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-13 11:34:25,724 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_nonspecific_chipseq_tf500
+2025-11-13 11:34:25,809 - INFO - Loaded 624 genes from expression data
+2025-11-13 11:34:25,811 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-13 11:34:25,811 - INFO - Filtered to 124 TFs present in expression data
+2025-11-13 11:34:25,811 - WARNING - Excluded 1354 TFs not in expression data
+2025-11-13 11:34:25,841 - INFO - Loaded 630 known positive pairs (filtered to expression data)
+2025-11-13 11:34:25,841 - INFO - All TFs are present in expression data
+2025-11-13 11:34:25,842 - INFO - Creating master splits...
+2025-11-13 11:34:25,843 - INFO - Positive splits - Train: 441, Val: 94, Test: 95
+2025-11-13 11:34:25,893 - INFO - Generated negative universe with 76622 candidates
+2025-11-13 11:34:25,898 - INFO - Master splits created:
+2025-11-13 11:34:25,898 - INFO -   Train: 441 pos, 441 neg
+2025-11-13 11:34:25,898 - INFO -   Val: 94 pos, 94 neg
+2025-11-13 11:34:25,898 - INFO -   Test: 95 pos, 95 neg
+2025-11-13 11:34:25,898 - INFO - Saving master splits...
+2025-11-13 11:34:25,904 - INFO - Master splits saved successfully
+2025-11-13 11:34:25,946 - INFO - Registering training negatives for LEAP: 535 pairs
+2025-11-13 11:34:25,947 - INFO - Saved training negatives to fair_evaluation_output/LEAP_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,609 - INFO - Evaluating method: LEAP
+2025-11-13 11:34:42,609 - INFO - Creating clean evaluation pool...
+2025-11-13 11:34:42,654 - INFO - Loaded training negatives from scGREAT_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,693 - INFO - Loaded training negatives from STGRNS_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,746 - INFO - Loaded training negatives from GRNFormer_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,798 - INFO - Loaded training negatives from GNNLink_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,844 - INFO - Loaded training negatives from GNE_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,864 - INFO - Loaded training negatives from PPCOR_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,884 - INFO - Loaded training negatives from PIDC_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,916 - INFO - Loaded training negatives from LEAP_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,936 - INFO - Loaded training negatives from SINCERITIES_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,956 - INFO - Loaded training negatives from CNNC_training_negatives_mHSC-L_nonspecific_chipseq_tf500.csv
+2025-11-13 11:34:42,956 - INFO - Total training negatives across all methods: 535 (loaded from 1 current + CSV files)
+2025-11-13 11:34:43,533 - INFO - Clean evaluation pool (all pairs) size: 387587
+2025-11-13 11:34:43,759 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-13 11:34:58,757 - INFO - Results for LEAP: AUROC=0.6209, AUPR=0.0015
+2025-11-13 11:34:58,926 - INFO - Saving evaluation results...
+2025-11-13 11:34:58,929 - INFO - Evaluation results saved successfully
+LEAP prediction statistics: 388752 pairs, score range [0.063871, 0.625320], mean 0.146108
+LEAP Results: {'auroc': 0.6208996879885575, 'aupr': 0.0015024005231012473, 'n_positives': 95, 'n_negatives': 387587, 'n_neg_samples': 387587, 'seed': 42, 'method': 'LEAP'}

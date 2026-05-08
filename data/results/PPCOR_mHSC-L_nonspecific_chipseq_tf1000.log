@@ -1,0 +1,21 @@
+2025-11-03 12:47:55,874 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-03 12:47:55,874 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mHSC-L_nonspecific_chipseq_tf1000
+2025-11-03 12:47:55,984 - INFO - Loaded 1124 genes from expression data
+2025-11-03 12:47:55,985 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-03 12:47:55,985 - INFO - Filtered to 124 TFs present in expression data
+2025-11-03 12:47:55,985 - WARNING - Excluded 1354 TFs not in expression data
+2025-11-03 12:47:56,030 - INFO - Loaded 1107 known positive pairs (filtered to expression data)
+2025-11-03 12:47:56,030 - INFO - All TFs are present in expression data
+2025-11-03 12:47:56,031 - INFO - Creating master splits...
+2025-11-03 12:47:56,032 - INFO - Positive splits - Train: 774, Val: 166, Test: 167
+2025-11-03 12:47:56,122 - INFO - Generated negative universe with 138145 candidates
+2025-11-03 12:47:56,130 - INFO - Master splits created:
+2025-11-03 12:47:56,130 - INFO -   Train: 774 pos, 774 neg
+2025-11-03 12:47:56,130 - INFO -   Val: 166 pos, 166 neg
+2025-11-03 12:47:56,130 - INFO -   Test: 167 pos, 167 neg
+2025-11-03 12:47:56,130 - INFO - Saving master splits...
+2025-11-03 12:47:56,135 - INFO - Master splits saved successfully
+2025-11-03 12:47:56,199 - INFO - Registering training negatives for PPCOR: 940 pairs
+2025-11-03 12:47:56,200 - INFO - Saved training negatives to fair_evaluation_output/PPCOR_training_negatives_mHSC-L_nonspecific_chipseq_tf1000.csv
+Predictions not found: /home/aghktb/Beeline/outputs/example/mHSC-L_nonspecific_chipseq_tf1000/PPCOR/outFile.txt
+PPCOR Results: {'auroc': 0.0, 'aupr': 0.0}

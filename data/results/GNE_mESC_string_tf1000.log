@@ -1,0 +1,45 @@
+2025-11-03 09:27:42,628 - INFO - Initialized Fair Evaluation Framework with seed 42
+2025-11-03 09:27:42,629 - INFO - Loading dataset from /home/aghktb/GRNformer_update/inputs/examples/mESC_string_tf1000
+2025-11-03 09:27:42,683 - INFO - Loaded 1000 genes from expression data
+2025-11-03 09:27:42,685 - INFO - Loaded 1478 TFs from TFs.csv
+2025-11-03 09:27:42,685 - INFO - Filtered to 81 TFs present in expression data
+2025-11-03 09:27:42,685 - WARNING - Excluded 1397 TFs not in expression data
+2025-11-03 09:27:42,712 - INFO - Loaded 661 known positive pairs (filtered to expression data)
+2025-11-03 09:27:42,712 - INFO - All TFs are present in expression data
+2025-11-03 09:27:42,712 - INFO - Creating master splits...
+2025-11-03 09:27:42,713 - INFO - Positive splits - Train: 462, Val: 99, Test: 100
+2025-11-03 09:27:42,750 - INFO - Generated negative universe with 80258 candidates
+2025-11-03 09:27:42,755 - INFO - Master splits created:
+2025-11-03 09:27:42,755 - INFO -   Train: 462 pos, 462 neg
+2025-11-03 09:27:42,755 - INFO -   Val: 99 pos, 99 neg
+2025-11-03 09:27:42,755 - INFO -   Test: 100 pos, 100 neg
+2025-11-03 09:27:42,755 - INFO - Saving master splits...
+2025-11-03 09:27:42,759 - INFO - Master splits saved successfully
+2025-11-03 09:27:42,796 - INFO - Registering training negatives for GNE: 561 pairs
+2025-11-03 09:27:42,797 - INFO - Saved training negatives to fair_evaluation_output/GNE_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:12,928 - INFO - Creating clean evaluation pool...
+2025-11-03 09:28:12,945 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:12,962 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:12,978 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:12,994 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:13,010 - INFO - Loaded training negatives from GNE_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:13,010 - INFO - Total training negatives across all methods: 561 (loaded from 1 current + CSV files)
+2025-11-03 09:28:14,014 - INFO - Clean evaluation pool (all pairs) size: 997778
+2025-11-03 09:28:14,514 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-03 09:28:42,195 - INFO - Evaluating method: GNE
+2025-11-03 09:28:42,195 - INFO - Creating clean evaluation pool...
+2025-11-03 09:28:42,212 - INFO - Loaded training negatives from scGREAT_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:42,228 - INFO - Loaded training negatives from STGRNS_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:42,244 - INFO - Loaded training negatives from GRNFormer_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:42,260 - INFO - Loaded training negatives from GNNLink_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:42,276 - INFO - Loaded training negatives from GNE_training_negatives_mESC_string_tf1000.csv
+2025-11-03 09:28:42,276 - INFO - Total training negatives across all methods: 561 (loaded from 1 current + CSV files)
+2025-11-03 09:28:43,096 - INFO - Clean evaluation pool (all pairs) size: 997778
+2025-11-03 09:28:43,592 - INFO - Clean evaluation pool (all pairs) already exists with same size, skipping save (use existing)
+2025-11-03 09:29:11,961 - INFO - Results for GNE: AUROC=0.7682, AUPR=0.0008
+2025-11-03 09:29:12,209 - INFO - Saving evaluation results...
+2025-11-03 09:29:12,212 - INFO - Evaluation results saved successfully
+[Diag] Test positives: 100, predicted: 100 (100.0%)
+[Diag] Eval negatives: 997778, predicted: 997778 (100.0%)
+[Diag] No overlap between test positives and negative pool
+GNE Results: {'auroc': 0.7681900182204859, 'aupr': 0.0007601340679699107, 'n_positives': 100, 'n_negatives': 997778, 'n_neg_samples': 997778, 'seed': 42, 'method': 'GNE'}
