@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "GRNAgent: evidence-graph gene regulatory network inference"
 requires-python = ">=3.10"
 readme = "README.md"
-license = { text = "Proprietary" }
+license = { text = "GPLv3" }
 dependencies = [
   "pydantic>=2.5",
   "PyYAML>=6.0",

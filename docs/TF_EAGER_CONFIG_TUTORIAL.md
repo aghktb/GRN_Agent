@@ -38,7 +38,7 @@ Think in layers:
    Defines the biological input, expression files, TF file, species, and context grouping.
 
 3. `window-building config`
-   Defines candidate construction, rescue rules, priors, orthology, thresholds, and output window JSONL files.
+   Defines candidate construction, rescue rules, thresholds, and output window JSONL files.
 
 4. `training config`
    Defines TF-EAGER architecture, optimization, DDP, and checkpoint naming.
@@ -122,7 +122,7 @@ It also reads from sections like:
 - `candidates`
 - `cell_context`
 - `scoring`
-- top-level flags such as `disable_priors` and `use_ortholog_lookup`
+- top-level workflow defaults
 
 ### `infer_tf_eager.py`
 
@@ -243,14 +243,6 @@ Important intuition:
 - `negative_ratio` affects window composition and evaluation sampling conventions elsewhere in the workflow
 - `rescue_motif` and `rescue_accessibility` affect candidate inclusion at build time
 - `train_subgraph_bootstraps` controls how many sampled windows are produced per TF during train-time generation
-
-### `disable_priors`
-
-Top-level boolean. If `true`, prior features are not computed during window building.
-
-### `use_ortholog_lookup`
-
-Top-level boolean. If `true`, orthology evidence is populated during window building.
 
 ### `scoring`
 
@@ -429,8 +421,6 @@ Typical fields:
 - `train_windows_jsonl`
 - `test_windows_jsonl`
 - `window_size`
-- `prior_train_frac`
-- `prior_bootstrap`
 
 ### `build_train_windows` and `build_test_windows`
 
@@ -513,10 +503,8 @@ Allowed names:
 - `motif`
 - `accessibility`
 - `linkage`
-- `prior`
-- `orthology`
 - `literature`
-- also short aliases like `acc`, `link`, `ortho`, `lit`
+- also short aliases like `acc`, `link`, `lit`
 
 Example functional-only mechanistic ablation:
 
@@ -697,22 +685,6 @@ Edit:
 - multi-context: `build_windows.candidates`
 - integrated: `candidates`
 
-### Disable priors
-
-Edit top-level:
-
-```yaml
-disable_priors: true
-```
-
-### Disable orthology
-
-Edit top-level:
-
-```yaml
-use_ortholog_lookup: false
-```
-
 ### Change inference threshold or top-k
 
 Edit `infer_tf_eager`:
@@ -759,7 +731,7 @@ In multicontext runs, each context writes evaluation files under its own `evalua
 
 ### Mistake 3: mixing build-time and model-time ablations
 
-- Build-time changes: rescue rules, priors disabled, orthology disabled, thresholds, candidate pool
+- Build-time changes: rescue rules, thresholds, candidate pool
 - Model-time changes: token dropping, decoder mode, embedding/vocab/layout changes
 
 These answer different scientific questions.

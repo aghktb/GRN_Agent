@@ -79,8 +79,6 @@ The `evidence_graph` carries:
 - accessibility evidence
 - linkage evidence
 
-Priors and ortholog lookups are **not** used in the current TF-EAGER configuration (no prior bundle or orthology channel in the default graph build).
-
 Training semantics
 ------------------
 

@@ -1,8 +1,10 @@
-# GRNAgent
+# GRNAgent: A Multimodal Graph Reasoning Agent for Gene Regulatory Inference
+
+![GRNAgent overview](<docs/Figure1_Overview (2).png>)
 
 **GRNAgent** is a **multi-agent** system for gene regulatory network (GRN) inference. Agents cooperate under explicit contracts: acquisition and ingest prepare data, a split agent defines leakage-safe train/val/test boundaries, window builders assemble **TF-centered evidence graphs** per neighborhood sample, and the **TF-EAGER** agent performs **graph reasoning** over each window to score TF→gene edges. Training, inference, and evaluation scripts orchestrate those handoffs from YAML configs.
 
-**TF-EAGER** is GRNAgent’s **graph reasoning agent**: it consumes a compact typed evidence graph per TF window (expression, optional accessibility and motif signals, priors, and related structure), runs the window model, and produces calibrated edge scores. It scores all candidate genes in a sampled TF neighborhood jointly, then exports scored edges and flat evidence for downstream evaluation.
+**TF-EAGER** is GRNAgent’s **graph reasoning agent**: it consumes a compact typed evidence graph per TF window built from expression, optional accessibility and motif signals, and related regulatory evidence, runs the window model, and produces calibrated edge scores. It scores all candidate genes in a sampled TF neighborhood jointly, then exports scored edges and flat evidence for downstream evaluation.
 
 For semantics (labeling, negatives, split policy, knobs), see [`docs/TF-EAGER.md`](docs/TF-EAGER.md).
 
@@ -21,18 +23,6 @@ Implementation lives under `src/grn_agent/` (agents, acquisition, I/O, schemas, 
 | **TF-EAGER (graph reasoning)** | Trains or runs the window model over those graphs; learns cross-gene structure within each window. | `tf_eager_bootstrap_v2.pt` (checkpoint) |
 | **Score & export** | Writes per-edge scores, an optional thresholded network, and flattened evidence for eval. | `test_scored_edges.csv`, `test_network.csv`, `test_flat_evidence.jsonl` |
 | **Evaluation** | Held-out metrics with split constraints and optional negative-ratio sweeps (`scripts/eval_grn_agent.py`). | e.g. `evaluation/eval_test_by_ratio.json` |
-
-```mermaid
-flowchart LR
-  A[Acquisition] --> M[multimodal_manifest.json]
-  M --> I[Ingest / features]
-  I --> S[Split manifest]
-  S --> W[Window builder\nTF-centered graphs]
-  W --> T[TF-EAGER\ngraph reasoning]
-  T --> P[Checkpoint]
-  P --> X[Infer + export]
-  X --> E[Evaluation]
-```
 
 ---
 

@@ -67,7 +67,7 @@ Hard reject conditions still apply for:
 Implication:
 
 - promoter coverage around `0.55` is not automatically rejected
-- QC is treated as a reliability prior, not just a binary filter
+- QC is treated as a reliability-weighted quality signal, not just a binary filter
 
 Current metric sources
 ----------------------

@@ -26,4 +26,7 @@ GenomeDatabase/
 docs/manuscript/
 docs/figures/
 archives/
-
+.pytest_cache/
+Literature_Validation_Agent/.venv/
+.kube/
+.ruff_cache/
