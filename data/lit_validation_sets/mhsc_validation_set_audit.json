@@ -1,0 +1,365 @@
+{
+  "cell_type": "mHSC",
+  "audit": [
+    {
+      "tf": "Runx1",
+      "target": "Csf1r",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 4,
+      "flag": "RECALL_LOW?"
+    },
+    {
+      "tf": "Tal1",
+      "target": "Lmo2",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 21,
+      "flag": ""
+    },
+    {
+      "tf": "Gata2",
+      "target": "Runx1",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 92,
+      "flag": ""
+    },
+    {
+      "tf": "Meis1",
+      "target": "Hoxa9",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 69,
+      "flag": ""
+    },
+    {
+      "tf": "Spi1",
+      "target": "Csf1r",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 3,
+      "flag": "RECALL_LOW?"
+    },
+    {
+      "tf": "Cebpa",
+      "target": "Csf3r",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 6,
+      "flag": ""
+    },
+    {
+      "tf": "Tal1",
+      "target": "Gata1",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 27,
+      "flag": ""
+    },
+    {
+      "tf": "Gata1",
+      "target": "Klf1",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 23,
+      "flag": ""
+    },
+    {
+      "tf": "Runx1",
+      "target": "Spi1",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 17,
+      "flag": ""
+    },
+    {
+      "tf": "Lmo2",
+      "target": "Gata2",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 24,
+      "flag": ""
+    },
+    {
+      "tf": "Pou5f1",
+      "target": "Nanog",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 15,
+      "flag": "MISLABELED?"
+    },
+    {
+      "tf": "Sox2",
+      "target": "Fgf4",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Hnf4a",
+      "target": "Apob",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Myod1",
+      "target": "Myog",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 3,
+      "flag": ""
+    },
+    {
+      "tf": "Pparg",
+      "target": "Fabp4",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 18,
+      "flag": "MISLABELED?"
+    },
+    {
+      "tf": "Hnf1a",
+      "target": "Alb",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Runx2",
+      "target": "Bglap",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 74,
+      "flag": "MISLABELED?"
+    },
+    {
+      "tf": "Ascl1",
+      "target": "Neurod1",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Klf4",
+      "target": "Nanog",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 45,
+      "flag": "MISLABELED?"
+    },
+    {
+      "tf": "Sall4",
+      "target": "Pou5f1",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Runx1",
+      "target": "mt-Nd1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Tal1",
+      "target": "Olfr1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Gata2",
+      "target": "Krtap4-1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Meis1",
+      "target": "Amelx",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Spi1",
+      "target": "Sprr2a3",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Cebpa",
+      "target": "Muc20",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Hoxa9",
+      "target": "Klk1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Gfi1",
+      "target": "Krt14",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "FAKETF1",
+      "target": "Runx1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Tal1",
+      "target": "ZZZZQ7",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Csf1r",
+      "target": "Runx1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 4,
+      "flag": ""
+    },
+    {
+      "tf": "Csf3r",
+      "target": "Cebpa",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 6,
+      "flag": ""
+    },
+    {
+      "tf": "Hbb-b1",
+      "target": "Gata1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Itgam",
+      "target": "Spi1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Ly6a",
+      "target": "Tal1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Runx1",
+      "target": "Mpo",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 11,
+      "flag": ""
+    },
+    {
+      "tf": "Tal1",
+      "target": "Pf4",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Gata2",
+      "target": "Itga2b",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Meis1",
+      "target": "Mlf1",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Spi1",
+      "target": "Lyz2",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "RUNX1",
+      "target": "CSF1R",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 4,
+      "flag": ""
+    },
+    {
+      "tf": "TAL1",
+      "target": "LMO2",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 21,
+      "flag": ""
+    },
+    {
+      "tf": "GATA2",
+      "target": "RUNX1",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 92,
+      "flag": ""
+    },
+    {
+      "tf": "MEIS1",
+      "target": "HOXA9",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 69,
+      "flag": ""
+    },
+    {
+      "tf": "CEBPA",
+      "target": "CSF3R",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 6,
+      "flag": ""
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "ABI2-mediated MEOX2/KLF4-NANOG axis promotes liver cancer stem cell and drives tumour recurrence.",
+    "confidence": 1.0,
+    "pmid": "36017822",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Direct binding of KLF4 on NANOG proximal promoter and PBX1 on a new upstream enhancer and proximal promoter were confirmed by chromatin immunoprecipitation and electrophoretic mobility shift assay.",
+    "confidence": 1.0,
+    "pmid": "19522013",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "KLF4 and PBX1 directly regulate NANOG expression in human embryonic stem cells.",
+      "Insight into the regulation of core transcription factors is important for a better understanding of the molecular mechanisms that control self-renewal and pluripotency of human ESCs (hESCs).",
+      "However, the transcriptional regulation of NANOG itself in hESCs has largely been elusive.",
+      "We established a NANOG promoter luciferase reporter assay as a fast read-out for indicating the pluripotent status of hESCs.",
+      "From the functional cDNA screens and NANOG promoter characterization, we successfully identified a zinc finger transcription factor KLF4 and a homeodomain transcription factor PBX1 as two novel transcriptional regulators that maintain the pluripotent and undifferentiated state of hESCs.",
+      "We showed that both KLF4 and PBX1 mRNA and protein expression were downregulated during hESC differentiation.",
+      "In addition, overexpression of KLF4 and PBX1 upregulated NANOG promoter activity and also the endogenous NANOG protein expression in hESCs.",
+      "Our results show two novel upstream transcription activators of NANOG that are functionally important for the self-renewal of hESC and provide new insights into the expanded regulatory circuitry that maintains hESC pluripotency."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "22528804",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Some of the induced pluripotent stem cell (iPS cell)-inducing factors have been reported to be expressed in breast cancer."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Klf4 directly binds to the promoter region of Nanog and regulates its expression.",
+    "confidence": 1.0,
+    "pmid": "20071344",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "On the other hand, knockdown of Nanog expression induces differentiation of ES cells that overexpress Klf4."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "27300169",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Prognosis of breast cancer patients has been reported to depend on the expression of induced pluripotent stem (iPS) cell-inducing factors: KLF4 and NANOG."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Additionally, Trim28 citrullination regulates mESC pluripotency by promoting transcription of Nanog and Klf4 which it does by increasing the enrichment of H3K27ac and H3K4me3 and decreasing the enrichment of H3K9me3 in the transcriptional regulatory region.",
+    "confidence": 0.9,
+    "pmid": "36100837",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Trim28 citrullination maintains mouse embryonic stem cell pluripotency via regulating Nanog and Klf4 transcription.",
+      "Protein citrullination, including histone H1 and H3 citrullination, is important for transcriptional regulation, DNA damage response, and pluripotency of embryonic stem cells (ESCs).",
+      "Tripartite motif containing 28 (Trim28), an embryonic development regulator involved in ESC self-renewal, has recently been identified as a novel substrate for citrullination by Padi4.",
+      "However, the physiological functions of Trim28 citrullination and its role in regulating the chromatin structure and gene transcription of ESCs remain unknown.",
+      "In this paper, we show that Trim28 is specifically citrullinated in mouse ESCs (mESCs), and that the loss of Trim28 citrullination induces loss of pluripotency.",
+      "Additionally, Trim28 citrullination regulates mESC pluripotency by promoting transcription of Nanog and Klf4 which it does by increasing the enrichment of H3K27ac and H3K4me3 and decreasing the enrichment of H3K9me3 in the transcriptional regulatory region.",
+      "Thus, our findings suggest that Trim28 citrullination is the key for the epigenetic activation of pluripotency genes and pluripotency maintenance of ESCs."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Knockdown of Nanog in SNU-601 and SNU-638 did not affect spheroid-forming capacity, however, its expression was inversely correlated with DR4/DR5 expression and TRAIL sensitivity.",
+    "confidence": 0.8,
+    "pmid": "36661504",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "The expression of pluripotency factors, and their associations with clinicopathological parameters and drug response have been described in various cancers, including gastric cancer."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "antagonistically regulates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Once transferred into aerobic cultures, the minor cellular fraction expressing this triad generates various types of adherent cells, which are progressively substituted by non-tumorigenic elements committed to fibromuscular, neuronal and glial differentiation. This reprogramming appears to be accomplished stepwise, with the assembly of the triad into a sophisticated transcriptional, oxygen-dependent circuitry, in which Nanog and Klf4 antagonistically regulate c-Myc.",
+    "confidence": 0.9,
+    "pmid": "23287475",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "The experimental model employed the prototype of ascites tumors, the Yoshida AH130 hepatoma and other neoplasias, including human melanoma.",
+      "AH130 hepatoma was started in the liver by the carcinogen o-aminoazotoluene."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Our study provides insights into the integration of the signaling pathways into the ES-cell-specific transcription circuitries. Intriguingly, we find specific genomic regions extensively targeted by different TFs.",
+    "confidence": 0.8,
+    "pmid": "18555785",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Integration of external signaling pathways with the core transcriptional network in embryonic stem cells."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "This process involves alterations in the occupancy of transcription factors HSF1, AP-1, NANOG, KLF4, and OCT4 accompanied by nucleosome remodeling by BRG1 and changes in H3K27ac.",
+    "confidence": 0.9,
+    "pmid": "30122536",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Architectural Proteins and Pluripotency Factors Cooperate to Orchestrate the Transcriptional Response of hESCs to Temperature Stress.",
+      "Here, we analyze the events taking place in hESCs upstream of RNAPII release."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "MeRIP-seq",
+    "relationship": "stabilizes",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Melatonin promotes stabilization of core pluripotency factors, such as Nanog, Sox2, Klf4, and c-Myc, by preventing m6A-dependent mRNA decay.",
+    "confidence": 0.9,
+    "pmid": "32415999",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Melatonin restores the pluripotency of long-term-cultured embryonic stem cells through melatonin receptor-dependent m6A RNA regulation.",
+      "N6-methyladenosine (m6A) methylation is the most common and abundant modification on mammalian messenger RNA (mRNA) and regulates the pluripotency of embryonic stem cells (ESCs).",
+      "Here, for the first time, we investigated the effect of melatonin on m6A modifications in long-term-cultured ESCs.",
+      "Pluripotency studies indicated that 10\u00a0\u03bcmol/L melatonin sufficiently maintained ESCs with stemness features over 45 passages (more than 90\u00a0days).",
+      "Notably, treatment of ESCs with melatonin led to a significant decrease in the nuclear presence of m6A methyltransferase complex and decreased global m6A modification.",
+      "Depletion of melatonin receptor 1 (MT1) by CRISPR/Cas9 significantly reduced the effects of melatonin on ESC pluripotency and m6A modification."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "Me-RIP sequencing/qPCR",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "High AMD1 level could promote SRY-box transcription factor 2 (SOX2), Kruppel like factor 4 (KLF4), and NANOG expression of HCC cells through obesity-associated protein (FTO)-mediated mRNA demethylation.",
+    "confidence": 0.8,
+    "pmid": "33783988",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Furthermore, immunofluorescence, co-IP (Co-IP) assays, and mass spectrometric (MS) analyses were performed to verify the proteins interacting with AMD1."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "E-cadherin promotes kruppel-like factor 4 (Klf4) and Nanog transcript and protein expression in mESCs via STAT3 phosphorylation",
+    "confidence": 0.9,
+    "pmid": "22696497",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "E-cadherin and, in its absence, N-cadherin promotes Nanog expression in mouse embryonic stem cells via STAT3 phosphorylation.",
+      "We have recently shown that loss of E-cadherin in mouse embryonic stem cells (mESCs) results in significant alterations to both the transcriptome and hierarchy of pluripotency-associated signaling pathways.",
+      "Here, we show that E-cadherin promotes kruppel-like factor 4 (Klf4) and Nanog transcript and protein expression in mESCs via STAT3 phosphorylation and that \u03b2-catenin, and its binding region in E-cadherin, is required for this function.",
+      "To further investigate the role of E-cadherin in leukemia inhibitory factor (LIF)-dependent pluripotency, E-cadherin null (Ecad(-/-)) mESCs were cultured in LIF/bone morphogenetic protein supplemented medium.",
+      "Under these conditions, Ecad(-/-) mESCs exhibited partial restoration of cell-cell contact and STAT3 phosphorylation and upregulated Klf4, Nanog, and N-cadherin transcripts and protein.",
+      "We therefore identify a novel molecular mechanism linking E- and N-cadherin to the core circuitry of pluripotency in mESCs.",
+      "This mechanism may explain the recently documented role of E-cadherin in efficient induced pluripotent stem cell reprogramming."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Moreover, we demonstrated that the dynamic pattern of lysine 27 trimethylation of histone 3 was conferred by the interplay of SUZ12 and JMJD3, both of which were involved in maintaining hESC pluripotency. In addition, we used chromatin immunoprecipitation analysis to elucidate the direct regulation by EpCAM of several reprogramming genes, including c-MYC, OCT-4, NANOG, SOX2, and KLF4, to help maintain the undifferentiation of hESCs.",
+    "confidence": 0.9,
+    "pmid": "20064925",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Epithelial cell adhesion molecule regulation is associated with the maintenance of the undifferentiated phenotype of human embryonic stem cells.",
+      "Human embryonic stem cells (hESCs) are unique pluripotent cells capable of self-renewal and differentiation into all three germ layers.",
+      "To date, more cell surface markers capable of reliably identifying hESCs are needed.",
+      "Here, we comprehensively profile the expression of EpCAM by immunofluorescence microscopy, Western blotting, and flow cytometry using an anti-EpCAM monoclonal antibody (mAb) OC98-1.",
+      "We found EpCAM to be highly and selectively expressed by undifferentiated rather than differentiated hESCs.",
+      "The protein and transcript level of EpCAM rapidly diminished as soon as hESC had differentiated.",
+      "Moreover, we demonstrated that the dynamic pattern of lysine 27 trimethylation of histone 3 was conferred by the interplay of SUZ12 and JMJD3, both of which were involved in maintaining hESC pluripotency.",
+      "In addition, we used chromatin immunoprecipitation analysis to elucidate the direct regulation by EpCAM of several reprogramming genes, including c-MYC, OCT-4, NANOG, SOX2, and KLF4, to help maintain the undifferentiation of hESCs.",
+      "Collectively, our results suggest that EpCAM might be used as a surface marker for hESC.",
+      "The expression of EpCAM may be regulated by epigenetic mechanisms, and it is strongly associated with the maintenance of the undifferentiated state of hESCs."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "piR-823 induced ALDH (+) breast CSC subpopulation promoted the expression of stem cell markers including OCT4, SOX2, KLF4, NANOG, and hTERT",
+    "confidence": 0.8,
+    "pmid": "33791297",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Collectively, these findings shed light on how a transcription factor can tightly couple gene transcription to m(6)A RNA modification to ensure ESC identity.",
+    "confidence": 0.9,
+    "pmid": "26526723",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Epigenetic and epitranscriptomic networks have important functions in maintaining the pluripotency of embryonic stem cells (ESCs) and somatic cell reprogramming.",
+      "Consistently, Zfp217 depletion compromises ESC self-renewal and somatic cell reprogramming, globally increases m(6)A RNA levels, and enhances m(6)A modification of the Nanog, Sox2, Klf4, and c-Myc mRNAs, promoting their degradation.",
+      "Collectively, these findings shed light on how a transcription factor can tightly couple gene transcription to m(6)A RNA modification to ensure ESC identity."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Examination of xenograft tumors revealed (a) increased miR-145 which results in decreased pluripotency maintenance factors OCT4, SOX2, NANOG, KLF4 as well as KRAS and RREB1.",
+    "confidence": 0.9,
+    "pmid": "24040120",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "We have previously demonstrated that downregulation of DCLK1 can upregulate critical miRNAs in both in vitro and in vivo cancer models and results in downregulation of c-MYC, KRAS, NOTCH1 and EMT-related transcription factors."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Furthermore, many aggressive tumors have been shown to display gene expression signatures characteristic of human embryonic stem cells (hESC). We now tested whether hypoxia might be responsible for the hESC signature observed in aggressive tumors.",
+    "confidence": 0.9,
+    "pmid": "21712410",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "HIF induces human embryonic stem cell markers in cancer cells.",
+      "Furthermore, many aggressive tumors have been shown to display gene expression signatures characteristic of human embryonic stem cells (hESC).",
+      "We now tested whether hypoxia might be responsible for the hESC signature observed in aggressive tumors.",
+      "We show that hypoxia, through hypoxia-inducible factor (HIF), can induce an hESC-like transcriptional program, including the induced pluripotent stem cell (iPSC) inducers, OCT4, NANOG, SOX2, KLF4, cMYC, and microRNA-302 in 11 cancer cell lines (from prostate, brain, kidney, cervix, lung, colon, liver, and breast tumors).",
+      "Furthermore, nondegradable forms of HIF\u03b1, combined with the traditional iPSC inducers, are highly efficient in generating A549 iPSC-like colonies that have high tumorigenic capacity.",
+      "To test potential correlation between iPSC inducers and HIF expression in primary tumors, we analyzed primary prostate tumors and found a significant correlation between NANOG-, OCT4-, and HIF1\u03b1-positive regions.",
+      "In primary glioma-derived CD133 negative cells, hypoxia was able to induce neurospheres and hESC markers."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Activation of p38 stabilized Nanog and Klf4 mRNA through increased inactivating phosphorylation of RNA-binding protein ZFP36L1, both of which promoted specification of the BCSC phenotype.",
+    "confidence": 0.8,
+    "pmid": "29880481",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "These surprising results delineate a mechanism by which a transcription factor switches cells from ERK to p38 signaling in response to chemotherapy and suggest that therapeutic targeting of HIF1 or the p38 pathway in combination with chemotherapy will block BCSC enrichment and improve outcome in TNBC."
+    ],
+    "effective_support": true
+  }
+]

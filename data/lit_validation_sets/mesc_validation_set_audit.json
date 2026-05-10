@@ -1,0 +1,365 @@
+{
+  "cell_type": "mESC",
+  "audit": [
+    {
+      "tf": "Pou5f1",
+      "target": "Nanog",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 201,
+      "flag": ""
+    },
+    {
+      "tf": "Sox2",
+      "target": "Nanog",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 1158,
+      "flag": ""
+    },
+    {
+      "tf": "Nanog",
+      "target": "Pou5f1",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 201,
+      "flag": ""
+    },
+    {
+      "tf": "Pou5f1",
+      "target": "Sox2",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 172,
+      "flag": ""
+    },
+    {
+      "tf": "Sox2",
+      "target": "Fgf4",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 39,
+      "flag": ""
+    },
+    {
+      "tf": "Klf4",
+      "target": "Nanog",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 324,
+      "flag": ""
+    },
+    {
+      "tf": "Pou5f1",
+      "target": "Zfp42",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 9,
+      "flag": ""
+    },
+    {
+      "tf": "Esrrb",
+      "target": "Nanog",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 54,
+      "flag": ""
+    },
+    {
+      "tf": "Myc",
+      "target": "Lin28a",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 6,
+      "flag": ""
+    },
+    {
+      "tf": "Stat3",
+      "target": "Klf4",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 43,
+      "flag": ""
+    },
+    {
+      "tf": "Cebpa",
+      "target": "Alb",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Hnf4a",
+      "target": "Apob",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Myod1",
+      "target": "Myog",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 4,
+      "flag": ""
+    },
+    {
+      "tf": "Pparg",
+      "target": "Fabp4",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 2,
+      "flag": ""
+    },
+    {
+      "tf": "Gata1",
+      "target": "Hbb-b1",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Runx2",
+      "target": "Bglap",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 6,
+      "flag": ""
+    },
+    {
+      "tf": "Tal1",
+      "target": "Gata1",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 11,
+      "flag": "MISLABELED?"
+    },
+    {
+      "tf": "Foxp3",
+      "target": "Il2",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 3,
+      "flag": ""
+    },
+    {
+      "tf": "Pax5",
+      "target": "Cd79a",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Hnf1a",
+      "target": "Alb",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Pou5f1",
+      "target": "mt-Nd1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Sox2",
+      "target": "Olfr1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Nanog",
+      "target": "Defb1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Klf4",
+      "target": "Krtap4-1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Myc",
+      "target": "Sprr2a3",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Esrrb",
+      "target": "Muc20",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Tbx3",
+      "target": "Amelx",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Prdm14",
+      "target": "Klk1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "FAKEGENE1",
+      "target": "Pou5f1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Sox2",
+      "target": "ZZZZQ7",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Fgf4",
+      "target": "Sox2",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 39,
+      "flag": "REVERSE_HAS_HITS?"
+    },
+    {
+      "tf": "Bmp4",
+      "target": "Nanog",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 57,
+      "flag": "REVERSE_HAS_HITS?"
+    },
+    {
+      "tf": "Lefty1",
+      "target": "Nanog",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 7,
+      "flag": ""
+    },
+    {
+      "tf": "Wnt3a",
+      "target": "Pou5f1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Dkk1",
+      "target": "Pou5f1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 3,
+      "flag": ""
+    },
+    {
+      "tf": "Klf4",
+      "target": "Ccnd1",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Pou5f1",
+      "target": "Cdx2",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 21,
+      "flag": ""
+    },
+    {
+      "tf": "Nanog",
+      "target": "Gata6",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 53,
+      "flag": ""
+    },
+    {
+      "tf": "Myc",
+      "target": "Trp53",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 4,
+      "flag": ""
+    },
+    {
+      "tf": "Sox2",
+      "target": "T",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 75,
+      "flag": ""
+    },
+    {
+      "tf": "POU5F1",
+      "target": "NANOG",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 201,
+      "flag": ""
+    },
+    {
+      "tf": "SOX2",
+      "target": "FGF4",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 39,
+      "flag": ""
+    },
+    {
+      "tf": "KLF4",
+      "target": "NANOG",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 324,
+      "flag": ""
+    },
+    {
+      "tf": "MYC",
+      "target": "LIN28A",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 6,
+      "flag": ""
+    },
+    {
+      "tf": "SMAD2",
+      "target": "NANOG",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 29,
+      "flag": ""
+    }
+  ]
+}

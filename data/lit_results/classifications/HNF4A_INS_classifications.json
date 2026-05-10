@@ -1,0 +1,166 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "cotransfection assays",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Our data provide genetic evidence that HNF-4alpha is required in the pancreatic beta cell for regulation of the pathway of insulin secretion dependent on the ATP-dependent potassium channel.",
+    "confidence": 0.8,
+    "pmid": "15761495",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Mutations in the gene encoding hepatocyte nuclear factor-4alpha (HNF-4alpha) result in maturity-onset diabetes of the young (MODY)."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Finally, we use gel shift, chromatin immunoprecipitation, small interfering RNA, and reporter gene analysis to show that SREBP2 binds the human HNF4alpha P1 promoter and negatively regulates its expression.",
+    "confidence": 0.9,
+    "pmid": "19179483",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Down-regulation of hepatic HNF4alpha gene expression during hyperinsulinemia via SREBPs.",
+      "Mutations in the coding region of hepatocyte nuclear factor 4alpha (HNF4alpha), and its upstream promoter (P2) that drives expression in the pancreas, are known to lead to maturity-onset diabetes of the young 1 (MODY1).",
+      "HNF4alpha also controls gluconeogenesis and lipid metabolism in the liver, where the proximal promoter (P1) predominates.",
+      "However, very little is known about the role of hepatic HNF4alpha in diabetes.",
+      "Here, we examine the expression of hepatic HNF4alpha in two diabetic mouse models, db/db mice (type 2, insulin resistant) and streptozotocin-treated mice (type 1, insulin deficient).",
+      "We found that the level of HNF4alpha protein and mRNA was decreased in the liver of db/db mice but increased in streptozotocin-treated mice.",
+      "Because insulin increases the activity of sterol regulatory element-binding proteins (SREBP)-1c and -2, we also examined the effect of SREBPs on hepatic HNF4alpha gene expression and found that, like insulin, ectopic expression of SREBPs decreases the level of hepatic HNF4alpha protein and mRNA both in vitro in primary hepatocytes and in vivo in the liver of C57BL/6 mice.",
+      "These data indicate that hyperinsulinemia down-regulates HNF4alpha in the liver through the up-regulation of SREBPs, thereby establishing a link between these two critical transcription factor pathways that regulate lipid and glucose metabolism in the liver.",
+      "These findings also provide new insights into diabetes-associated complications such as fatty liver disease."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "22967502",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "The Wnt signaling pathway effector TCF7L2 is upregulated by insulin and represses hepatic gluconeogenesis.",
+      "As carriers of TCF7L2 type 2 diabetes risk SNPs demonstrated increased hepatic glucose production, we aimed to determine whether TCF7L2 expression is regulated by nutrient availability and whether TCF7L2 and Wnt regulate hepatic gluconeogenesis.",
+      "We examined hepatic Wnt activity in the TOPGAL transgenic mouse, assessed hepatic TCF7L2 expression in mice upon feeding, determined the effect of insulin on TCF7L2 expression and \u03b2-cat Ser\u2076\u2077\u2075 phosphorylation, and investigated the effect of Wnt activation and TCF7L2 knockdown on gluconeogenic gene expression and glucose production in hepatocytes.",
+      "Wnt activity was observed in pericentral hepatocytes in the TOPGAL mouse, whereas TCF7L2 expression was detected in human and mouse hepatocytes.",
+      "Insulin and feeding stimulated hepatic TCF7L2 expression in vitro and in vivo, respectively.",
+      "Wnt activation by intraperitoneal lithium injection repressed hepatic gluconeogenic gene expression in vivo, whereas lithium or Wnt-3a reduced gluconeogenic gene expression and glucose production in hepatic cells in vitro.",
+      "Small interfering RNA-mediated TCF7L2 knockdown increased glucose production and gluconeogenic gene expression in cultured hepatocytes.",
+      "These observations suggest that Wnt signaling and TCF7L2 are negative regulators of hepatic gluconeogenesis, and TCF7L2 is among the downstream effectors of insulin in hepatocytes."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "25646437",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Network-based metaanalysis of four independent microarray studies identified the hepatocyte nuclear factor 4 alpha (HNF4A), a transcription factor associated with gluconeogenesis and diabetes, as a central regulatory hub gene up-regulated in blood of PD patients."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Transfection of cultured 293T cells with an HNF4 alpha expression vector led to 10-fold activation of a cotransfected reporter plasmid containing the rat insulin I gene promoter.",
+    "confidence": 0.9,
+    "pmid": "11994285",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Activation of the insulin gene promoter through a direct effect of hepatocyte nuclear factor 4 alpha.",
+      "MODY1 is caused by mutation in the transcription factor hepatocyte nuclear factor 4 alpha (HNF4 alpha)."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "31092478",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The induction of DN-HNF4alpha also caused defective mitochondrial function substantiated by reduced [(14)C]pyruvate oxidation, attenuated substrate-evoked mitochondrial membrane hyperpolarization, and blunted nutrient-generated cellular ATP production.",
+    "confidence": 0.9,
+    "pmid": "10967120",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Hepatocyte nuclear factor 4alpha regulates the expression of pancreatic beta -cell genes implicated in glucose metabolism and nutrient-induced insulin secretion.",
+      "Hepatocyte nuclear factor 4alpha (HNF4alpha) is a transcription factor critical for liver development and hepatocyte-specific gene expression."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "27185732",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "9884331",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  }
+]

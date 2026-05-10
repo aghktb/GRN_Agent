@@ -1,0 +1,21 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "co-transcription",
+    "relationship": "cotranscribed",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "AC115619 was cotranscribed with the adjacent upstream coding gene APOB",
+    "confidence": 0.8,
+    "pmid": "37326474",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Hypoxia-Responsive lncRNA AC115619 Encodes a Micropeptide That Suppresses m6A Modifications and Hepatocellular Carcinoma Progression.",
+      "Here, we revealed that the liver-specific putative lncRNA, AC115619, is expressed at low levels in hepatocellular carcinoma (HCC) and encodes a micropeptide, designated as AC115619-22aa.",
+      "A micropeptide encoded by lncRNA AC115619 impedes formation of the m6A methylation complex to lower m6A levels and reduce the growth of hepatocellular carcinoma."
+    ],
+    "effective_support": true
+  }
+]

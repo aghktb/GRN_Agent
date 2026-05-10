@@ -1,0 +1,330 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "co-expression",
+    "relationship": "cooperatively binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Hoxa9 cooperatively binds consensus DNA sequences with Meis1 and with Pbx1",
+    "confidence": 0.8,
+    "pmid": "9649441",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Hoxa9 transforms primary bone marrow cells through specific collaboration with Meis1a but not Pbx1b.",
+      "Primary bone marrow cells, retrovirally engineered to overexpress Hoxa9 and Meis1a simultaneously, induced growth factor-dependent oligoclonal acute myeloid leukemia in <3 months when transplanted into syngenic mice."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Syk upregulation occurs through a Meis1-dependent feedback loop.",
+    "confidence": 0.9,
+    "pmid": "28399410",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "We therefore investigated whether myeloid progenitor cells transformed by Hoxa9 and Meis1 become addicted to targetable signaling pathways."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "coexpression",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Meis1 and HoxA9 were found expressed in 13/14 of ALLs with the t(4 : 11) and in 8/8 of AMLs with ALL-1 rearrangements.",
+    "confidence": 0.8,
+    "pmid": "11314021",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Forced expression of miR-196b significantly delays MLL-fusion-mediated leukemogenesis in primary bone marrow transplantation through suppressing Hoxa9/Meis1 expression.",
+    "confidence": 0.9,
+    "pmid": "22353710",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Forced expression of miR-196b significantly delays MLL-fusion-mediated leukemogenesis in primary bone marrow transplantation through suppressing Hoxa9/Meis1 expression."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The enforced expression of Hoxa9 in combination with Meis1 was sufficient to substitute for MLL-ENL-ERtm function and to maintain a state of continuous proliferation and differentiation arrest.",
+    "confidence": 0.9,
+    "pmid": "14701735",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "MEIS1 enhances in vitro HOXA9-PBX protein complex formation in the absence of DNA and forms a trimeric electrophoretic mobility shift assay (EMSA) complex with these proteins on an oligonucleotide containing a PBX-HOXA9 site.",
+    "confidence": 0.9,
+    "pmid": "10082572",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Finally, we show that Hoxa9 represses the locus of the cyclin-dependent kinase inhibitors Cdkn2a/b in concert with C/EBP\u03b1 to overcome a block in G1 cell cycle progression.",
+    "confidence": 0.9,
+    "pmid": "24958854",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Homeobox A9 (HOXA9) is a homeodomain-containing transcription factor that plays a key role in hematopoietic stem cell expansion and is commonly deregulated in human acute leukemias."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Tip60 was recruited by MLL-AF10 and MLL-ENL fusions to the Hoxa9 locus, where it acetylated H2A.Z, thereby promoting Hoxa9 gene expression.",
+    "confidence": 0.9,
+    "pmid": "33967269",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Genetic deletion of MLL3/MLL4 blocks histone H3K4 methylation at de novo enhancers and inhibits HOXA9/MEIS1-mediated leukemogenesis in vivo.",
+    "confidence": 0.8,
+    "pmid": "30270123",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Unexpectedly, however, Nup98-HoxA9 also enforced strong transcription of the cellular Hoxa9, Hoxa7 and Meis1 genes at levels similar to those found in mouse AML's generated by proviral activation of Hoxa9 and Meis1.",
+    "confidence": 0.8,
+    "pmid": "12082612",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Nup98-HoxA9 immortalizes myeloid progenitors, enforces expression of Hoxa9, Hoxa7 and Meis1, and alters cytokine-specific responses in a manner similar to that induced by retroviral co-expression of Hoxa9 and Meis1.",
+      "Here we report that Nup98-HoxA9, indeed mimicks Hoxa9 plus Meis1 coexpression - it immortalizes myeloid progenitors, prevents differentiation in response to GM-CSF, IL-3, G-CSF, and permits proliferation in SCF."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Conditional Hoxa9 activation is associated with CBP/P300 recruitment, histone acetylation, and transcriptional activation of a network of proto-oncogenes, including Erg, Flt3, Lmo2, Myb, and Sox4.",
+    "confidence": 0.9,
+    "pmid": "22072553",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "gene_expression",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "IDH2/R140Q also increased the level of Meis1 and activated the hypoxia pathway in AML cells.",
+    "confidence": 0.9,
+    "pmid": "25795706",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "suppresses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Meis1a suppresses G-CSF-induced granulocytic differentiation of Hoxa9-immortalized progenitors, permitting indefinite self-renewal in G-CSF.",
+    "confidence": 0.9,
+    "pmid": "11687616",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Despite their cooperativity in leukemogenesis, we demonstrated previously that retroviral expression of Hoxa9 alone--in the absence of coexpressed retroviral Meis1 or of expression of endogenous Meis genes--blocks neutrophil and macrophage differentiation of primary myeloid progenitors cultured in granulocyte-macrophage colony-stimulating factor (GM-CSF)."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "26059450",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "27617578",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Flt3 inhibition by AC220 did not delay AML development in mice transplanted with bone marrow cells overexpressing Hoxa9 and Meis1."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Knockdown of FABP4 increases survival in Hoxa9/Meis1-driven AML model.",
+    "confidence": 0.8,
+    "pmid": "28049638",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Leukemic blasts program bone marrow adipocytes to generate a protumoral microenvironment.",
+      "Because adipocytes have been shown to promote breast and prostate cancer proliferation, and because the bone marrow adipose tissue accounts for up to 70% of bone marrow volume in adult humans, we examined the adipocyte-leukemia cell interactions to determine if they are essential for the growth and survival of AML.",
+      "Using in vivo and in vitro models of AML, we show that bone marrow adipocytes from the tumor microenvironment support the survival and proliferation of malignant cells from patients with AML.",
+      "Here, we report the first description of AML programming bone marrow adipocytes to generate a protumoral microenvironment."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "downregulates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Loss of Hoxa9 caused downregulation of the Meis1 mRNA and protein",
+    "confidence": 0.8,
+    "pmid": "19620287",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Meis1(+/-) Hoxa9(-/-) deficient mice, generated to test HOXA9 regulation of endogenous Meis1, were small and had reduced bone marrow Meis1 mRNA and significant defects in fluorescence-activated cell sorting-enumerated monocytes, mature and pre/pro-B cells, and functional B-cell progenitors.",
+      "Loss of Hoxa9 resulted in a decrease in Creb1 and Pknox1 mRNA, and forced expression of CREB1 in Hoxa9(-/-) bone marrow cells increased Meis1 mRNA almost as well as HOXA9, suggesting that CREB1 may mediate HOXA9 modulation of Meis1 expression."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "Chromatin immunoprecipitation",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Chromatin immunoprecipitation confirmed co-occupancy of Hoxa9 and Meis1 on the Flt3 promoter.",
+    "confidence": 0.9,
+    "pmid": "16648484",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "While Hoxa9 alone blocks the differentiation of nonleukemogenic myeloid cell-committed progenitors, coexpression with Meis1 is required for the production of AML-initiating progenitors, which also transcribe a group of hematopoietic stem cell genes, including Cd34 and Flt3 (defined as Meis1-related leukemic signature genes)."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Gene expression profiling after HOXA9 suppression demonstrated co-down-regulation of a program highly expressed in human MLL-AML and murine MLL-leukemia stem cells, including HOXA10, MEIS1, PBX3, and MEF2C.",
+    "confidence": 0.8,
+    "pmid": "19056693",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "impairs",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Engraftment of all mutants into the bone marrow (BM) was impaired.",
+    "confidence": 0.9,
+    "pmid": "21518888",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Engraftment of all mutants into the bone marrow (BM) was impaired."
+    ],
+    "effective_support": true
+  }
+]

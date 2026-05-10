@@ -1,0 +1,21 @@
+[
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "37709864",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Genome-wide association meta-analysis identifies 17 loci associated with nonalcoholic fatty liver disease.",
+      "Nonalcoholic fatty liver disease (NAFLD) is common and partially heritable and has no effective treatments.",
+      "Individuals in the top 10% and 1% of genetic risk have a 2.5-fold to 6-fold increased risk of NAFLD, cirrhosis and hepatocellular carcinoma."
+    ],
+    "effective_support": false
+  }
+]

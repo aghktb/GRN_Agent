@@ -1,0 +1,148 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "RNA immunoprecipitation",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "RNA immunoprecipitation and luciferase reporter assay were performed to determine hnRNPA2B1-dependent regulation of sterol regulatory element-binding protein 2 (SREBP2) and low-density lipoprotein receptor (LDLR) mRNA.",
+    "confidence": 0.8,
+    "pmid": "38070488",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Transcription factor SREBP2 activated the transcription of LDLR directly.",
+    "confidence": 0.8,
+    "pmid": "35811843",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "However, the detailed mechanism by which LDLR affects hepatic triglyceride (TG) accumulation has rarely been reported."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Fato could inhibit activation of SREBP2-LDLR pathway, alleviating TMX-induced hepatic cholesterol accumulation.",
+    "confidence": 0.9,
+    "pmid": "35944649",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Fatostatin inhibits SREBP2-mediated cholesterol uptake via LDLR against selective estrogen receptor \u03b1 modulator-induced hepatic lipid accumulation.",
+      "Estrogen receptor \u03b1 (ER\u03b1) plays a key role in the adaptive response of liver metabolism to energy demands, especially in controlling lipid metabolism.",
+      "However, accordingly, the long-term use of TMX would lead to nonalcoholic fatty liver (NAFLD) in clinical, which had no definite treatment up to now.",
+      "Fatostatin (Fato), an inhibitor of sterol-regulatory element binding protein 2 (SREBP2), was reported as a synergistic inhibitor of ER-positive breast cancer with TMX, but the hepatic lipid regulation of this combination is still unknown.",
+      "The results identified that hepatic cholesterol content increase was the main reason for TMX-induced NAFLD.",
+      "It was caused by the upregulation of circulating cholesterol uptake mediated by low density lipoprotein receptor (LDLR) in liver, which resulted from the activation of SREBP2.",
+      "Meanwhile, Fato could inhibit activation of SREBP2-LDLR pathway, alleviating TMX-induced hepatic cholesterol accumulation."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Pterostilbene as compared to short hairpin RNA against SREBP2 induced a higher protein expression of LDLR",
+    "confidence": 0.8,
+    "pmid": "34439528",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Furthermore, 2.5 and 5 \u03bcM pterostilbene treatment resulted in a significant reduction in the protein hepatic nuclear factor 1\u03b1 (HNF1\u03b1)/histone deacetylase 2 (HDAC2) ratio and sterol regulatory element-binding protein-2 (SREBP2)/HDAC2 ratio."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Genistein increased the nuclear fraction of SREBP-2 and the DNA-binding activity of SREBP-2 to LDLR promoter, as assessed by CHIP.",
+    "confidence": 0.9,
+    "pmid": "27211318",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "HepG2 cell was used for the experiments."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "30092639",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Moreover, naringin treatment significantly decreased plasma 8-isoprostane (an indicator of the oxidative stress) level, fat weight, liver weight, hepatic total cholesterol concentration, hepatic triglyceride concentration, plasma leptin level, plasma insulin content, plasma low-density lipoprotein cholesterol level, and plasma PCSK9 production concomitantly with down-regulated expression of SREBP-2, PCSK9, and SREBP-1, and up-regulated expression of p-AMPK\u03b1 and LDLR."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "16524875",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "24(S)-hydroxycholesterol participates in a liver X receptor-controlled pathway in astrocytes that regulates apolipoprotein E-mediated cholesterol efflux.",
+      "Moreover, 24(S)-hydroxycholesterol primes astrocytoma, but not neuroblastoma cells, to mediate cholesterol efflux to apoE. Similar results were obtained using the synthetic liver X receptor (LXR) agonist GW683965A, suggesting involvement of an LXR-controlled signaling pathway."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Moreover, it enhanced LDLR gene promoter activity through the proteolytic activation of the sterol regulatory element-binding protein-2 (SREBP-2) as well as SREBP-1.",
+    "confidence": 0.9,
+    "pmid": "22153697",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Resveratrol increases the expression and activity of the low density lipoprotein receptor in hepatocytes by the proteolytic activation of the sterol regulatory element-binding proteins.",
+      "The hepatocyte low density lipoprotein receptor (LDLR) plays a pivotal role in lipoprotein metabolism by lowering plasma LDL-cholesterol, a risk factor for atherosclerosis.",
+      "The present study was conducted to investigate the effects of grape polyphenols on LDLR gene expression in human hepatocyte models.",
+      "Among the 14 phenolic compounds in red wine, we found that a stilbene trans-resveratrol most strongly up-regulated LDLR gene expression in HepG2 cells.",
+      "Trans-resveratrol up-regulated hepatic LDLR expression via proteolytic activation of SREBPs.",
+      "We concluded that trans-resveratrol exhibits the anti-atherogenic effect, at least in part, by increased hepatic LDLR expression and subsequent LDL uptake."
+    ],
+    "effective_support": true
+  }
+]

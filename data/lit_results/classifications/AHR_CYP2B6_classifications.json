@@ -1,0 +1,347 @@
+[
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "31199573",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Cytochrome P450 1A1 (CYP1A1) is abundant in the kidney, liver, and intestine and is involved in the phase I metabolism of numerous endogenous and exogenous compounds.",
+      "In human hepatocellular carcinoma cells (HepG2) with aryl hydrocarbon receptor (AhR) or specificity protein 1 (Sp1) knockdown, we confirmed that AhR and Sp1 are involved in basal CYP1A1 expression.",
+      "In HepG2 cells overexpressing either AhR or Sp1, AhR determined the proximal transactivation of basal CYP1A1 expression."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "SB, CC, baicalin, baicalein, chrysin, oroxylin A, berberine, coptisine and epiberberine increased CYP1A1 mRNA expression in an AHR-dependent way.",
+    "confidence": 0.8,
+    "pmid": "35843411",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "The livers of mice treated with SB-CC extract were subjected to RNA-sequencing (RNA-seq).",
+      "Luciferase reporter gene, qRT-PCR, and Western blot assays were used to determine whether SB-CC and their main constituents could activate AHR and regulate CYP1A expression in HepG2 cells.",
+      "The potential CYP1A inhibitors in SB-CC were screened and their inhibitory mechanisms were also studied using human liver microsomes.",
+      "AHR and drug metabolism system, especially CYP1A1 and CYP1A2, were strongly affected in the liver of SB-CC-treated mice.",
+      "These results were further validated by the findings that SB-CC increased CYP1A's mRNA, protein expression and activity in mouse liver.",
+      "In HepG2 cells, SB, CC, baicalin, baicalein, chrysin, oroxylin A, berberine, coptisine and epiberberine increased CYP1A1 mRNA expression in an AHR-dependent way."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "28103884",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "RNA interference of AhR or ARNT significantly decreased the levels of the target gene as well as those of its counterpart, and both dramatically repressed CYP6DA2 expression.",
+    "confidence": 0.9,
+    "pmid": "28463435",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "18835618",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "In vitro screening for aryl hydrocarbon receptor agonistic activity in 200 pesticides using a highly sensitive reporter cell line, DR-EcoScreen cells, and in vivo mouse liver cytochrome P450-1A induction by propanil, diuron and linuron.",
+      "To investigate the in vivo effects, we examined the gene expression of AhR-inducible cytochrome P450 1As (CYP1As) in the liver of female C57BL/6 mice intraperitoneally injected with these three herbicides (300 mg kg(-1)) by quantitative RT-PCR, resulting in induction of significant high levels of CYP1A1 and CYP1A2 mRNAs."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "coimmunoprecipitation",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Coimmunoprecipitation demonstrated a physical interaction between AhR and \u03b2-catenin.",
+    "confidence": 0.8,
+    "pmid": "21498875",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Coordinate regulation of cytochrome P450 1a1 expression in mouse liver by the aryl hydrocarbon receptor and the beta-catenin pathway.",
+      "Here, we show that a second level of transcriptional control exists in hepatocytes, which is tightly linked to the Wnt/\u03b2-catenin/T-cell factor (TCF) signaling pathway.",
+      "In transgenic mice, hepatic expression of CYP1A (and other CYP isoforms) is stimulated by the expression of mutationally activated \u03b2-catenin(S33Y) in the absence of AhR-activating compounds but repressed after knockout of \u03b2-catenin.",
+      "Furthermore, the present results suggest that transcriptional induction of the AhR by \u03b2-catenin does not play a major role in \u03b2-catenin-dependent regulation of Cyp1a1 expression and that inhibition of \u03b2-catenin signaling by ligand-activated AhR, as recently observed in the intestine does not occur in mouse liver."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "This study evaluated the effects of these mycotoxins, alone or combined, on activation and expression of Cyp1A and its transcription factor aryl hydrocarbon receptor (Ahr) in hepatoma cell line H4IIE and spleen mononuclear cells of rats.",
+    "confidence": 0.8,
+    "pmid": "25449202",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Aflatoxin B1 (AFB1) and fumonisin B1 (FB1) are mycotoxins widely found as cereal contaminants and their co-occurrence in corn has been associated with a high incidence of liver cancer."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "AFB1 triggered AHR nuclear translocation by directly binding to its N-terminus.",
+    "confidence": 0.9,
+    "pmid": "34373448",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "AHR mediates the aflatoxin B1 toxicity associated with hepatocellular carcinoma.",
+      "Aflatoxin exposure is a crucial factor in promoting the development of primary hepatocellular carcinoma (HCC) in individuals infected with the hepatitis virus.",
+      "However, the molecular pathways leading to its bioactivation and subsequent toxicity in hepatocytes have not been well-defined."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Electrophoretic mobility shift assay analyses, which demonstrated that these ligands directly activate the AhR.",
+    "confidence": 0.8,
+    "pmid": "17720764",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "21994236",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Effect of aflatoxin B1 on nuclear receptors PXR, CAR, and AhR and their target cytochromes P450 mRNA expression in primary cultures of human hepatocytes.",
+      "The aim of the present study was to explore the effect of AFB1 on messenger RNA (mRNA) expression of pregnane X receptor (PXR), constitutive androstane receptor (CAR), and aryl hydrocarbon receptor (AhR) and some of their target cytochromes using primary cultures of human hepatocytes.",
+      "Pregnane X receptor and CAR mRNA expression increased in the 3 treated livers."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "15044623",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Aryl hydrocarbon receptor activation and cytochrome P450 1A induction by the mitogen-activated protein kinase inhibitor U0126 in hepatocytes.",
+      "We now report that 1,4-diamino-2,3-dicyano-1,4-bis[2-aminophenylthio]butadiene (U0126), a specific inhibitor of MAPK kinase (MEK) MEK1/2, elicits a marked increase in CYP1A1 expression at both mRNA and protein levels associated with a significant increase of enzyme activity in primary rat hepatocytes and a human hepatoma cell line.",
+      "Such an effect was demonstrated by direct in vitro ligand binding competition assays using rabbit liver cytosol, showing that this compound binds AhR with an EC(50) = 25 x 10(-6) M. Moreover, we demonstrated that U0126 is a substrate for several P450s including human CYP1A2, -1A1, and -1B1."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The induction of CYP1A1 expression by CBD was significantly attenuated by the knockdown of AhR expression with AhR small interfering RNAs.",
+    "confidence": 0.8,
+    "pmid": "26187180",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Cannabidiol induces expression of human cytochrome P450 1A1 that is possibly mediated through aryl hydrocarbon receptor signaling in HepG2 cells.",
+      "We herein investigated the inducibility of cytochrome P450 1A1 (CYP1A1) by \u0394(9)-tetrahydrocannabinol, cannabidiol (CBD), and cannabinol, three major phytocannabinoids, using human hepatoma HepG2 cells."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "These epigenetic changes persisted until 40 days post-TCDD treatment and there was Cyp1a1 mRNA hyperinduction upon repeat administration of TCDD at this time-point.",
+    "confidence": 0.8,
+    "pmid": "27713569",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Dioxin induces Ahr-dependent robust DNA demethylation of the Cyp1a1 promoter via Tdg in the mouse liver.",
+      "A single dose of TCDD administered to adult mice induced Ahr-dependent CpG hypomethylation, changes in histone modifications, and thymine DNA glycosylase (Tdg) recruitment at the Cyp1a1 promoter in the liver within 24\u2009hrs."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "9698073",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "38279324",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Regulation of Benzo[a]pyrene-Induced Hepatic Lipid Accumulation through CYP1B1-Induced mTOR-Mediated Lipophagy.",
+      "Metabolic dysfunction-associated steatotic liver disease (MASLD) is caused by lipid accumulation within the liver.",
+      "The aryl hydrocarbon receptor activation by B[a]P induces cytochrome P450 (CYP) enzymes, contributing to hepatic lipid accumulation.",
+      "However, the molecular mechanism through which the B[a]P-mediated induction of CYP enzymes causes hepatic lipid accumulation is unknown.",
+      "This research was conducted to elucidate the role of CYP1B1 in regulating B[a]P-induced lipid accumulation within hepatocytes.",
+      "B[a]P increased hepatic lipid accumulation, which was mitigated by CYP1B1 knockdown.",
+      "Our results indicate that B[a]P-induced hepatic lipid accumulation is caused by CYP1B1-induced mTOR and the reduction of lipophagy, thereby introducing novel targets and mechanisms to provide insights for understanding B[a]P-induced MASLD."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Specifically, blockade of AhR-induced CYP1A1 was the primary regulator of AhR-mediated lipid production.",
+    "confidence": 0.8,
+    "pmid": "30381393",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "This AhR function in lipid production was also observed in HCV-uninfected Huh-7 cells and primary human hepatocytes, suggesting that AhR signaling regulates lipid accumulation independently of HCV infection."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The majority of investigated PAHs activated AHR, while non-carcinogenic PAHs tended to activate CAR.",
+    "confidence": 0.8,
+    "pmid": "33396476",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Polycyclic Aromatic Hydrocarbons Activate the Aryl Hydrocarbon Receptor and the Constitutive Androstane Receptor to Regulate Xenobiotic Metabolism in Human Liver Cells.",
+      "Here, we studied ten PAHs, different in carcinogenicity classification, for their potential to activate AHR- and CAR-dependent luciferase reporter genes in human liver cells."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Our results clearly showed that ZEN activated human PXR, CAR and AhR mRNA levels in addition to some of their phase I target genes mainly CYP3A4, CYP2B6 and CYP1A1 and at lesser extent CYP3A5 and CYP2C9 at ZEN concentrations as low as 0.1 \u03bcM.",
+    "confidence": 0.9,
+    "pmid": "21787672",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Zearalenone activates pregnane X receptor, constitutive androstane receptor and aryl hydrocarbon receptor and corresponding phase I target genes mRNA in primary cultures of human hepatocytes.",
+      "The aim of the present study was to further explore the effect of ZEN on regulation of some CYPs using primary cultures of human hepatocytes.",
+      "Finally, we realised the luciferase assay in HepG2 treated with the toxin and transiently transfected with p-CYP3A4-Luc in the presence of a hPXR vector or transfected with p-CYPA1-Luc."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "22422552",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Quercetin, quercetin glycosides and taxifolin differ in their ability to induce AhR activation and CYP1A1 expression in HepG2 cells.",
+      "This study examined the ability of quercetin, isoquercitrin (quercetin-3-O-glucoside), rutin (quercetin-3-O-rutinoside) and taxifolin (dihydroquercetin) to activate AhR and to induce CYP1A1 expression in human hepatoma HepG2 cells.",
+      "It is concluded that quercetin, but not its 3-O-glycosides isoquercitrin and rutin, induces AhR activation and CYP1A1 expression in HepG2 cells and that the CYP1A1-inducing activity of taxifolin has a low toxicological potential."
+    ],
+    "effective_support": false
+  }
+]

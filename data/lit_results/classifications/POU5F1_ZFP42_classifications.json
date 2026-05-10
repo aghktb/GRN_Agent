@@ -1,0 +1,76 @@
+[
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "18725401",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Embryonic stem cell-specific miR302-367 cluster: human gene structure and functional characterization of its core promoter.",
+      "Recently, the miRNA cluster miR302-367 was shown to be differentially expressed in embryonic stem cells (ESCs).",
+      "From a hierarchical standpoint, its activity decays upon differentiation of ESCs, suggesting that its activity is restricted to the ESC compartment and that the ESC-specific expression of the miR302-367 cluster is fully conferred by its core promoter transcriptional activity.",
+      "Furthermore, algorithmic prediction of transcription factor binding sites and knockdown studies suggest that ESC-associated transcription factors, including Nanog, Oct3/4, Sox2, and Rex1 may be upstream regulators of miR302-367 promoter.",
+      "This study opens up new avenues to further investigate the upstream transcriptional regulation of the miR302-367 cluster and to dissect how these miRNAs integrate in the complex molecular network conferring stem cell properties to ESCs."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "23939908",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "REX1-depleted human pluripotent stem cells (hPSCs) lose their self-renewal capacity and full differentiation potential, especially their mesoderm lineage potential."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Knockdown of Nanog in embryonic stem cells resulted in a reduction of Rex-1 expression",
+    "confidence": 0.9,
+    "pmid": "16714766",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Rex-1 (Zfp-42) is a known marker for undifferentiated embryonic stem cells and teratocarcinoma cells.",
+      "Knockdown of Nanog in embryonic stem cells resulted in a reduction of Rex-1 expression, whereas forced expression of Nanog in P19 stimulated Rex-1 expression."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "7945330",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "The octamer motif present in the Rex-1 promoter binds Oct-1 and Oct-3 expressed by EC cells and ES cells.",
+      "F9 EC cells, D3 ES cells, and human NT2/D1 EC cells each from at least two prominent DNA/protein complexes with the octamer motif."
+    ],
+    "effective_support": false
+  }
+]

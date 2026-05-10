@@ -1,0 +1,51 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Chromatin immunoprecipitation assays revealed specific and strong binding of HNF4A to the Gcgr promoter.",
+    "confidence": 0.9,
+    "pmid": "36464036",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Impaired hepatic glucose metabolism and liver-\u03b1-cell axis in mice with liver-specific ablation of the Hepatocyte Nuclear Factor 4\u03b1 (Hnf4a) gene.",
+      "Hnf4a gene ablation in mouse liver causes hepatic steatosis, perturbs HDL structure and function and affects many pathways and genes related to glucose metabolism.",
+      "Our aim here was to investigate the role of liver HNF4A in glucose homeostasis.",
+      "Insulin signaling in the liver was reduced despite the increase in serum insulin levels.",
+      "H4LivKO mice showed altered expression of genes involved in glycolysis, gluconeogenesis and glycogen metabolism in the liver.",
+      "The expression of the gene encoding the glucagon receptor (Gcgr) was markedly reduced in H4LivKO liver and chromatin immunoprecipitation assays revealed specific and strong binding of HNF4A to the Gcgr promoter.",
+      "H4LivKO mice presented increased amino acid concentration in the serum, \u03b1-cell hyperplasia and a dramatic increase in glucagon levels suggesting an impairment of the liver-\u03b1-cell axis.",
+      "The expression of several genes related to non-alcoholic fatty liver disease progression to more severe liver pathologies, including Mcp1, Gdf15, Igfbp-1 and Hmox1, was increased in H4LivKO mice as early as 6 weeks of age and this increased expression was sustained until the endpoint of the study.",
+      "Our results reveal a novel role of liver HNF4A in controlling blood glucose levels via regulation of glucagon signaling.",
+      "In combination with the steatotic phenotype, our results suggest that H4LivKO mice could serve as a valuable model for studying glucose homeostasis in the context of non-alcoholic fatty liver disease."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Microarray expression analysis revealed up-regulation of genes associated with proliferation and cell cycle control only in the acute liver-specific Hnf4\u03b1-null mouse.",
+    "confidence": 0.8,
+    "pmid": "22241473",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Suppression of hepatocyte proliferation by hepatocyte nuclear factor 4\u03b1 in adult mice.",
+      "Hepatocyte nuclear factor 4\u03b1 (HNF4\u03b1) regulates genes involved in lipid and bile acid synthesis, gluconeogenesis, amino acid metabolism, and blood coagulation.",
+      "In addition to its metabolic role, HNF4\u03b1 is critical for hepatocyte differentiation, and loss of HNF4\u03b1 is associated with hepatocellular carcinoma.",
+      "The hepatocyte-specific Hnf4a knock-out mouse develops severe hepatomegaly and steatosis resulting in premature death, thereby limiting studies of the role of this transcription factor in the adult animal.",
+      "Microarray expression analysis revealed up-regulation of genes associated with proliferation and cell cycle control only in the acute liver-specific Hnf4\u03b1-null mouse.",
+      "BrdU and ki67 staining confirmed extensive hepatocyte proliferation in this model.",
+      "These data suggest that HNF4\u03b1 maintains hepatocyte differentiation in the adult healthy liver, and its loss may directly contribute to hepatocellular carcinoma development, thus indicating this factor as a possible liver tumor suppressor gene."
+    ],
+    "effective_support": true
+  }
+]

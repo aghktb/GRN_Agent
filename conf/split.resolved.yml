@@ -1,0 +1,11 @@
+gold_edges: Data/DataContext/mHSC-GM_nonspecific_chipseq_tf1000/refNetwork.csv
+out: artifacts/InferenceAblation/mHSC-GM_nonspecific_chipseq_tf1000/splits/split_manifest.csv
+fold_id: mHSC-GM_nonspecific_chipseq_tf1000_f1
+node_split_mode: expression
+target_gene_policy: audit
+train_ratio: 0.7
+val_ratio: 0.1
+test_ratio: 0.2
+seed: 42
+expression_path: Data/DataContext/mHSC-GM_nonspecific_chipseq_tf1000/ExpressionData.csv
+tf_file: Data/DataContext/mHSC-GM_nonspecific_chipseq_tf1000/TFs.csv

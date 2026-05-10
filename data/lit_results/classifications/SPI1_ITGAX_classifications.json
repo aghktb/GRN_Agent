@@ -1,0 +1,190 @@
+[
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "35567557",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Interferon regulatory factor-5-dependent CD11c+ macrophages contribute to the formation of rupture-prone atherosclerotic plaques.",
+      "Interferon regulatory factor-5 immunopositive areas were predominantly found within CD11c+ areas with a predilection for the shoulder region, the area of the human plaque most prone to rupture.",
+      "Accordingly, an inducible plaque rupture model of ApoE-/-Irf5-/- mice had significantly lower frequencies of carotid plaque ruptures, smaller necrotic cores, and less CD11c+ macrophages than their IRF5-competent counterparts."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "24441789",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "The unfolded-protein-response sensor IRE-1\u03b1 regulates the function of CD8\u03b1+ dendritic cells.",
+      "Here we found that dendritic cells (DCs) constitutively activated the UPR sensor IRE-1\u03b1 and its target, the transcription factor XBP-1, in the absence of ER stress.",
+      "Loss of XBP-1 in CD11c+ cells led to defects in phenotype, ER homeostasis and antigen presentation by CD8\u03b1+ conventional DCs, yet the closely related CD11b+ DCs were unaffected."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "26801566",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "\u03b3-Tocopherol supplementation of allergic female mice augments development of CD11c+CD11b+ dendritic cells in utero and allergic inflammation in neonates.",
+      "There was also about a twofold increase in pup lung CD11b(+) subsets of CD11c(+) dendritic cells and in numbers of these dendritic cells expressing the transcription factor IRF4.",
+      "There was no change in several CD11b(-) dendritic cell subsets.",
+      "Furthermore, maternal supplementation with \u03b3-tocopherol increased the number of fetal liver CD11b(+)CD11c(+) dendritic cells twofold in utero.",
+      "In conclusion, maternal supplementation with \u03b3-tocopherol increased fetal development of subsets of dendritic cells that are critical for allergic responses and increased development of allergic responses in pups from allergic mothers."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "26759006",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "IL-6 down-regulates HLA class II expression and IL-12 production of human dendritic cells to impair activation of antigen-specific CD4(+) T cells.",
+      "Here, we focused on the role of interleukin (IL)-6/signal transducer and activator of transcription (STAT3) signaling cascade in immune regulation by human dendritic cells (DCs)."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "9295357",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The -90/-50 fragment from the CD11c promoter, containing the adjacent CEBP-80, Sp1-70, and AP1-60 sites, differentially enhanced the activity of the minimal prolactin promoter in hematopoietic and epithelial cells.",
+    "confidence": 0.8,
+    "pmid": "9360988",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "38759303",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "DNase I protection",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "DNase I protection analysis on the promoter region spanning from -160 to +40 revealed four regions of DNA-protein interactions (FPI-FPIV), two of which (FPII and FPIV) correlate with the cell type-specific and regulated expression of the CD11c gene.",
+    "confidence": 0.8,
+    "pmid": "7678251",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "34707127",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Optineurin modulates the maturation of dendritic cells to regulate autoimmunity through JAK2-STAT3 signaling.",
+      "Optineurin (OPTN) has important functions in diverse biological processes and diseases, but its effect on dendritic cell (DC) differentiation and functionality remains elusive."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "20190134",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "IFN-beta inhibits dendritic cell migration through STAT-1-mediated transcriptional suppression of CCR7 and matrix metalloproteinase 9.",
+      "Migration of dendritic cells (DCs) from the inflammatory site to draining lymph nodes for Ag presentation and activation of naive T cells and to the CNS for reactivation of encephalitogenic T cells requires CCR7 and matrix metalloproteinase (MMP)-9 expression."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Together, these increases in the functional activity of both Puralpha and Sp1 combine to induce CD11c expression.",
+    "confidence": 0.8,
+    "pmid": "11937543",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  }
+]

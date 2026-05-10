@@ -1,0 +1,79 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "When active, PI3K/Akt establishes conditions where Activin A/Smad2,3 performs a pro-self-renewal function by activating target genes, including Nanog.",
+    "confidence": 0.9,
+    "pmid": "22385658",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Signaling network crosstalk in human pluripotent cells: a Smad2/3-regulated switch that controls the balance between self-renewal and differentiation.",
+      "A general mechanism for how intracellular signaling pathways in human pluripotent cells are coordinated and how they maintain self-renewal remain to be elucidated.",
+      "In this report, we describe a signaling mechanism where PI3K/Akt activity maintains self-renewal by restraining prodifferentiation signaling through suppression of the Raf/Mek/Erk and canonical Wnt signaling pathways."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The Activin-SMAD2/3 signaling pathway cooperates with the core pluripotency factor NANOG to recruit the DPY30-COMPASS histone modifiers onto key developmental genes.",
+    "confidence": 1.0,
+    "pmid": "25805847",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Activin/nodal signaling and NANOG orchestrate human embryonic stem cell fate decisions by controlling the H3K4me3 chromatin mark.",
+      "Here, we use human embryonic stem cells (hESCs) to show that the Activin-SMAD2/3 signaling pathway cooperates with the core pluripotency factor NANOG to recruit the DPY30-COMPASS histone modifiers onto key developmental genes.",
+      "Our results reveal the mechanisms by which extracellular factors coordinate chromatin status and cell fate decisions in hESCs."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Therefore, the effect of Activin/Nodal signaling on pluripotency and differentiation could be dictated by tissue specific Smad2/3 partners such as Nanog",
+    "confidence": 0.9,
+    "pmid": "21630377",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Activin/Nodal signaling controls divergent transcriptional networks in human embryonic stem cells and in endoderm progenitors.",
+      "Activin/Nodal signaling is necessary to maintain pluripotency of human embryonic stem cells (hESCs) and to induce their differentiation toward endoderm.",
+      "To unravel these mechanisms, we examined the transcriptional network controlled in hESCs by Smad2 and Smad3, which represent the direct effectors of Activin/Nodal signaling.",
+      "Therefore, Activin/Nodal signaling appears to control divergent transcriptional networks in hESCs and in endoderm.",
+      "Importantly, we observed an overlap between the transcriptional network downstream of Nanog and Smad2/3 in hESCs; whereas, functional studies showed that both factors cooperate to control the expression of pluripotency genes."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Smad2 directly associates with Oct4 to form Nanog promoting protein complex.",
+    "confidence": 1.0,
+    "pmid": "24929238",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Nanog, a core pluripotency factor, is required for stabilizing pluripotency of inner cell mass (ICM) and embryonic stem cells (ESCs), and survival of primordial germ cells in mice.",
+      "Notably, Nanog promoters switch from Oct4/Esrrb in ICM/ESCs to Oct4/Smad2 in epiblasts."
+    ],
+    "effective_support": true
+  }
+]

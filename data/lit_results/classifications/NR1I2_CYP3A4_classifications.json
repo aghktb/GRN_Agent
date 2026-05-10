@@ -1,0 +1,420 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "These results show that both PAH parent compounds as well as their phase I metabolites induce CYP3A4 promoter via the transcription factor PXR.",
+    "confidence": 0.9,
+    "pmid": "23845848",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "38166548",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Cyclosporine-A induced cytotoxicity within HepG2 cells by inhibiting PXR mediated CYP3A4/CYP3A5/MRP2 pathway.",
+      "Liver injury is one of the most common adverse effects of CsA, whose precise mechanism has not been fully elucidated.",
+      "Pregnane X receptor (PXR) plays a critical role in mediating drug-induced liver injury as a key regulator of drug and xenobiotic clearance.",
+      "Our study established CsA-induced cytotoxic hepatocytes in an"
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Chromatin immunoprecipitation assays revealed that rifampicin-activated PXR recruited HNF4alpha and SRC-1 to the CYP3A4 chromatin.",
+    "confidence": 0.9,
+    "pmid": "16455805",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Rifampicin induction of CYP3A4 requires pregnane X receptor cross talk with hepatocyte nuclear factor 4alpha and coactivators, and suppression of small heterodimer partner gene expression.",
+      "Bile acids and drugs activate pregnane X receptor (PXR) to induce CYP3A4, which is the predominant cytochrome P450 enzyme expressed in the liver and intestine and plays a critical role in detoxifying bile acids and drugs, and protecting against cholestasis.",
+      "Rifampicin dose dependently induced the CYP3A4 but inhibited small heterodimer partner (SHP) mRNA expression levels in primary human hepatocytes.",
+      "Rifampicin strongly stimulated PXR and hepatocyte nuclear factor 4alpha (HNF4alpha) interaction, and CYP3A4 reporter activity, which was further stimulated by peroxisome proliferators-activated receptorgamma co-activator 1alpha (PGC-1alpha) and steroid receptor coactivator-1 (SRC-1) but inhibited by SHP.",
+      "PXR concomitantly inhibits SHP gene transcription and maximizes the PXR induction of the CYP3A4 gene in human livers.",
+      "Drugs targeted to PXR may be developed for treating cholestatic liver diseases induced by bile acids and drugs."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Panaxytriol can upregulate CYP3A4 expression by decreasing PXR binding to HSP90\u03b1 and increasing PXR binding to RXR\u03b1.",
+    "confidence": 0.8,
+    "pmid": "35417848",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Cytochrome P450 3A4 (CYP3A4) is one of the most important drug-metabolizing enzymes in the human body, mainly existing in the liver, small intestine, and kidney.",
+      "The mRNA and protein expressions of PXR, CAR, CYP3A4, RXR\u03b1, and HSP90\u03b1 in HepG2 cells and Huh-7 cells were detected by quantitative PCR and western blot analysis, respectively.",
+      "The nuclear translocation of PXR and RXR\u03b1 into HepG2 cells and human (hCAR)-silenced HepG2 cells were measured by immunofluorescence.",
+      "In HepG2 cells and Huh-7 cells, panaxytriol (10-80 \u03bcM) upregulated CYP3A4 expression in a concentration-dependent manner by decreasing PXR binding to HSP90\u03b1 and increasing PXR binding to RXR\u03b1.",
+      "Panaxytriol can upregulate CYP3A4 expression by promoting PXR dissociation from HSP90\u03b1 and enhancing PXR binding to RXR\u03b1 in HepG2 cells and Huh-7 cells."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Knock-down of AhR in PHHs increased both basal and rifampicin-induced expression of CYP3A4 mRNA.",
+    "confidence": 0.8,
+    "pmid": "28571685",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Activation of the aryl hydrocarbon receptor decreases rifampicin-induced CYP3A4 expression in primary human hepatocytes and HepaRG.",
+      "The role of the cross-talk between nuclear receptors in the regulation of Cytochrome P450 expression in the liver is well-documented.",
+      "In the present study, we treated HepaRG and primary human hepatocytes (PHHs) with both a strong (TCDD) and weak (3-methylindole; 3MI) AhR activator to investigate their impact on PXR-regulated expression of CYP3A4."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "18805405",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Our observations showed that Danshen ethanol extract could activate human PXR and induce the CYP3A4 reporter construct in HepG2 cells."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "29071751",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Fetal mice with conditional deletion of Hnf4alpha had reduced or absent expression of CYP3A.",
+    "confidence": 0.9,
+    "pmid": "12514743",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "However, in cell-based reporter assays, CYP3A4 promoter activity was most pronounced in liver-derived cells and minimal or modest in non-hepatic cells, indicating that a liver-specific factor is required for physiological transcriptional response.",
+      "Here we show that the orphan nuclear receptor hepatocyte nuclear factor-4alpha (HNF4alpha; HNF4A) is critically involved in the PXR- and CAR-mediated transcriptional activation of CYP3A4.",
+      "Fetal mice with conditional deletion of Hnf4alpha had reduced or absent expression of CYP3A. Furthermore, adult mice with conditional hepatic deletion of Hnf4alpha had reduced basal and inducible expression of CYP3A. These data identify HNF4alpha as an important regulator of coordinate nuclear-receptor-mediated response to xenobiotics."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "two-hybrid assay",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Metformin disrupts PXR's interaction with steroid receptor coactivator-1 (SRC1) in a two-hybrid assay independently of the PXR ligand binding pocket.",
+    "confidence": 0.8,
+    "pmid": "21920351",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "SHP suppresses the functions of several nuclear receptors involved in the regulation of hepatic metabolism, including pregnane X receptor (PXR), which is referred to as a \"master regulator\" of drug/xenobiotic metabolism.",
+      "We employed various gene reporter assays in cell lines and qRT-PCR in human hepatocytes and in Pxr(-/-) mice.",
+      "We show that metformin dramatically suppresses PXR-mediated expression of CYP3A4 in hepatocytes.",
+      "Consistently, metformin significantly suppressed the up-regulation of Cyp3a11 mRNA in the liver and intestine of wild-type mice, but not in Pxr(-/-) mice.",
+      "A mechanistic investigation of the phenomenon showed that metformin does not significantly up-regulate SHP in human hepatocytes.",
+      "Metformin also inhibited vitamin D receptor-, glucocorticoid receptor- and constitutive androstane receptor (CAR)-mediated induction of CYP3A4 mRNA in human hepatocytes.",
+      "We show, therefore, a suppressive effect of metformin on PXR and other ligand-activated nuclear receptors in transactivation of the main detoxification enzyme CYP3A4 in human hepatocytes."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Pharmacologic inhibition or genetic knockdown of hPXR resulted in attenuation of DIM induced CYP3A4 and MDR1 gene expression, suggesting that DIM induces CYP3A4 and MDR1 in an hPXR-dependent manner.",
+    "confidence": 0.9,
+    "pmid": "25542144",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Here, we studied whether 3,3'-diindolylmethane (DIM), a natural health supplement, could induce hPXR-mediated regulation of CYP3A4 and MDR1 in human hepatocytes and intestinal cells."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "By a reporter gene assay using the CYP3A4 promoter/enhancer reporter in COS-7 or HepG2 cells, it was found that the R98C variant failed to transactivate the CYP3A4 reporter.",
+    "confidence": 0.9,
+    "pmid": "14709632",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "By a reporter gene assay using the CYP3A4 promoter/enhancer reporter in COS-7 or HepG2 cells, it was found that the R98C variant failed to transactivate the CYP3A4 reporter."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "suppresses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "In reporter assays using the CYP3A4 promoter, the PXR-mediated transcription was suppressed by inflammatory stimuli and co-expression of NF-\u03baB or activator protein-1 (AP-1), suggesting that not only NF-\u03baB but also AP-1 play a key role in the suppression of CYP3A induction.",
+    "confidence": 0.8,
+    "pmid": "31280915",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Pregnane X receptor (PXR) is a xenobiotic-responsive transcription factor that plays a pivotal role in drug metabolism and disposition in livers and intestines through regulating the expression of drug metabolizing enzymes and transporters."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "In HepG2 cells, SHP repressed transactivation of CYP3A4 promoter by pregnane X receptor (PXR), constitutive androstane receptor (CAR), and glucocorticoid receptor.",
+    "confidence": 0.8,
+    "pmid": "25725071",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "GW4064, an agonist of farnesoid X receptor, represses CYP3A4 expression in human hepatocytes by inducing small heterodimer partner expression.",
+      "The effects of 3-(2,6-dichlorophenyl)-4-(3'-carboxy-2-chlorostilben-4-yl)oxymethyl-5-isopropylisoxazole (GW4064), a synthetic agonist of FXR, on the expression and activity of CYP3A4 were examined in primary human hepatocytes by using quantitative real-time polymerase chain reaction and S9 phenotyping.",
+      "In human hepatocytes, treatment of GW4064 (1 \u03bcM) for 48 hours resulted in a 75% decrease in CYP3A4 mRNA expression and a 25% decrease in CYP3A4 activity, accompanied by \u223c3-fold increase in SHP mRNA expression.",
+      "In HepG2 cells, SHP repressed transactivation of CYP3A4 promoter by pregnane X receptor (PXR), constitutive androstane receptor (CAR), and glucocorticoid receptor.",
+      "In conclusion, GW4064 represses CYP3A4 expression in human hepatocytes, potentially through upregulation of SHP expression and subsequent repression of CYP3A4 promoter activity."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "two-hybrid",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Treatment with PMA also abolished the ligand-dependent interaction between PXR and the steroid receptor co-activator 1 protein (SRC1)",
+    "confidence": 0.8,
+    "pmid": "15710363",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Repression of PXR-mediated induction of hepatic CYP3A gene expression by protein kinase C. Pregnane X receptor (PXR, NR1I2) regulates the inducible expression of the 3A sub-family of cytochrome P450 genes (CYP3A).",
+      "Hepatic CYP3A gene expression is rapidly down-regulated during inflammation and sepsis.",
+      "It is now well accepted that cytokine stimulation of hepatocytes increases intracellular PKC activity during inflammation and sepsis.",
+      "We show here that protein kinase C alpha (PKC alpha) and phorbol ester-dependent PKC signaling dramatically repressed PXR activity in both, cell-based reporter gene assays and in hepatocytes.",
+      "Moreover, treatment with the protein phosphatase PP1/PP2A inhibitor okadaic acid (OA) totally abolished PXR activity in reporter gene assays and in cultured hepatocytes.",
+      "In addition, our data potentially provide important insights into the molecular mechanism of the repression of hepatic CYP3A gene expression that occurs during the inflammatory response."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "12695340",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Regulation of CYP3A4 expression in human hepatocytes by pharmaceuticals and natural products.",
+      "We used primary cultures of human hepatocytes from 17 individuals to assess the inducibility of CYP3A4 mRNA by prototypical inducers, dietary flavonoids, and botanicals.",
+      "A reporter gene assay using the human pregnane X receptor (hPXR) and promoter regions of CYP3A4 transiently transfected into HepG2 cells, exhibited inductive properties by the aforementioned therapeutics that were similar to those observed in hepatocytes.",
+      "Several flavonoids including quercetin, resveratrol, and curcumin were also examined for their ability to induce CYP3A4 in human hepatocytes.",
+      "We also examined the effects of herbals on CYP3A4 expression in human hepatocytes."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The human orphan nuclear receptor PXR binds to a response element in the CYP3A4 promoter and is activated by a range of drugs known to induce CYP3A4 expression.",
+    "confidence": 0.8,
+    "pmid": "9727070",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "16513849",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Differential regulation of hepatic CYP2B6 and CYP3A4 genes by constitutive androstane receptor but not pregnane X receptor.",
+      "Human hepatocyte studies revealed nonselective induction of both CYP2B6 and CYP3A4 by hPXR activation but marked preferential induction of CYP2B6 by selective hCAR activation."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "15548381",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "The abilities of organochlorine (OC), organophosphate (OP) and pyrethroid pesticides (PY) to activate hPXR were also assessed and found to be consistent with the abilities of these compounds to induce CYP3A4 and CYP2B6 in primary culture of human hepatocytes."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "CYP3A4 mRNA expression was regulated by both PXR and GR whereas constitutive expression of CYP3A5 in HepaRG cells was regulated by GR alone.",
+    "confidence": 0.8,
+    "pmid": "30919109",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Through studies in sandwich-cultured human hepatocytes (SCHH) and HepaRG cells, our laboratory has shown that this induction is likely mediated by the increase in cortisol plasma concentrations during pregnancy."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "19307295",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Evaluation of multiple in vitro systems for assessment of CYP3A4 induction in drug discovery: human hepatocytes, pregnane X receptor reporter gene, and Fa2N-4 and HepaRG cells.",
+      "Prototypic CYP3A4 inducers were tested in a pregnane X receptor (PXR) reporter gene assay, Fa2N-4 cells, HepaRG cells, and primary human hepatocytes, along with negative controls, using CYP3A4 mRNA and activity endpoints, where appropriate.",
+      "E(max) and EC(50) estimates determined from the PXR reporter gene assay and Fa2N-4 and HepaRG cells were compared with those from hepatocytes.",
+      "Overall, EC(50) values generated using hepatocytes agreed with those generated in the PXR reporter gene assay (r(2) = 0.85, p < 0.001) and Fa2N-4 (r(2) = 0.65, p < 0.001) and HepaRG (r(2) = 0.99, p < 0.001) cells.",
+      "However, E(max) values generated in hepatocytes were only significantly correlated to those determined in Fa2N-4 (r(2) = 0.33, p = 0.005) and HepaRG cells (r(2) = 0.79, p < 0.001). \"",
+      "Gold standard\" cytochrome P450 induction data can be generated using primary human hepatocytes, but a restricted, erratic supply and interdonor variability somewhat restrict routine application within a drug discovery setting."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "15183191",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Kupffer cells and reactive oxygen species partially mediate lipopolysaccharide-induced downregulation of nuclear receptor pregnane x receptor and its target gene CYP3a in mouse liver.",
+      "The in vivo effects of lipopolysaccharide (LPS) on expression of PXR and its target gene cytochrome P450 3A (CYP3A) in mouse liver were investigated in this study.",
+      "Results indicate that LPS significantly inhibits the expression of PXR mRNA in a dose-dependent manner, followed by suppression of CYP3A11 mRNA in mouse liver.",
+      "LPS-induced downregulation of PXR and CYP3A11 mRNA in liver was significantly attenuated in mice pretreated with gadolinium chloride, a selective Kupffer cell toxicant.",
+      "Pretreatment with a single dose of gadolinium chloride (10 mg/kg) also significantly attenuated LPS-induced downregulation of dexamethasone-, rifampicim-, mifepristone-, and phenobarbital-inducible, CYP3A11 mRNA expression and ERND activity in mouse liver.",
+      "Allopurinol and diphenyleneiodonium chloride pretreatment also attenuated the repressive effects of LPS on dexamethasone-, rifampicin-, mifepristone-, and phenobarbital-inducible CYP3A11 mRNA expression and ERND catalytic activity in mouse liver.",
+      "These antioxidants also prevented the repressive effects of LPS on dexamethasone-, rifampicin-, mifepristone-, and phenobarbital-inducible CYP3A11 mRNA expression and ERND catalytic activity in mouse liver.",
+      "These results indicate that Kupffer cells contribute to LPS-induced downregulation of PXR and CYP3A in mouse liver.",
+      "Reactive oxygen species, produced possibly by NADPH oxidase and perhaps by xanthine oxidase, are involved in LPS-induced downregulation of nuclear receptor PXR and its target gene CYP3A in mouse liver."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Overexpression of TPX2 led to enhancement of PXR recruitment to its downstream gene cyp3a4's promoter region (the PXRE region) or enhancer region (the XREM region).",
+    "confidence": 0.8,
+    "pmid": "36707511",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "TPX2 enhances the transcription factor activation of PXR and enhances the resistance of hepatocellular carcinoma cells to antitumor drugs.",
+      "The pregnane X receptor (PXR) is an important regulator of hepatocellular carcinoma cellular resistance to antitumor drugs."
+    ],
+    "effective_support": true
+  }
+]

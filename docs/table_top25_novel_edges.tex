@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[margin=0.75in, landscape]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{microtype}
+
+% ragged-right p column
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+\footnotesize
+
+\begin{longtable}{llccccP{4.2cm}P{5.8cm}}
+\caption{Top 25 novel TF--target predictions with literature support (mHSC-GM context).
+\emph{Conf}: model $P_{\text{present}}$; \emph{Score}: literature validation score;
+\emph{Papers}: number of supporting papers; \emph{Type}: direct (dir) or indirect (indir) regulation.}
+\label{tab:top25_novel_edges} \\
+\toprule
+\textbf{TF} & \textbf{Target} & \textbf{Conf} & \textbf{Score} & \textbf{Papers} & \textbf{Type} & \textbf{Evidence} & \textbf{PMIDs} \\
+\midrule
+\endfirsthead
+\multicolumn{8}{l}{\footnotesize\emph{(continued)}} \\
+\toprule
+\textbf{TF} & \textbf{Target} & \textbf{Conf} & \textbf{Score} & \textbf{Papers} & \textbf{Type} & \textbf{Evidence} & \textbf{PMIDs} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{\footnotesize\emph{(continued on next page)}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+JUN    & TLR4    & 0.997 & 1.00 & 12 & dir   & ATAC-seq, ChIP-seq, EMSA, confocal microscopy, knockdown, luciferase           & 22431523, 19592489, 25637945, 22021612, 33644468, 38184503, 28490734, 25463278, 27859308, 28137827, 28013342, 36840360 \\
+MYC    & BTK     & 0.997 & 1.00 & 11 & dir   & ChIP, ChIP-seq, EMSA, Western blot, gene expression, knockdown, qRT-PCR        & 37217247, 35173274, 24285714, 25890196, 39327570, 36662812, 36003390, 21177653, 36721266, 33158815, 21245140 \\
+JUN    & SPI1    & 0.998 & 1.00 & 10 & dir   & ChIP-seq, EMSA, co-immunoprecipitation, knockdown, luciferase                   & 36104445, 19592489, 17041602, 27840425, 25637945, 12937177, 18026136, 20529870, 20410304, 20499359 \\
+MYC    & ABL1    & 0.998 & 1.00 & 6  & dir   & ChIP-seq, knockdown, luciferase                                                & 38457494, 30107177, 24285714, 24837367, 28321124, 23318434 \\
+JUN    & CRK     & 0.999 & 1.00 & 6  & dir   & ChIP-seq, EMSA, knockdown, luciferase                                          & 20601188, 25637945, 25463278, 35263587, 19592489, 11751895 \\
+JUN    & BTK     & 0.997 & 0.95 & 6  & indir & co-immunoprecipitation, knockdown, luciferase, single-cell mRNA-seq            & 15507213, 27840425, 25637945, 12937177, 24100343, 37983263 \\
+SPI1   & FOS     & 0.999 & 1.00 & 5  & dir   & ChIP-seq, EMSA, knockdown                                                      & 37154113, 18026136, 8007948, 33712570, 25567680 \\
+SPI1   & GATM    & 0.999 & 1.00 & 5  & dir   & ChIP-seq, knockdown                                                            & 33712570, 36662812, 36661340, 30315161, 24028770 \\
+SPI1   & BTK     & 0.997 & 1.00 & 5  & dir   & ChIP-seq, RNAseq, knockdown                                                    & 33712570, 36662812, 36661340, 23319570, 30315161 \\
+JUN    & CD274   & 0.999 & 1.00 & 4  & dir   & ChIP-seq, EMSA, knockdown                                                      & 33939321, 28555079, 38065997, 32493933 \\
+SPI1   & MYC     & 0.998 & 1.00 & 4  & dir   & ChIP-seq, RNA-seq, knockdown                                                   & 36662812, 38383388, 33857288, 36894688 \\
+ESR1   & MTOR    & 0.998 & 1.00 & 4  & dir   & EMSA, knockdown, western blotting                                              & 33150381, 31686316, 31582727, 28802038 \\
+SPI1   & MEIS1   & 0.998 & 1.00 & 3  & dir   & ChIP-seq                                                                       & 36662812, 20516218, 34714913 \\
+MYC    & PSMD9   & 0.998 & 1.00 & 3  & dir   & ChIP-seq, knockdown, luciferase                                                & 31822694, 21245140, 22710719 \\
+SPI1   & TCN2    & 0.998 & 1.00 & 3  & dir   & ChIP-seq, luciferase, survival analysis                                        & 12023360, 33712570, 28628103 \\
+MYC    & STAT6   & 0.997 & 1.00 & 2  & indir & ChIP assay, luciferase                                                         & 36721266, 26601901 \\
+MYC    & MEIS1   & 0.998 & 1.00 & 2  & dir   & ChIP-seq, knockdown                                                            & 24285714, 36662812 \\
+JUN    & RUNX1T1 & 0.998 & 1.00 & 2  & dir   & EMSA                                                                           & 36104445, 12393465 \\
+HDAC2  & GSDME   & 0.998 & 1.00 & 2  & dir   & ChIP-seq, chromatin immunoprecipitation                                        & 39445538, 39486886 \\
+HDAC2  & GDI1    & 0.997 & 1.00 & 2  & dir   & ChIP-seq, knockdown                                                            & 30267710, 35764883 \\
+JUN    & NFKB1   & 0.999 & 1.00 & 2  & dir   & EMSA                                                                           & 20538003, 19592489 \\
+JUN    & LYN     & 0.999 & 1.00 & 2  & dir   & EMSA                                                                           & 22021612, 35500650 \\
+MYC    & MAPK14  & 0.998 & 0.95 & 2  & indir & ChIP, RNA sequencing                                                           & 25890196, 38048856 \\
+JUN    & GDI1    & 0.999 & 0.90 & 2  & indir & knockdown, single-cell mRNA-deep sequencing                                    & 37983263, 30936419 \\
+MYB    & THRB    & 0.999 & 1.00 & 1  & dir   & ChIP-seq                                                                       & 36632736 \\
+
+\end{longtable}
+
+\end{document}

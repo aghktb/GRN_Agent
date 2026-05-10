@@ -1,0 +1,17 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Zeb2 chromatin immunoprecipitation analysis revealed Id2 to be a direct target of Zeb2.",
+    "confidence": 0.9,
+    "pmid": "27185854",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  }
+]

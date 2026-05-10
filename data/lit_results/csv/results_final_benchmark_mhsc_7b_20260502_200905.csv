@@ -1,0 +1,41 @@
+TF,Target,Exp_Confidence,Exp_Evidence,lit_score,avg_conf,reg_type,relationships,evidence_types,pmids,conflict_detected
+Runx1,Csf1r,1.0,literature_canonical,0.0,0.0,none,none,,,False
+Tal1,Lmo2,1.0,literature_canonical,1.0,0.9,dir,activates,"ChIP-Seq, ChIP-chip, ChIP-seq","19171877, 21186366, 18184866",False
+Gata2,Runx1,1.0,literature_canonical,1.0,0.8667,dir,activates,"ChIP-seq, knockdown","20516218, 24903482, 24014243",False
+Meis1,Hoxa9,1.0,literature_canonical,1.0,0.86,dir,both,"ChIP-seq, Chromatin immunoprecipitation, co-expression, knockdown, luciferase","9649441, 28399410, 22353710, 24958854, 12082612, 11687616, 28049638, 19620287, 16648484, 21518888",True
+Spi1,Csf1r,1.0,literature_canonical,0.0,0.0,none,none,,,False
+Cebpa,Csf3r,1.0,literature_canonical,0.0,0.0,none,none,,,False
+Tal1,Gata1,1.0,literature_canonical,0.8,0.8,indir,none,knockdown,34724565,False
+Gata1,Klf1,1.0,literature_canonical,1.0,0.85,dir,none,"ChIP-seq, EMSA","34940950, 33239656",False
+Runx1,Spi1,1.0,literature_canonical,1.0,0.9,dir,activates,"ChIP-seq, EMSA, gene expression microarray, knockdown","32573733, 25313057, 25150295, 15592512, 31640815",False
+Lmo2,Gata2,1.0,literature_canonical,0.0,0.0,none,none,,,False
+Hnf4a,Apob,1.0,literature_other_celltype,0.0,0.0,none,none,none,,False
+Myod1,Myog,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Hnf1a,Alb,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Ascl1,Neurod1,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Sall4,Pou5f1,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Tbx21,Ifng,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Mef2c,Myh7,1.0,literature_other_celltype,0.0,0.0,none,none,none,,False
+Atoh1,Pou4f3,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Cebpa,Alb,1.0,literature_other_celltype,0.9,0.8,dir,none,ChIP-chip,19932685,False
+Olig2,Pdgfra,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Runx1,mt-Nd1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Tal1,Olfr1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Gata2,Krtap4-1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Meis1,Amelx,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Spi1,Sprr2a3,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Cebpa,Muc20,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Hoxa9,Klk1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Gfi1,Krt14,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+FAKETF1,Runx1,0.0,fabricated_TF,0.0,0.0,none,none,none,,False
+Tal1,ZZZZQ7,0.0,fabricated_target,0.0,0.0,none,none,none,,False
+Csf1r,Runx1,0.0,direction_reversal,0.0,0.0,none,none,,,False
+Csf3r,Cebpa,0.0,direction_reversal,0.0,0.0,none,none,,,False
+Hbb-b1,Gata1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+Itgam,Spi1,0.0,direction_reversal,1.0,0.9,dir,none,ChIP-seq,22528488,False
+Gapdh,Runx1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+Runx1,Mpo,0.5,indirect_regulation,0.0,0.0,none,none,,,False
+Tal1,Pf4,0.5,indirect_regulation,0.0,0.0,none,none,none,,False
+Gata2,Itga2b,0.5,indirect_regulation,0.0,0.0,none,none,none,,False
+Meis1,Mlf1,0.5,indirect_regulation,0.0,0.0,none,none,none,,False
+Spi1,Lyz2,0.5,indirect_regulation,0.0,0.0,none,none,,,False

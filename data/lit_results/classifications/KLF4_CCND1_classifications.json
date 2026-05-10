@@ -1,0 +1,41 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Recombinant GKLF and nuclear extracts from HT-29 cells were found to bind to the Sp1 motif on the CD1 promoter.",
+    "confidence": 0.9,
+    "pmid": "10908361",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "33621399",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "A synthetic mRNA cell reprogramming method using CYCLIN D1 promotes DNA repair, generating improved genetically stable human induced pluripotent stem cells.",
+      "A key challenge for clinical application of induced pluripotent stem cells (iPSC) to accurately model and treat human pathologies depends on developing a method to generate genetically stable cells to reduce long-term risks of cell transplant therapy.",
+      "Here, we hypothesized that CYCLIN D1 repairs DNA by highly efficient homologous recombination (HR) during reprogramming to iPSC that reduces genetic instability and threat of neoplastic growth.",
+      "We demonstrate that CYCLIN D1 made iPSC have (a) lower multitelomeric signal, (b) reduced double-strand DNA breaks, (c) correct nuclear localization of RAD51 protein expression, and (d) reduced single-nucleotide polymorphism (SNP) changes per chromosome, compared with the classical reprogramming method using C-MYC.",
+      "CYCLIN D1 iPSC have reduced teratoma Ki67 cell growth kinetics and derived neural stem cells successfully engraft in a hostile spinal cord injury (SCI) microenvironment with efficient survival, differentiation.",
+      "We demonstrate that CYCLIN D1 promotes double-stranded DNA damage repair predominantly through HR during cell reprogramming to efficiently produce iPSC.",
+      "CYCLIN D1 reduces general cell stress associated with significantly lower SIRT1 gene expression and can rescue Sirt1 null mouse cell reprogramming.",
+      "In conclusion, we show synthetic mRNA transfection of CYCLIN D1 repairs DNA during reprogramming resulting in significantly improved genetically stable footprint in human iPSC, enabling a new cell reprogramming method for more accurate and reliable generation of human iPSC for disease modeling and future clinical applications."
+    ],
+    "effective_support": false
+  }
+]

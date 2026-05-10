@@ -1,0 +1,51 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "down-regulates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Finally, in vitro transcription assays with liver nuclear extracts and recombinant C/EBP-beta/LAP demonstrate that C/EBP-beta/LAP can directly down-regulate transcription mediated by the minimal element of the albumin promoter.",
+    "confidence": 0.9,
+    "pmid": "8703043",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "PPAR-gamma and C/EBP-alpha also induced a phenotypic switch from activated to quiescent cells and, interestingly, suppression of albumin using short-hairpin RNA (shRNA) blocked their effects.",
+    "confidence": 0.8,
+    "pmid": "19932685",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Activation of quiescent hepatic stellate cells (HSCs) into myofibroblast-like cells is a key event of liver fibrosis, and adipogenic transcription factors, PPAR-gamma and C/EBP-alpha, reverse HSC activation.",
+      "As albumin was reported to maintain the quiescent phenotype of stellate cells, we examined whether it plays a role in PPAR-gamma and C/EBP-alpha-mediated effects.",
+      "PPAR-gamma and C/EBP-alpha also induced a phenotypic switch from activated to quiescent cells and, interestingly, suppression of albumin using short-hairpin RNA (shRNA) blocked their effects."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "We showed that CEBP-\u03b2 binds to the albumin promoter in an IL-10-dependent manner.",
+    "confidence": 0.9,
+    "pmid": "39536933",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  }
+]

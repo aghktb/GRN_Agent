@@ -1,0 +1,132 @@
+[
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "16520391",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "T-bet regulates Th1 responses through essential effects on GATA-3 function rather than on IFNG gene acetylation and transcription.",
+      "T helper type 1 (Th1) development is facilitated by interrelated changes in key intracellular factors, particularly signal transducer and activator of transcription (STAT)4, T-bet, and GATA-3.",
+      "Here we show that CD4+ cells from T-bet-/- mice are skewed toward Th2 differentiation by high endogenous GATA-3 levels but exhibit virtually normal Th1 differentiation provided that GATA-3 levels are regulated at an early stage by anti-interleukin (IL)-4 blockade of IL-4 receptor (R) signaling.",
+      "In addition, under these conditions, Th1 cells from T-bet-/- mice manifest IFNG promotor accessibility as detected by histone acetylation and deoxyribonuclease I hypersensitivity.",
+      "In related studies, we show that the negative effect of GATA-3 on Th1 differentiation in T-bet-/- cells arises from its ability to suppress STAT4 levels, because if this is prevented by a STAT4-expressing retrovirus, normal Th1 differentiation is observed.",
+      "Thus, the principal function of T-bet in developing Th1 cells is to negatively regulate GATA-3 rather than to positively regulate the IFNG gene."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Furthermore, we demonstrate that both factors bind distal sites at Tbx21 and that T-bet directly activates its own expression.",
+    "confidence": 0.9,
+    "pmid": "23232398",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "T-bet and GATA3 orchestrate Th1 and Th2 differentiation through lineage-specific targeting of distal regulatory elements.",
+      "T-bet and GATA3 regulate the CD4+ T cell Th1/Th2 cell fate decision but little is known about the interplay between these factors outside of the murine Ifng and Il4/Il5/Il13 loci.",
+      "We also show that in Th1 cells, GATA3 is distributed away from Th2 genes, instead occupying T-bet binding sites at Th1 genes, and that T-bet is sufficient to induce GATA3 binding at these sites.",
+      "We propose these aspects of T-bet and GATA3 function are important for Th1/Th2 differentiation and for understanding transcription factor interactions in other T cell lineage decisions."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "17195845",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "By chromatin immunoprecipitation we show that Blimp-1 binds directly to a distal regulatory region in the ifng gene and at multiple sites in tbx21 and bcl6 genes.",
+    "confidence": 1.0,
+    "pmid": "18684923",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Blimp-1 attenuates Th1 differentiation by repression of ifng, tbx21, and bcl6 gene expression.",
+      "Herein we explore the role of Blimp-1 in Th1/Th2 differentiation.",
+      "Blimp-1 mRNA and protein are more highly expressed in Th2 cells compared with Th1 cells, and Blimp-1 attenuates IFN-gamma production in CD4 cells activated under nonpolarizing conditions.",
+      "Our data provide evidence that Blimp-1 functions in Th2 cells to reinforce Th2 differentiation by repressing critical Th1 genes."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "genetic association",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Our study suggests that IFNG and IFNG-TBX21 interaction are involved in SLE susceptibility.",
+    "confidence": 0.95,
+    "pmid": "26916970",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "TBX21 recode T-bet which is an important transcription factor that drives the Th1 immune response primarily by promoting expression of the interferon-gamma (IFNG) gene."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "15306590",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "T-bet upregulation and subsequent interleukin 12 stimulation are essential for induction of Th1 mediated immunopathology in Crohn's disease.",
+      "Many lines of evidence suggest that T helper cell type 1 (Th1) immune responses predominate in Crohn's disease (CD).",
+      "Recently, a novel transcription factor T-box expressed in T cells (T-bet) has been reported as the master regulator of Th1 development.",
+      "This study was designed to investigate the role of T-bet and proinflammatory cytokines in Th1 mediated immunopathology in CD.",
+      "T-bet induction by antigenic stimulation and subsequent stimulation by macrophage derived IL-12/IL-18 are important for establishing Th1 mediated immunopathology in CD."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The mechanism through which TNFalpha enhances IL-18 induced IFNgamma production is by promoting IL-18 receptor alpha-chain expression which results in higher levels of p38 activation and induces expression of T-bet, a transcriptional regulator of the IFNG gene.",
+    "confidence": 0.9,
+    "pmid": "19879772",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  }
+]

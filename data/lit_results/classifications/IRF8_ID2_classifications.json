@@ -1,0 +1,25 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Zeb2 chromatin immunoprecipitation analysis revealed Id2 to be a direct target of Zeb2.",
+    "confidence": 1.0,
+    "pmid": "27185854",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Plasmacytoid dendritic cells (DCs [pDCs]) develop from pre-pDCs, whereas two lineages of conventional DCs (cDCs; cDC1s and cDC2s) develop from lineage-committed pre-cDCs.",
+      "Several transcription factors (TFs) have been implicated in regulating the development of pDCs (E2-2 and Id2) and cDC1s (Irf8, Id2, and Batf3); however, those required for the early commitment of pre-cDCs toward the cDC2 lineage are unknown.",
+      "Zeb2 was expressed from the pre-pDC and pre-cDC stage onward and highly expressed in mature pDCs and cDC2s.",
+      "Mice conditionally lacking Zeb2 in CD11c(+) cells had a cell-intrinsic reduction in pDCs and cDC2s, coupled with an increase in cDC1s.",
+      "Conversely, mice in which CD11c(+) cells overexpressed Zeb2 displayed a reduction in cDC1s.",
+      "This was accompanied by altered expression of Id2, which was up-regulated in cDC2s and pDCs from conditional knockout mice.",
+      "Thus, we conclude that Zeb2 regulates commitment to both the cDC2 and pDC lineages through repression of Id2."
+    ],
+    "effective_support": true
+  }
+]

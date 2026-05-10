@@ -1,0 +1,80 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Knockdown of STAT3 reduced survivin and IRF4 in the IL-10- producing or IL-10- treated ILTs.",
+    "confidence": 0.8,
+    "pmid": "28910419",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Finally, IRF4 directly targets and activates the Il-10 and Il-33 genes in DCs.",
+    "confidence": 1.0,
+    "pmid": "24356538",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Transcription factor IRF4 drives dendritic cells to promote Th2 differentiation.",
+      "While dendritic cells (DCs) are known to shape the adaptive immune response, the mechanisms by which DCs promote Th2 differentiation remain elusive."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "luciferase",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Furthermore, expression of IRF4 alone in a B cell line up-regulates IL-10 expression in culture supernatants, revealing a novel role for IRF4 in B cell induced IL-10.",
+    "confidence": 0.9,
+    "pmid": "24391506",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Th2-preferential in vivo binding of NFAT1 and IRF4 to the CNS-9 region was observed by ChIP.",
+    "confidence": 0.9,
+    "pmid": "18962896",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Knockdown of IRF4 by siRNA decreased IL-10 expression level in Th2 cells.",
+    "confidence": 0.9,
+    "pmid": "21440248",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  }
+]

@@ -1,0 +1,41 @@
+TF,Target,Confidence,Evidence,set,expected,note
+Runx1,Csf1r,1.0,literature_canonical,1,recall,Myeloid commitment HSC
+Tal1,Lmo2,1.0,literature_canonical,1,recall,SCL/TAL1 HSC complex
+Gata2,Runx1,1.0,literature_canonical,1,recall,HSC TF cascade
+Meis1,Hoxa9,1.0,literature_canonical,1,recall,HSC self-renewal cooperative
+Spi1,Csf1r,1.0,literature_canonical,1,recall,PU.1 myeloid M-CSFR
+Cebpa,Csf3r,1.0,literature_canonical,1,recall,Granulocyte commitment G-CSFR
+Tal1,Gata1,1.0,literature_canonical,1,recall,Erythroid lineage switch
+Gata1,Klf1,1.0,literature_canonical,1,recall,Erythroid TF cascade
+Runx1,Spi1,1.0,literature_canonical,1,recall,Myeloid lineage decision
+Lmo2,Gata2,1.0,literature_canonical,1,recall,HSC TF complex
+Hnf4a,Apob,1.0,literature_other_celltype,2,wrong_cell_type,Hepatocyte not mHSC
+Myod1,Myog,1.0,literature_other_celltype,2,wrong_cell_type,Skeletal muscle not mHSC
+Hnf1a,Alb,1.0,literature_other_celltype,2,wrong_cell_type,Hepatocyte not mHSC
+Ascl1,Neurod1,1.0,literature_other_celltype,2,wrong_cell_type,Neural lineage not mHSC
+Sall4,Pou5f1,1.0,literature_other_celltype,2,wrong_cell_type,mESC pluripotency not mHSC
+Tbx21,Ifng,1.0,literature_other_celltype,2,wrong_cell_type,Th1 cell not mHSC
+Mef2c,Myh7,1.0,literature_other_celltype,2,wrong_cell_type,Cardiomyocyte not mHSC
+Atoh1,Pou4f3,1.0,literature_other_celltype,2,wrong_cell_type,Inner ear hair cell not mHSC
+Cebpa,Alb,1.0,literature_other_celltype,2,wrong_cell_type,Hepatic Cebpa not mHSC
+Olig2,Pdgfra,1.0,literature_other_celltype,2,wrong_cell_type,Oligodendrocyte not mHSC
+Runx1,mt-Nd1,0.0,no_known_relationship,3,fake,Mitochondrial no link
+Tal1,Olfr1,0.0,no_known_relationship,3,fake,Olfactory receptor no link
+Gata2,Krtap4-1,0.0,no_known_relationship,3,fake,Keratin-associated no link
+Meis1,Amelx,0.0,no_known_relationship,3,fake,Amelogenin no link
+Spi1,Sprr2a3,0.0,no_known_relationship,3,fake,Skin proline-rich no link
+Cebpa,Muc20,0.0,no_known_relationship,3,fake,Mucin no link
+Hoxa9,Klk1,0.0,no_known_relationship,3,fake,Kallikrein no link
+Gfi1,Krt14,0.0,no_known_relationship,3,fake,Skin keratin no link
+FAKETF1,Runx1,0.0,fabricated_TF,3,fake,Fabricated TF must return zero abstracts
+Tal1,ZZZZQ7,0.0,fabricated_target,3,fake,Fabricated target must return zero abstracts
+Csf1r,Runx1,0.0,direction_reversal,4,direction_reverse,M-CSFR receptor cannot be TF
+Csf3r,Cebpa,0.0,direction_reversal,4,direction_reverse,G-CSFR receptor cannot be TF
+Hbb-b1,Gata1,0.0,direction_reversal,4,direction_reverse,Hemoglobin cannot be TF
+Itgam,Spi1,0.0,direction_reversal,4,direction_reverse,CD11b surface marker cannot be TF
+Gapdh,Runx1,0.0,direction_reversal,4,direction_reverse,Gapdh housekeeping enzyme cannot be TF
+Runx1,Mpo,0.5,indirect_regulation,5,indirect,Myeloperoxidase indirect via Cebpa cascade
+Tal1,Pf4,0.5,indirect_regulation,5,indirect,Megakaryocyte downstream indirect
+Gata2,Itga2b,0.5,indirect_regulation,5,indirect,Megakaryocyte differentiation indirect
+Meis1,Mlf1,0.5,indirect_regulation,5,indirect,Indirect via Hoxa9 cascade
+Spi1,Lyz2,0.5,indirect_regulation,5,indirect,Lysozyme indirect via myeloid cascade

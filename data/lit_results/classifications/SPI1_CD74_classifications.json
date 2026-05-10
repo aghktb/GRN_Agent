@@ -1,0 +1,361 @@
+[
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "24362890",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Transcriptional programming of dendritic cells for enhanced MHC class II antigen presentation.",
+      "CD11b(+) dendritic cells (DCs) seem to be specialized for presenting antigens via major histocompatibility (MHC) class II complexes to stimulate helper T cells, but the genetic and regulatory basis for this is not established."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "26759006",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "IL-6 down-regulates HLA class II expression and IL-12 production of human dendritic cells to impair activation of antigen-specific CD4(+) T cells.",
+      "Here, we focused on the role of interleukin (IL)-6/signal transducer and activator of transcription (STAT3) signaling cascade in immune regulation by human dendritic cells (DCs)."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "36116740",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Specifically, RCC2 regulates G2/M progression via CDC2 phosphorylation at Tyrosine 15."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "11777970",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "26880555",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Variations modifying the consensus binding motifs of IRF4 and CTCF in the XL9 regulatory complex modified the transcription of HLA-DRB1, HLA-DQA1 and HLA-DQB1 in a chromosome-specific manner, resulting in a 2.5-fold increase in the surface expression of HLA-DR and DQ molecules on dendritic cells with SLE risk genotypes, which increases to over 4-fold after stimulation."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "30518425",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Immunological analysis of phase II glioblastoma dendritic cell vaccine (Audencel) trial: immune system characteristics influence outcome and Audencel up-regulates Th1-related immunovariables.",
+      "Audencel is a dendritic cell (DC)-based cellular cancer immunotherapy against glioblastoma multiforme (GBM)."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "PU.1 siRNA introduction suppressed MHC class II expression, allogeneic and syngeneic T-cell activation activities of bone marrow-derived DCs (BMDCs) with reduction of CIITA mRNA driven by the DC-specific promoter pI.",
+    "confidence": 0.9,
+    "pmid": "22112519",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Role of PU.1 in MHC class II expression through transcriptional regulation of class II transactivator pI in dendritic cells.",
+      "We hypothesized that PU.1 is involved in MHC class II expression in dendritic cells (DCs).",
+      "PU.1 siRNA introduction suppressed MHC class II expression, allogeneic and syngeneic T-cell activation activities of bone marrow-derived DCs (BMDCs) with reduction of CIITA mRNA driven by the DC-specific promoter pI, and MHC class II mRNA.",
+      "The chromatin immunoprecipitation assay showed constitutive binding of PU.1 to the pI region in BMDCs, whereas acetylation of histone H3 on pI was suppressed by LPS stimulation in parallel with shutdown of CIITA transcription.",
+      "Acetylation of histones H3 and H4 on pI was reduced in PU.1 siRNA-introduced BMDCs."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "21216962",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Positive regulatory domain I (PRDM1) and IRF8/PU.1 counter-regulate MHC class II transactivator (CIITA) expression during dendritic cell maturation.",
+      "Dendritic cells (DCs) are key mediators of immune function through robust and tightly regulated presentation of antigen in the context of the MHC Class II."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "28723692",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Angiotensin II Regulates Dendritic Cells through Activation of NF-\u03baB /p65, ERK1/2 and STAT1 Pathways.",
+      "Activation of dendritic cells (DCs) is necessary to initiate immune responses."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "17495427",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "34132026",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "suppresses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Elimination of LMP2A in LCLs using a shLMP2A approach showed that the expression levels of E47, PU.1, CIITA, MHC class II, and CD74 are reversed.",
+    "confidence": 0.9,
+    "pmid": "25631773",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "12244147",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Differential functions of IL-4 receptor types I and II for dendritic cell maturation and IL-12 production and their dependency on GM-CSF."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "24680927",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Cell cycle blocking was associated with the down-regulation of Cdc25C, Cdc2, cyclin A and cyclin B1 as well as the up-regulation of p21/WAF1, phospho-Cdc25C and phospho-Cdc2."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "12566374",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Nicotine strongly activates dendritic cell-mediated adaptive immunity: potential role for progression of atherosclerotic lesions.",
+      "Antigen-presenting cells (APCs) such as monocytes and dendritic cells (DCs) stimulate T-cell proliferation and activation in the course of adaptive immunity."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "14976186",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "24415757",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Novel regulation of CD80/CD86-induced phosphatidylinositol 3-kinase signaling by NOTCH1 protein in interleukin-6 and indoleamine 2,3-dioxygenase production by dendritic cells.",
+      "Dendritic cells (DC) play a critical role in modulating antigen-specific immune responses elicited by T cells via engagement of the prototypic T cell costimulatory receptor CD28 by the cognate ligands CD80/CD86, expressed on DC."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "MR negatively regulated Plc\u03b21/4, which recruited SHP-1 to inactivate of Stat5 activity, resulting in enhanced NF-\u03baB activation and Th17 polarization.",
+    "confidence": 0.9,
+    "pmid": "39498862",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Dendritic cell mineralocorticoid receptor controls blood pressure by regulating T helper 17 differentiation: role of the Plc\u03b21/4-Stat5-NF-\u03baB pathway.",
+      "Dendritic cells (DCs) are closely related to blood pressure (BP) regulation.",
+      "Dendritic cell MR knockout (DCMRKO) mice, DC MR overexpressing (DCMROV) mice, DCMROV/IL-17A knockout (DCMROV/IL-17AKO) mice and finerenone-treated C57BL/6 mice were infused with angiotensin II (Ang II) to establish hypertensive models.",
+      "Compared with littermate control (LC) mice, dendritic cell MR knockout mice had strikingly decreased BPs and attenuated target organ damage after Ang II infusion.",
+      "Dendritic cell MR plays important roles in the pathogenesis of hypertension by regulating Th17 through Plc\u03b21/4-Stat5-NF-\u03baB signalling, and blockade of DC MR is beneficial for treating hypertension."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "9029125",
+    "evidence_grounded": false,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "EBNA3C bound strongly to the p14(ARF) promoter through SPI1/IRF4/BATF/RUNX3",
+    "confidence": 0.9,
+    "pmid": "24344258",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": false,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "23478263",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Trypanosome cdc2-related kinase 9 controls spliced leader RNA cap4 methylation and phosphorylation of RNA polymerase II subunit RPB1.",
+      "Here we show that silencing the expression of T. brucei cdc2-related kinase 9 (CRK9) leads to a loss of RPB1 phosphorylation."
+    ],
+    "effective_support": false
+  }
+]

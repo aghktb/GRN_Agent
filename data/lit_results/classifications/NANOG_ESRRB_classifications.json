@@ -1,0 +1,157 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Nanog binds directly to Esrrb, enhances binding of RNAPolII, and stimulates Esrrb transcription.",
+    "confidence": 1.0,
+    "pmid": "23040477",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Embryonic stem cell (ESC) self-renewal efficiency is determined by the level of Nanog expression.",
+      "Here we investigate ESCs expressing different Nanog levels and Nanog(-/-) cells with distinct functionally inducible Nanog proteins to identify Nanog-responsive genes.",
+      "Overexpression of Esrrb in ESCs maintains cytokine-independent self-renewal and pluripotency.",
+      "Remarkably, this activity is retained in Nanog(-/-) ESCs.",
+      "Moreover, Esrrb can reprogram Nanog(-/-) EpiSCs and can rescue stalled reprogramming in Nanog(-/-) pre-iPSCs.",
+      "Finally, Esrrb deletion abolishes the defining ability of Nanog to confer LIF-independent ESC self-renewal."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Both ESRRB and NANOG are necessary for maintaining the activity of this promoter in ES cell lines.",
+    "confidence": 0.9,
+    "pmid": "18957414",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Esrrb activates Oct4 transcription and sustains self-renewal and pluripotency in embryonic stem cells.",
+      "Recent studies have shown that knockdown of Esrrb (estrogen-related-receptor beta), a member of the nuclear orphan receptor family, induces differentiation of mouse ES cells cultured in the presence of leukemia inhibitory factor.",
+      "In summary, our experiments help to understand how Esrrb coordinates with Nanog and Oct4 to activate the internal machinery of ES cells."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "18555785",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Integration of external signaling pathways with the core transcriptional network in embryonic stem cells."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "The second group (Oct4, Nanog, Sox2, Smad1, Stat3, Tcfcp2l1, and Esrrb) may serve as either activator or repressor depending on the target.",
+    "confidence": 0.9,
+    "pmid": "19995984",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "ChIP-Seq of transcription factors predicts absolute and differential gene expression in embryonic stem cells.",
+      "In mouse embryonic stem cells (ESCs), we find that a remarkably high proportion of variation in gene expression (65%) can be explained by the binding signals of 12 transcription factors (TFs).",
+      "The two groups of TFs cooperate tightly to activate genes that are differentially up-regulated in ESCs.",
+      "In the absence of binding by the first group, the binding of the second group is associated with genes that are repressed in ESCs and derepressed upon early differentiation."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "recruits",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Esrrb binds to silenced enhancers containing stable nucleosomes and hypermethylated DNA, which are inaccessible to the core factors.",
+    "confidence": 0.9,
+    "pmid": "29910149",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "represses",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "We show that Tcf3 acts broadly on a genome-wide scale to reduce the levels of several promoters of self-renewal (Nanog, Tcl1, Tbx3, Esrrb) while not affecting other ESC genes.",
+    "confidence": 0.9,
+    "pmid": "18483421",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Tcf3 functions as a steady-state limiter of transcriptional programs of mouse embryonic stem cell self-renewal.",
+      "Three transcription factors, Nanog, Oct4, and Sox2, have been reported to form a feedforward circuit promoting pluripotent cell self-renewal in embryonic stem cells (ESC).",
+      "Previously, we found that a transcriptional repressor activity of Tcf3, a DNA-binding effector of Wnt signaling, reduced Nanog promoter activity and Nanog levels in mouse embryonic stem cells (mESC).",
+      "We show that Tcf3 acts broadly on a genome-wide scale to reduce the levels of several promoters of self-renewal (Nanog, Tcl1, Tbx3, Esrrb) while not affecting other ESC genes (Oct4, Sox2, Fgf4).",
+      "Interestingly, the effects of Tcf3 were more strongly correlated with Oct4 than with Nanog, despite the normal levels of Oct4 in TCF3-/- mESC.",
+      "The deranged gene expression allowed TCF3-/- mESC self-renewal even in the absence of leukemia inhibitory factor and delayed differentiation in embryoid bodies."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Through chromatin immunoprecipitation (ChIP) sequencing and microarray experiments, we further demonstrate that Ncoa3 shares overlapping gene regulatory functions with Esrrb and cooperates genome-wide with the Oct4-Sox2-Nanog circuitry at active enhancers to up-regulate genes involved in self-renewal and pluripotency.",
+    "confidence": 0.9,
+    "pmid": "23019124",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Ncoa3 functions as an essential Esrrb coactivator to sustain embryonic stem cell self-renewal and reprogramming.",
+      "Embryonic stem cell (ESC) pluripotency depends on a well-characterized gene regulatory network centered on Oct4, Sox2, and Nanog.",
+      "In contrast, little is known about the identity of the key coregulators and the mechanisms by which they may potentiate transcription in ESCs.",
+      "Alongside core transcription factors, the orphan nuclear receptor Esrrb (estrogen-related receptor \u03b2) is vital for the maintenance of ESC identity and furthermore is uniquely associated with the basal transcription machinery.",
+      "Here, we show that Ncoa3, an essential coactivator, is required to mediate Esrrb function in ESCs.",
+      "We propose an integrated model of transcriptional and coactivator control, mediated by Ncoa3, for the maintenance of ESC self-renewal and somatic cell reprogramming."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Co-expression of NANOG and TET1 increases 5-hydroxymethylcytosine levels at the top-ranked common target loci Esrrb and Oct4 (also called Pou5f1), resulting in priming of their expression before reprogramming to naive pluripotency.",
+    "confidence": 0.9,
+    "pmid": "23395962",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Using enhanced purification techniques and a stringent computational algorithm, we identify 27 high-confidence protein interaction partners of NANOG in mouse embryonic stem cells.",
+      "TET1 and NANOG co-occupy genomic loci of genes associated with both maintenance of pluripotency and lineage commitment in embryonic stem cells, and TET1 binding is reduced upon NANOG depletion."
+    ],
+    "effective_support": true
+  }
+]

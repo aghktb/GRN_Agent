@@ -1,0 +1,41 @@
+TF,Target,Confidence,Evidence,set,expected,note
+Irf8,Id2,1.0,literature_canonical,1,recall,cDC1 development master regulator
+Batf3,Irf8,1.0,literature_canonical,1,recall,cDC1 lineage commitment
+Irf4,Klf4,1.0,literature_canonical,1,recall,cDC2 development
+Spi1,Itgax,1.0,literature_canonical,1,recall,PU.1 -> CD11c DC marker
+Tcf4,Siglech,1.0,literature_canonical,1,recall,E2-2 -> pDC marker
+Relb,Cd40,1.0,literature_canonical,1,recall,DC activation costim
+Spi1,Csf1r,1.0,literature_canonical,1,recall,PU.1 -> M-CSFR myeloid foundational
+Stat1,Irf1,1.0,literature_canonical,1,recall,IFN signaling DC response
+Nfkb1,Tnf,1.0,literature_canonical,1,recall,NF-kB target DC activation
+Irf3,Ifnb1,1.0,literature_canonical,1,recall,TLR signaling type I IFN in DC
+Pou5f1,Nanog,1.0,literature_other_celltype,2,wrong_cell_type,mESC pluripotency not mDC
+Sox2,Fgf4,1.0,literature_other_celltype,2,wrong_cell_type,mESC pluripotency not mDC
+Hnf4a,Apob,1.0,literature_other_celltype,2,wrong_cell_type,Hepatocyte not mDC
+Myod1,Myog,1.0,literature_other_celltype,2,wrong_cell_type,Skeletal muscle not mDC
+Pparg,Fabp4,1.0,literature_other_celltype,2,wrong_cell_type,Adipocyte not mDC
+Gata1,Hbb-b1,1.0,literature_other_celltype,2,wrong_cell_type,Erythroid not mDC
+Runx2,Bglap,1.0,literature_other_celltype,2,wrong_cell_type,Osteoblast not mDC
+Hnf1a,Alb,1.0,literature_other_celltype,2,wrong_cell_type,Hepatocyte not mDC
+Mef2c,Myh7,1.0,literature_other_celltype,2,wrong_cell_type,Cardiomyocyte not mDC
+Atoh1,Pou4f3,1.0,literature_other_celltype,2,wrong_cell_type,Inner ear hair cell not mDC
+Irf8,mt-Nd1,0.0,no_known_relationship,3,fake,Mitochondrial no link
+Batf3,Olfr1,0.0,no_known_relationship,3,fake,Olfactory receptor no link
+Spi1,Krtap4-1,0.0,no_known_relationship,3,fake,Keratin-associated no link
+Stat1,Amelx,0.0,no_known_relationship,3,fake,Amelogenin no link
+Irf4,Sprr2a3,0.0,no_known_relationship,3,fake,Skin proline-rich no link
+Relb,Muc20,0.0,no_known_relationship,3,fake,Mucin no link
+Nfkb1,Klk1,0.0,no_known_relationship,3,fake,Kallikrein no link
+Tcf4,Krt14,0.0,no_known_relationship,3,fake,Skin keratin no link
+FAKETF1,Irf8,0.0,fabricated_TF,3,fake,Fabricated TF must return zero abstracts
+Spi1,ZZZZQ7,0.0,fabricated_target,3,fake,Fabricated target must return zero abstracts
+Itgax,Spi1,0.0,direction_reversal,4,direction_reverse,CD11c surface protein cannot be TF
+Csf1r,Spi1,0.0,direction_reversal,4,direction_reverse,M-CSFR receptor cannot be TF
+Tnf,Nfkb1,0.0,direction_reversal,4,direction_reverse,TNF cytokine cannot be TF
+Ifnb1,Irf3,0.0,direction_reversal,4,direction_reverse,IFN-beta cytokine cannot be TF
+Gapdh,Irf8,0.0,direction_reversal,4,direction_reverse,Gapdh housekeeping enzyme cannot be TF
+Irf8,Tnf,0.5,indirect_regulation,5,indirect,Indirect via DC activation cascade
+Spi1,Cd74,0.5,indirect_regulation,5,indirect,MHC class II indirect via Ciita
+Stat1,Cxcl10,0.5,indirect_regulation,5,indirect,Downstream of Irf1 indirect
+Nfkb1,Cd40,0.5,indirect_regulation,5,indirect,Indirect via DC activation
+Irf4,Il10,0.5,indirect_regulation,5,indirect,Tolerogenic DC indirect cascade

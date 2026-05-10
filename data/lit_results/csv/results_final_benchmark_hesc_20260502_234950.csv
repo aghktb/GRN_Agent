@@ -1,0 +1,41 @@
+TF,Target,Exp_Confidence,Exp_Evidence,lit_score,avg_conf,reg_type,relationships,evidence_types,pmids,conflict_detected
+POU5F1,NANOG,1.0,literature_canonical,1.0,0.94,dir,activates,"ChIP-seq, knockdown","20026622, 15860457, 18454139, 23788624, 17196549",False
+SOX2,NANOG,1.0,literature_canonical,1.0,0.9143,dir,activates,"ChIP-seq, chemical inhibition, knockdown","15860457, 19818703, 22847005, 18388306, 24511468, 25271810, 19582141",False
+NANOG,POU5F1,1.0,literature_canonical,1.0,0.9167,dir,activates,ChIP-seq,"20026622, 16518401, 15860457, 18454139, 23788624, 22847005",False
+POU5F1,SOX2,1.0,literature_canonical,1.0,0.89,dir,both,"ChIP-seq, EMSA","19409607, 25754111, 15860457, 15988017, 29358044, 15557334, 30999923, 22311737, 23437007, 21185279",True
+SOX2,FGF4,1.0,literature_canonical,1.0,0.9,dir,activates,"ChIP-seq, EMSA, knockdown","19531481, 23939864, 15860457, 18238855, 15557334",False
+KLF4,NANOG,1.0,literature_canonical,1.0,0.8867,dir,both,"ChIP-seq, EMSA, Me-RIP sequencing/qPCR, MeRIP-seq, knockdown","19522013, 20071344, 36100837, 36661504, 23287475, 18555785, 30122536, 32415999, 33783988, 22696497, 20064925, 26526723, 24040120, 21712410, 29880481",True
+POU5F1,ZFP42,1.0,literature_canonical,0.9,0.9,indir,activates,knockdown,16714766,False
+NANOG,ESRRB,1.0,literature_canonical,1.0,0.9167,dir,both,ChIP-seq,"23040477, 18957414, 19995984, 18483421, 23019124, 23395962",True
+MYC,LIN28A,1.0,literature_canonical,1.0,0.875,dir,both,"ChIP-seq, co-expression","21533284, 25471879, 25479749, 19153603",True
+SMAD2,NANOG,1.0,literature_canonical,1.0,0.95,dir,activates,ChIP-seq,"22385658, 25805847, 21630377, 24929238",False
+CEBPA,ALB,1.0,literature_other_celltype,0.9,0.8,dir,none,ChIP-seq,19932685,False
+HNF4A,APOB,1.0,literature_other_celltype,0.0,0.0,none,none,none,,False
+MYOD1,MYOG,1.0,literature_other_celltype,1.0,0.9,indir,activates,"knockdown, overexpression","37174683, 15501225",False
+PPARG,FABP4,1.0,literature_other_celltype,1.0,0.95,dir,activates,"ChIP-seq, luciferase","30336279, 41317938",False
+GATA1,HBB,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+RUNX2,BGLAP,1.0,literature_other_celltype,1.0,0.825,dir,activates,"ChIP-seq, Pull-down, knockdown, luciferase","16000305, 17042739, 35663324, 35592642",False
+TBX21,IFNG,1.0,literature_other_celltype,1.0,0.95,dir,both,"ChIP-seq, genetic association","23232398, 18684923, 26916970",True
+FOXP3,IL2,1.0,literature_other_celltype,1.0,0.95,dir,both,ChIP-seq,"17182565, 36581209",True
+SREBF1,FASN,1.0,literature_other_celltype,1.0,0.8667,dir,both,"ChIP-seq, gene_expression_profiling, luciferase","39731014, 29680640, 23449803",True
+PAX5,CD79A,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+POU5F1,MTRNR2L9,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+SOX2,OR2T11,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+NANOG,DEFB126,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+KLF4,KRTAP4-12,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+MYC,SPRR2D,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+ESRRB,MUC7,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+TBX3,AMELX,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+PRDM14,KLK3,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+FAKEGENE1,POU5F1,0.0,fabricated_TF,0.0,0.0,none,none,none,,False
+SOX2,ZZZZQ7,0.0,fabricated_target,0.0,0.0,none,none,none,,False
+GAPDH,SOX2,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+ACTB,POU5F1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+HBB,POU5F1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+WNT3A,POU5F1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+DKK1,POU5F1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+KLF4,CCND1,0.5,indirect_regulation,0.0,0.0,none,none,,,False
+MYC,TP53,0.5,indirect_regulation,1.0,0.875,dir,activates,"ChIP-seq, EMSA","19696787, 23589839, 33462212, 38981022",False
+NANOG,CCNE1,0.5,indirect_regulation,0.0,0.0,none,none,none,,False
+POU5F1,BMP4,0.5,indirect_regulation,1.0,0.9,dir,activates,ChIP-seq,22482508,False
+SOX2,DKK1,0.5,indirect_regulation,0.0,0.0,none,none,none,,False

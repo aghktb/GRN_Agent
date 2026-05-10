@@ -1,0 +1,365 @@
+{
+  "cell_type": "mDC",
+  "audit": [
+    {
+      "tf": "Irf8",
+      "target": "Id2",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 13,
+      "flag": ""
+    },
+    {
+      "tf": "Batf3",
+      "target": "Irf8",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 55,
+      "flag": ""
+    },
+    {
+      "tf": "Irf4",
+      "target": "Klf4",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 5,
+      "flag": ""
+    },
+    {
+      "tf": "Spi1",
+      "target": "Itgax",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 2,
+      "flag": "RECALL_LOW?"
+    },
+    {
+      "tf": "Tcf4",
+      "target": "Siglech",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 2,
+      "flag": "RECALL_LOW?"
+    },
+    {
+      "tf": "Relb",
+      "target": "Cd40",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 29,
+      "flag": ""
+    },
+    {
+      "tf": "Spi1",
+      "target": "Csf1r",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 1,
+      "flag": "RECALL_LOW?"
+    },
+    {
+      "tf": "Stat1",
+      "target": "Irf1",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 30,
+      "flag": ""
+    },
+    {
+      "tf": "Nfkb1",
+      "target": "Tnf",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 4,
+      "flag": "RECALL_LOW?"
+    },
+    {
+      "tf": "Irf3",
+      "target": "Ifnb1",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 5,
+      "flag": ""
+    },
+    {
+      "tf": "Pou5f1",
+      "target": "Nanog",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Sox2",
+      "target": "Fgf4",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Hnf4a",
+      "target": "Apob",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Myod1",
+      "target": "Myog",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Pparg",
+      "target": "Fabp4",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Gata1",
+      "target": "Hbb-b1",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Runx2",
+      "target": "Bglap",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Hnf1a",
+      "target": "Alb",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Klf4",
+      "target": "Nanog",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Ascl1",
+      "target": "Neurod1",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Irf8",
+      "target": "mt-Nd1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Batf3",
+      "target": "Olfr1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Spi1",
+      "target": "Krtap4-1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Stat1",
+      "target": "Amelx",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Irf4",
+      "target": "Sprr2a3",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Relb",
+      "target": "Muc20",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Nfkb1",
+      "target": "Klk1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Tcf4",
+      "target": "Krt14",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "FAKETF1",
+      "target": "Irf8",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Spi1",
+      "target": "ZZZZQ7",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Itgax",
+      "target": "Spi1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 2,
+      "flag": ""
+    },
+    {
+      "tf": "Csf1r",
+      "target": "Spi1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "Tnf",
+      "target": "Nfkb1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 4,
+      "flag": ""
+    },
+    {
+      "tf": "Ifnb1",
+      "target": "Irf3",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 5,
+      "flag": ""
+    },
+    {
+      "tf": "Cd40",
+      "target": "Relb",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 29,
+      "flag": "REVERSE_HAS_HITS?"
+    },
+    {
+      "tf": "Irf8",
+      "target": "Tnf",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 8,
+      "flag": ""
+    },
+    {
+      "tf": "Spi1",
+      "target": "Cd74",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "Stat1",
+      "target": "Cxcl10",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 26,
+      "flag": ""
+    },
+    {
+      "tf": "Nfkb1",
+      "target": "Cd40",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 4,
+      "flag": ""
+    },
+    {
+      "tf": "Irf4",
+      "target": "Il10",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 17,
+      "flag": ""
+    },
+    {
+      "tf": "IRF8",
+      "target": "ID2",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 13,
+      "flag": ""
+    },
+    {
+      "tf": "SPI1",
+      "target": "ITGAX",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 2,
+      "flag": ""
+    },
+    {
+      "tf": "TCF4",
+      "target": "SIGLECH",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 2,
+      "flag": ""
+    },
+    {
+      "tf": "RELB",
+      "target": "CD40",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 29,
+      "flag": ""
+    },
+    {
+      "tf": "NFKB1",
+      "target": "TNF",
+      "set": "6",
+      "expected": "cross_species",
+      "ct_hits": 4,
+      "flag": ""
+    }
+  ]
+}

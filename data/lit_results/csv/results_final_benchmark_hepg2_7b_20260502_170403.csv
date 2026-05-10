@@ -1,0 +1,41 @@
+TF,Target,Exp_Confidence,Exp_Evidence,lit_score,avg_conf,reg_type,relationships,evidence_types,pmids,conflict_detected
+HNF4A,APOB,1.0,literature_canonical,0.8,0.8,indir,none,co-transcription,37326474,False
+SREBF2,LDLR,1.0,literature_canonical,0.96,0.86,indir,activates,"ChIP, knockdown, luciferase","35811843, 35944649, 34439528, 27211318, 22153697",False
+HNF4A,APOA1,1.0,literature_canonical,0.0,0.0,none,none,none,,False
+HNF1A,ALB,1.0,literature_canonical,0.95,0.85,indir,activates,luciferase,"1673926, 8443410",False
+CEBPA,ALB,1.0,literature_canonical,0.9,0.9,indir,suppresses,luciferase,8703043,False
+SP1,LDLR,1.0,literature_canonical,1.0,1.0,indir,activates,knockdown,27109240,False
+AHR,CYP1A1,1.0,literature_canonical,1.0,0.8471,dir,activates,"ChIP, ChIP-seq, EMSA, gene expression, knockdown, luciferase","31199573, 24355420, 27474938, 27713569, 8824276, 38600349, 27138278, 23419638, 28428138, 30776761, 19376845, 16046213, 9865727, 9380021, 24583342, 12917420, 34848246",False
+NR1I2,CYP3A4,1.0,literature_canonical,1.0,0.8333,dir,both,"ChIP-seq, knockdown, luciferase, two-hybrid, two-hybrid assay","16455805, 35417848, 28571685, 12514743, 21920351, 25542144, 14709632, 31280915, 25725071, 15710363, 30919109, 36707511",True
+SREBF1,FASN,1.0,literature_canonical,1.0,0.875,dir,activates,"ChIP-seq, RNA FISH, deletion, knockdown","40180937, 32389809, 18782084, 38387286, 37995825, 40379644, 28604762, 31710612",False
+NFE2L2,NQO1,1.0,literature_canonical,0.92,0.82,indir,activates,"ChIP, knockdown, luciferase","17462537, 20833713, 22021391, 34329667, 28665123",False
+MYOD1,MYOG,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+GATA1,HBB,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+SOX2,FGF4,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+IRF8,ID2,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+RUNX1,CSF1R,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+RUNX2,BGLAP,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+TBX21,IFNG,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+MEF2C,MYH7,1.0,literature_other_celltype,0.0,0.0,none,none,none,,False
+OLIG2,PDGFRA,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+ATOH1,POU4F3,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+HNF4A,MTRNR2L9,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+CEBPA,OR2T11,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+AHR,DEFB126,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+SREBF1,KRTAP4-12,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+NR1I2,SPRR2D,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+NFE2L2,AMELX,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+FOXA2,MUC7,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+USF1,KLK3,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+FAKETF1,ALB,0.0,fabricated_TF,0.0,0.0,none,none,none,,False
+HNF4A,ZZZZQ7,0.0,fabricated_target,0.0,0.0,none,none,none,,False
+APOB,HNF4A,0.0,direction_reversal,0.8,0.8,indir,none,co-transcription,37326474,False
+ALB,HNF4A,0.0,direction_reversal,1.0,0.85,dir,activates,"ChIP-seq, knockdown","36464036, 22241473",False
+GAPDH,HNF4A,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+ACTB,CEBPA,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+TUBB,FOXA2,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+HNF4A,INS,0.5,indirect_regulation,1.0,0.875,dir,both,"ChIP-seq, cotransfection assays, knockdown, luciferase","15761495, 19179483, 11994285, 10967120",True
+CEBPA,CDKN1A,0.5,indirect_regulation,0.0,0.0,none,none,none,,False
+SREBF1,INSR,0.5,indirect_regulation,0.0,0.0,none,none,,,False
+NR1I2,ABCB1,0.5,indirect_regulation,0.0,0.0,none,none,,,False
+AHR,CYP2B6,0.5,indirect_regulation,1.0,0.825,dir,activates,"EMSA, coimmunoprecipitation, knockdown, luciferase","35843411, 21498875, 25449202, 34373448, 26187180, 27713569, 33396476, 21787672",False

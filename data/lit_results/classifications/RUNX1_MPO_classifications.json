@@ -1,0 +1,32 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Both MyNF1 alpha and -beta supershift with an antiserum raised by using a peptide derived from the N terminus of polyomavirus enhancer-binding protein 2/core-binding factor (PEBP2/CBF) alpha subunit.",
+    "confidence": 0.8,
+    "pmid": "8035830",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "Gelshift competition and supershift experiments",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Gelshift competition and supershift experiments demonstrated the binding of the alpha subunit of the transcription factor AML1 to this site in HL-60 cells.",
+    "confidence": 0.8,
+    "pmid": "9783807",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  }
+]

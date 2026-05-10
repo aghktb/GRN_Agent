@@ -1,0 +1,384 @@
+\documentclass{article}
+
+% ---- Packages ----
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}  % from algorithmicx bundle; do NOT also load 'algorithmic'
+\usepackage{float}      % required for [H] exact placement
+\usepackage{microtype}
+
+% ---- Notation helpers ----
+\newcommand{\TopK}{\mathrm{TopK}}
+\newcommand{\clip}{\mathrm{clip}}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{document}
+
+% =========================================================================
+% ALGORITHM 1: TF-Neighborhood Candidate Generation
+% =========================================================================
+\begin{algorithm}[H]
+\caption{TF-Neighborhood Candidate Generation}
+\label{alg:candidates}
+\begin{algorithmic}[1]
+\Require Expression matrix $X \in \mathbb{R}^{n \times p}$;
+         context $c$ with module genes $\mathcal{M}^{(c)}$ and candidate TFs $\mathcal{T}^{(c)}$;
+         thresholds $\tau_{\mathrm{corr}}, \tau_{\mathrm{acc}}$;
+         caps $K_{\mathrm{corr}}, K_{\mathrm{prior}}, K_{\max}$;
+         optional multimodal loader $\mathcal{ML}$
+\Ensure  Candidate edge set $\mathcal{E}^{(c)}$
+\State $X_c \leftarrow X[\text{ctx.cell\_indices},\, :]$
+\State $Z_c \leftarrow \mathrm{arcsinh}\bigl((X_c - \mu_c) / (\sigma_c + \epsilon)\bigr)$
+       \Comment{Column-wise standardization in context}
+\State $\mathcal{E}^{(c)} \leftarrow \emptyset$
+\For{each $t \in \mathcal{T}^{(c)}$}
+  \State $\mathcal{N}_t \leftarrow \emptyset$
+  \State Compute $r_{t,j} = \tfrac{1}{n_c}\, z_t^{\top} z_j$ for all $j \in \mathcal{M}^{(c)}$
+  \State $\mathcal{N}_t \leftarrow \{j : |r_{t,j}| \ge \tau_{\mathrm{corr}}\}$; keep top-$K_{\mathrm{corr}}$ by $|r_{t,j}|$
+         \Comment{Co-expression neighborhood}
+  \If{$\mathcal{ML}$ provides motif hits}
+    \State $\mathcal{N}_t \leftarrow \mathcal{N}_t \cup \{j : \mathrm{MotifHit}(t,j) = \mathrm{True}\}$
+           \Comment{Motif rescue}
+  \EndIf
+  \If{$\mathcal{ML}$ provides ATAC accessibility}
+    \State $\mathcal{N}_t \leftarrow \mathcal{N}_t \cup \{j : \mathrm{Acc}(j) \ge \tau_{\mathrm{acc}}\}$
+           \Comment{Accessibility rescue}
+  \EndIf
+  \If{train mask $\mathbf{m}$ is available}
+    \State Compute $\hat{p}_{t,j}$ via ensemble prior on training split $X[\mathbf{m},:]$
+    \State $\mathcal{N}_t \leftarrow \mathcal{N}_t \cup \TopK(\mathcal{M}^{(c)},\, K_{\mathrm{prior}},\, \hat{p}_{t,\cdot})$
+           \Comment{Prior rescue}
+  \EndIf
+  \State \textbf{Rerank:} for each $j \in \mathcal{N}_t$ compute
+  \Statex \quad $s_{t,j} \leftarrow 0.55|r_{t,j}| + 0.20\,\mathrm{MotifScore}(t,j) + 0.10\,\mathrm{Acc}(j) + 0.10\,\hat{p}_{t,j} + 0.05\cdot\mathbb{I}[\text{$j$ rescued}]$
+  \State $\mathcal{E}^{(c)} \leftarrow \mathcal{E}^{(c)} \cup \{(t,j) : j \in \TopK(\mathcal{N}_t,\, K_{\max},\, s_{t,\cdot})\}$
+\EndFor
+\State \Return $\mathcal{E}^{(c)}$
+\end{algorithmic}
+\end{algorithm}
+
+% =========================================================================
+% ALGORITHM 2: Split-Safe Label and Sample-Weight Assignment
+% =========================================================================
+\begin{algorithm}[H]
+\caption{Split-Safe Label and Sample-Weight Assignment}
+\label{alg:splits}
+\begin{algorithmic}[1]
+\Require Candidate set $\mathcal{E}^{(c)}$;
+         allowed positive set $\mathcal{P}^{+}$ (current split subset);
+         global positive set $\mathcal{P}^{+}_{\mathrm{all}}$;
+         feature bundle $\mathcal{F}_{t,g}$;
+         thresholds $\tau_{\mathrm{corr}}, \tau_{\mathrm{acc}}, \tau_{\mathrm{motif}}$
+\Ensure  Label $y_{t,g} \in \{0,1\}$ and weight $w_{t,g} \in \{0.0, 0.5, 1.0\}$ for each $(t,g)$
+\For{each $(t,g) \in \mathcal{E}^{(c)}$}
+  \If{$(t,g) \in \mathcal{P}^{+}$}
+    \State $y_{t,g} \leftarrow 1$;\; $w_{t,g} \leftarrow 1.0$
+           \Comment{Confirmed positive}
+  \ElsIf{$(t,g) \in \mathcal{P}^{+}_{\mathrm{all}} \setminus \mathcal{P}^{+}$}
+    \State Skip: exclude from training and evaluation
+           \Comment{Global positive outside allowed subset}
+  \Else
+    \State $y_{t,g} \leftarrow 0$
+    \State $\ell_{\mathrm{expr}} \leftarrow \mathbb{I}[|r_{t,g}| < \tau_{\mathrm{corr}}]$;\;
+           $\ell_{\mathrm{acc}} \leftarrow \mathbb{I}[\mathrm{Acc}(g) \le \tau_{\mathrm{acc}}]$;\;
+           $\ell_{\mathrm{mot}} \leftarrow \mathbb{I}[\mathrm{MotifScore}(t,g) \le \tau_{\mathrm{motif}}]$
+    \If{ATAC and motif both available}
+      \If{$\ell_{\mathrm{expr}} \wedge \ell_{\mathrm{acc}} \wedge \ell_{\mathrm{mot}}$}
+        \State $w_{t,g} \leftarrow 1.0$ \Comment{Reliable negative}
+      \ElsIf{$\ell_{\mathrm{expr}} \wedge (\ell_{\mathrm{acc}} \vee \ell_{\mathrm{mot}})$}
+        \State $w_{t,g} \leftarrow 0.5$ \Comment{Probable negative}
+      \Else
+        \State $w_{t,g} \leftarrow 0.0$ \Comment{Ambiguous; masked in loss}
+      \EndIf
+    \ElsIf{ATAC only}
+      \State $w_{t,g} \leftarrow 1.0$ if $\ell_{\mathrm{expr}} \wedge \ell_{\mathrm{acc}}$, else $0.5$
+    \Else
+      \Comment{Expression-only context}
+      \State $w_{t,g} \leftarrow 1.0$ if $\ell_{\mathrm{expr}}$, else $0.0$
+    \EndIf
+  \EndIf
+\EndFor
+\State \Return $\{(y_{t,g},\, w_{t,g})\}_{(t,g) \in \mathcal{E}^{(c)}}$
+\end{algorithmic}
+\end{algorithm}
+
+% =========================================================================
+% ALGORITHM 4: Evidence Graph Construction
+% =========================================================================
+\begin{algorithm}[H]
+\caption{Evidence Graph Construction}
+\label{alg:evidencegraph}
+\begin{algorithmic}[1]
+\Require Context $c$; candidate edge $(t,g)$;
+         feature bundle $\mathcal{F}_{t,g}$; prior bundle $\Pi_{t,g}$;
+         evaluation track $\tau \in \{\text{NoLit},\text{TimeLit},\text{Assisted}\}$
+\Ensure  Typed evidence graph $\mathcal{G}_{t,g}^{(c)} = (\mathcal{V},\mathcal{R},\Sigma_{t,g})$
+\State $n_t \leftarrow (\text{expr},\,\text{TF},\,t)$;\;
+       $n_g \leftarrow (\text{expr},\,\text{target},\,g)$;\;
+       $n_c \leftarrow (\text{expr},\,\text{ctx},\,c)$
+\State $\mathcal{V} \leftarrow \{n_t,\, n_g,\, n_c\}$;\; $\mathcal{R} \leftarrow \emptyset$
+\For{each modality $\nu \in \{\text{expr},\text{network},\text{binding},\text{prior},\text{ortho}\}$}
+  \State $n_\nu \leftarrow (\mathrm{NodeType}(\nu),\;\nu,\;\mathrm{Payload}(\mathcal{F}_{t,g},\Pi_{t,g},\nu))$
+  \State $\mathcal{V} \leftarrow \mathcal{V} \cup \{n_\nu\}$;\;
+         $\mathcal{R} \leftarrow \mathcal{R} \cup \{(n_\nu \!\to\! n_t,\;\texttt{in\_context})\}$
+  \If{$\nu = \text{network}$ and $r_{t,g} > 0.1$}
+    \State $\mathcal{R} \leftarrow \mathcal{R} \cup \{(n_\nu \!\to\! n_t,\;\texttt{supports\_activation})\}$
+  \EndIf
+  \If{$\nu = \text{network}$ and $r_{t,g} < -0.1$}
+    \State $\mathcal{R} \leftarrow \mathcal{R} \cup \{(n_\nu \!\to\! n_t,\;\texttt{supports\_repression})\}$
+  \EndIf
+  \If{$\nu = \text{binding}$ and $\mathrm{MotifHit}(t,g) = \mathrm{True}$}
+    \State $\mathcal{R} \leftarrow \mathcal{R} \cup \{(n_\nu \!\to\! n_t,\;\texttt{supports\_activation})\}$
+  \EndIf
+  \If{$\nu = \text{prior}$ and $\hat{p}^{\mathrm{ens}}_{t,g} < 0.5$}
+    \State $\mathcal{R} \leftarrow \mathcal{R} \cup \{(n_\nu \!\to\! n_t,\;\texttt{contradicts\_activation})\}$
+  \EndIf
+\EndFor
+\If{$\tau \ne \text{NoLit}$}
+  \State $n_{\mathrm{lit}} \leftarrow (\text{literature},\;\ell_{t,g}^{(c)})$;\;
+         $\mathcal{V} \leftarrow \mathcal{V} \cup \{n_{\mathrm{lit}}\}$;\;
+         add \texttt{in\_context} relation
+\EndIf
+\State $\Sigma_{t,g} \leftarrow \{r_{t,g},\;\hat{p}^{\mathrm{ens}}_{t,g},\;\mathrm{InModule},\;\mathrm{Neighbors},\;z_t,\;z_g,\;\mathrm{MotifHit},\;\mathrm{Acc}(g)\}$
+\State \Return $\mathcal{G}_{t,g}^{(c)} = (\mathcal{V}, \mathcal{R}, \Sigma_{t,g})$
+\end{algorithmic}
+\end{algorithm}
+
+% =========================================================================
+% ALGORITHM 5: Window Tensorization
+% =========================================================================
+\begin{algorithm}[H]
+\caption{Window Tensorization}
+\label{alg:tensorize}
+\begin{algorithmic}[1]
+\Require TF $t$; context $c$; candidate list $[g_1,\ldots,g_W]$;
+         evidence graphs $[\mathcal{G}_{t,g_i}^{(c)}]_{i=1}^{W}$;
+         kind map $\kappa$; $W_{\max} = 100$; payload dim $d_v = 32$
+\Ensure  Window batch $\mathbf{B}$
+\State Append global TF token (kind $0$) and context token (kind $1$)
+\For{$i = 1,\ldots,\min(W, W_{\max})$}
+  \For{each $\nu \in [\text{Gene, Expr, Net, Motif, Acc, Link, Prior, Ortho, Lit}]$}
+    \State Retrieve $n_\nu$ from $\mathcal{G}_{t,g_i}^{(c)}$;\;
+           let $\mathit{ok} \leftarrow \mathbb{I}[n_\nu \ne \emptyset]$
+    \State Append: kind $= \kappa(\nu)$;\;
+                   value $= \mathrm{Pack}(n_\nu, d_v) \cdot \mathit{ok}$;\;
+                   conf $= \mathrm{Conf}(n_\nu) \cdot \mathit{ok}$;\;
+                   pos $= i$;\;
+                   mask $= \mathit{ok}$
+  \EndFor
+\EndFor
+\State Pad sequence to $N_{\max} = 2 + W_{\max} \times 9$ tokens with kind $= 11$ (PAD)
+\State $\mathbf{m}_{\mathrm{mech}} \leftarrow \mathbb{I}[\kappa \in \{\text{Motif, Acc, Link}\}]$;\;
+       $\mathbf{m}_{\mathrm{func}} \leftarrow \mathbb{I}[\kappa \in \{\text{Expr, Net}\}]$
+\State Compute modality flags $\mathbf{o} \in \{0,1\}^4$ for [Expr, Acc, Motif, Link]
+\State Hash $t$, $\{g_i\}$, $c$ into bucket indices $\mathrm{idx}_t$, $\mathrm{idx}_{g_i}$, $\mathrm{idx}_c$
+\State Pack labels $\mathbf{y}$ and sample weights $\mathbf{w}$ from Algorithm~\ref{alg:splits}
+\State \Return $\mathbf{B} = (\mathbf{k}, \mathbf{V}, \mathbf{q}, \boldsymbol{\pi}, \mathbf{m}, \mathbf{m}_{\mathrm{mech}}, \mathbf{m}_{\mathrm{func}}, \mathbf{o}, \mathrm{idx}_t, \mathrm{idx}_c, \mathbf{p}, \mathbf{g}, \mathbf{y}, \mathbf{w})$
+\end{algorithmic}
+\end{algorithm}
+
+% =========================================================================
+% ALGORITHM 6: TF-EAGER Forward Pass
+% =========================================================================
+\begin{algorithm}[H]
+\caption{TF-EAGER Forward Pass (Staged Cross-Attention)}
+\label{alg:forward}
+\begin{algorithmic}[1]
+\Require Window batch $\mathbf{B}$ (Algorithm~\ref{alg:tensorize}); parameters $\theta$
+\Ensure  Logits $\mathbf{o} \in \mathbb{R}^{B \times W}$;\; probabilities $\mathbf{p} = \sigma(\mathbf{o})$
+\State \textbf{Token embedding} for each $j \in [N_{\max}]$:
+\Statex \quad $H^{(0)}_j \leftarrow E_{\mathrm{kind}}(k_j) + \mathrm{MLP}_v(V_j) + W_q\, q_j + E_{\mathrm{ctx}}(\mathrm{idx}_c)$
+\State \textbf{Encoder:}\; $H \leftarrow \mathrm{TransformerEnc}(H^{(0)})$
+       \Comment{2 layers, $d{=}128$, 4 heads, $d_{\mathrm{ff}}{=}512$, dropout 0.1}
+\For{$i = 1, \ldots, W$}
+  \State \textbf{Query init:}\;
+         $z_i^{(0)} \leftarrow E_{\mathrm{tf}}(\mathrm{idx}_t) + E_{\mathrm{gene}}(\mathrm{idx}_{g_i}) + E_{\mathrm{ctx}}(\mathrm{idx}_c)$
+  \If{$\sum_j \mathbf{m}_{\mathrm{mech},j} > 0$}
+    \State $z_i^{(1)} \leftarrow \mathrm{Block}_1(z_i^{(0)},\, H[\mathbf{m}_{\mathrm{mech}}])$
+           \Comment{Stage 1: mechanistic (motif, ATAC, linkage) evidence}
+  \Else
+    \State $z_i^{(1)} \leftarrow z_i^{(0)}$
+           \Comment{Skip Stage 1 if no binding tokens present}
+  \EndIf
+  \State $z_i^{(2)} \leftarrow \mathrm{Block}_2(z_i^{(1)},\, H[\mathbf{m}_{\mathrm{func}}])$
+         \Comment{Stage 2: functional (expression, network) evidence}
+  \State $z_i^{(3)} \leftarrow \mathrm{Block}_3(z_i^{(2)},\, H[\mathbf{m}])$
+         \Comment{Stage 3: global integration over all tokens}
+  \State $o_i \leftarrow w^{\top} z_i^{(3)} + b$
+\EndFor
+\State \Return $\mathbf{o} = [o_i]_{i=1}^{W}$;\; $\mathbf{p} = \sigma(\mathbf{o})$
+\end{algorithmic}
+\smallskip
+\noindent\small
+Each Block\,=\,LayerNorm$\circ$(CrossAttn\,+\,Dropout)\,+\,LayerNorm$\circ$(FFN\textsubscript{GELU}\,+\,Dropout).
+\end{algorithm}
+
+% =========================================================================
+% ALGORITHM 7: TF-EAGER Training
+% =========================================================================
+\begin{algorithm}[H]
+\caption{TF-EAGER Training with Weighted BCE and Early Stopping}
+\label{alg:training}
+\begin{algorithmic}[1]
+\Require Train windows $\mathcal{D}_{\mathrm{tr}}$; validation windows $\mathcal{D}_{\mathrm{val}}$;
+         learning rate $\eta$; weight decay $\lambda$;
+         patience $P$; min-delta $\delta$; max epochs $T$
+\Ensure  Checkpoint $\theta^*$
+\State $\theta \leftarrow \text{random init}$;\;
+       $\mathrm{Opt} \leftarrow \mathrm{AdamW}(\theta;\,\eta,\lambda)$;\;
+       $\mathrm{bestAUPRC} \leftarrow 0$;\;
+       $\mathrm{wait} \leftarrow 0$
+\For{$\text{epoch} = 1, \ldots, T$}
+  \For{each batch $\mathbf{B} \sim \mathcal{D}_{\mathrm{tr}}$}
+    \State $\mathbf{o} \leftarrow \mathrm{TF\text{-}EAGER}(\mathbf{B};\,\theta)$
+           \Comment{Algorithm~\ref{alg:forward}}
+    \State $\alpha \leftarrow N_{\mathrm{neg}}^{w} / N_{\mathrm{pos}}^{w}$
+           \Comment{Positive class weight from weighted label counts}
+    \State Compute weighted BCE loss $\mathcal{L}(\theta)$:
+    \Statex \quad $\mathcal{L}(\theta) \leftarrow \dfrac{\sum_i m_i w_i \bigl[-\alpha y_i \log \sigma(o_i) - (1-y_i)\log(1-\sigma(o_i))\bigr]}{\max\!\bigl(1,\;\sum_i m_i w_i\bigr)}$
+    \State $\theta \leftarrow \mathrm{Opt.step}(\nabla_\theta \mathcal{L})$
+           \Comment{With AMP gradient scaling when CUDA is available}
+  \EndFor
+  \State Evaluate on $\mathcal{D}_{\mathrm{val}}$; record $\mathrm{AUPRC}_{\mathrm{val}}$ and $\mathrm{Brier}_{\mathrm{val}}$
+  \If{$\mathrm{AUPRC}_{\mathrm{val}} > \mathrm{bestAUPRC} + \delta$}
+    \State $\mathrm{bestAUPRC} \leftarrow \mathrm{AUPRC}_{\mathrm{val}}$;\;
+           $\theta^* \leftarrow \theta$;\;
+           $\mathrm{wait} \leftarrow 0$
+  \Else
+    \State $\mathrm{wait} \leftarrow \mathrm{wait} + 1$
+    \If{$\mathrm{wait} \ge P$}
+      \State \textbf{break} \Comment{Early stopping}
+    \EndIf
+  \EndIf
+\EndFor
+\State \Return $\theta^*$
+\end{algorithmic}
+\end{algorithm}
+
+% =========================================================================
+% ALGORITHM 8: GRN Inference and Decoding
+% =========================================================================
+\begin{algorithm}[H]
+\caption{GRN Inference and Decoding}
+\label{alg:inference}
+\begin{algorithmic}[1]
+\Require Test windows $\mathcal{D}_{\mathrm{te}}$; checkpoint $\theta^*$;
+         threshold $\delta_p$; optional top-$K$ per TF; eval track $\tau$
+\Ensure  Scored edges $\hat{\mathcal{E}}$;\; decoded network $\hat{\mathcal{N}} \subseteq \hat{\mathcal{E}}$
+\State $\hat{\mathcal{E}} \leftarrow \emptyset$;\; set model to eval mode; disable gradient computation
+\For{each batch $\mathbf{B} \sim \mathcal{D}_{\mathrm{te}}$}
+  \State $\mathbf{o} \leftarrow \mathrm{TF\text{-}EAGER}(\mathbf{B};\,\theta^*)$;\;
+         $\hat{\mathbf{p}} \leftarrow \sigma(\mathbf{o})$
+  \For{each valid gene $g_i$ in $\mathbf{B}$}
+    \State $\Sigma \leftarrow$ evidence summary from window record
+    \State $\mathrm{mech} \leftarrow \mathrm{MechanisticReasoning}(\hat{p}_i,\, o_i,\, \Sigma)$
+           \Comment{Auto-generated narrative from evidence and attention}
+    \State $\hat{\mathcal{E}} \leftarrow \hat{\mathcal{E}} \cup \{(t,\, g_i,\, \hat{p}_i,\, \mathrm{mech})\}$
+  \EndFor
+\EndFor
+\State Sort $\hat{\mathcal{E}}$ by $\hat{p}_{t,g}$ descending
+\State $\hat{\mathcal{N}} \leftarrow \{(t, g, \hat{p}) \in \hat{\mathcal{E}} : \hat{p} \ge \delta_p\}$
+\If{top-$K$ per TF is enabled}
+  \For{each source TF $t$}
+    \State $\hat{\mathcal{N}} \leftarrow \hat{\mathcal{N}} \cup \TopK(\{e \in \hat{\mathcal{E}} : e.t = t\},\, K)$
+  \EndFor
+\EndIf
+\State Export \texttt{test\_scored\_edges.csv}, \texttt{test\_network.csv},
+       \texttt{test\_flat\_evidence.jsonl}
+\State \Return $\hat{\mathcal{E}},\; \hat{\mathcal{N}}$
+\end{algorithmic}
+\end{algorithm}
+
+% =========================================================================
+% ALGORITHM 9: Split-Aware Evaluation
+% =========================================================================
+\begin{algorithm}[H]
+\caption{Split-Aware Evaluation with Negative-Ratio Sweeps}
+\label{alg:eval}
+\begin{algorithmic}[1]
+\Require Scored edges $\hat{\mathcal{E}}$; gold edges $\mathcal{Y}$;
+         split manifest $\mathcal{M}$ (allowed pairs per fold/subset);
+         negative ratios $R = \{1, 2, 5, 10\}$; ECE bins $\mathcal{B}$ with $|\mathcal{B}| = 10$
+\Ensure  Metrics $\mathrm{Metrics}[\rho]$ for each $\rho \in R$
+\State $\mathcal{A} \leftarrow \mathcal{M}.\mathrm{allowed}$
+       \Comment{Pairs permitted under the split contract}
+\State $\hat{\mathcal{E}}^* \leftarrow \{e \in \hat{\mathcal{E}} : (e.t, e.g) \in \mathcal{A}\}$;\;
+       join with $\mathcal{Y}$ on $(t,g)$ to assign labels
+\State $\mathcal{P}^+ \leftarrow \{e \in \hat{\mathcal{E}}^* : y=1\}$;\;
+       $\mathcal{P}^- \leftarrow \{e \in \hat{\mathcal{E}}^* : y=0\}$
+\For{each $\rho \in R$}
+  \State $\mathcal{S}_\rho \leftarrow \mathcal{P}^+ \cup \mathrm{Sample}\!\bigl(\mathcal{P}^-,\; \min(|\mathcal{P}^-|,\; \rho|\mathcal{P}^+|)\bigr)$
+  \State $\mathrm{AUROC}_\rho \leftarrow \mathrm{AUC\text{-}ROC}(\hat{\mathbf{p}}_{\rho}, \mathbf{y}_\rho)$
+  \State $\mathrm{AUPRC}_\rho \leftarrow \mathrm{AUC\text{-}PR}(\hat{\mathbf{p}}_{\rho}, \mathbf{y}_\rho)$
+  \State $\mathrm{Brier}_\rho \leftarrow \tfrac{1}{|\mathcal{S}_\rho|}\sum_{i \in \mathcal{S}_\rho} (\hat{p}_i - y_i)^2$
+  \State $\mathrm{ECE}_\rho \leftarrow \sum_{B_m \in \mathcal{B}} \tfrac{|B_m|}{|\mathcal{S}_\rho|}\bigl|\mathrm{acc}(B_m) - \mathrm{conf}(B_m)\bigr|$
+  \State Compute $F_1$, $\mathrm{P@}k$, $\mathrm{R@}k$ on $\mathcal{S}_\rho$
+  \State $\mathrm{Metrics}[\rho] \leftarrow (\mathrm{AUROC}, \mathrm{AUPRC}, \mathrm{Brier}, \mathrm{ECE}, F_1, \mathrm{P@}k, \mathrm{R@}k)$
+\EndFor
+\State Export $\mathrm{Metrics}$ to \texttt{eval\_test\_by\_ratio.json}
+\State \Return $\{\mathrm{Metrics}[\rho]\}_{\rho \in R}$
+\end{algorithmic}
+\end{algorithm}
+
+% =========================================================================
+% ALGORITHM 9: Reflexive Agentic Literature Validation
+% =========================================================================
+\begin{algorithm}[H]
+\caption{Reflexive Agentic Literature Validation and Scoring}
+\label{alg:lit_val}
+\begin{algorithmic}[1]
+\Require $TF$, $Target$, $Context$, $N_{\max} = 40$
+\Ensure $S_{\mathrm{lit}} \in [0,1]$, $RegType$, $Relationships$
+
+\State $Aliases \leftarrow \mathrm{ExpandGeneAliases}(TF,\, Target)$
+\State $Abstracts \leftarrow \mathrm{PubMedRetrieve}(Aliases,\, Context)$
+\State $Abstracts \leftarrow \mathrm{CompositeRank}(Abstracts)[:N_{\max}]$
+
+\State $Filtered \leftarrow \emptyset$
+\For{$D_i \in Abstracts$}
+  \If{$\mathrm{SentenceCoOccurrence}(D_i, Aliases)$ \textbf{and} $\mathrm{HasMechanisticSignal}(D_i)$}
+    \If{\textbf{not} $\mathrm{AllNegated}(D_i)$}
+      \State $Filtered \leftarrow Filtered \cup \{D_i\}$
+    \EndIf
+  \EndIf
+\EndFor
+
+\If{$|Filtered| = 0$ \textbf{and} $Context \ne \text{None}$}
+  \State \Comment{Adaptive search fallback for sparse contexts}
+  \State $Abstracts_{\mathrm{broad}} \leftarrow \mathrm{PubMedRetrieve}(Aliases,\, \text{None})$
+  \State $Filtered \leftarrow \mathrm{ApplyTextFilters}(Abstracts_{\mathrm{broad}}[:N_{\max}])$
+\EndIf
+
+\State $Supporting \leftarrow \emptyset$
+\For{$D_i \in Filtered$}
+  \State $J \leftarrow \mathrm{LLM\_Classify}(D_i,\, TF,\, Target,\, Context,\, \tau{=}0)$
+  \If{$J.\mathrm{supports} = \mathrm{True}$}
+    \State $G \leftarrow \mathbb{I}\bigl[\mathrm{4GramOverlap}(J.\mathrm{evidence\_sentence},\, D_i) \ge 0.8\bigr]$
+    \State $CT \leftarrow (Context = \text{None}) \vee \mathrm{MentionsCellType}(D_i)$
+    \If{$G$ \textbf{and} $J.\mathrm{dir\_correct}$ \textbf{and not} $J.\mathrm{negated}$
+        \textbf{and not} $J.\mathrm{speculative}$ \textbf{and} $CT$}
+      \State $Supporting \leftarrow Supporting \cup \{J\}$
+    \EndIf
+  \EndIf
+\EndFor
+
+\If{$|Supporting| = 0$}
+  \State \Return $0.0$, \text{``none''}, \text{``none''}
+\EndIf
+
+\State $AvgConf \leftarrow \tfrac{1}{|Supporting|} \displaystyle\sum_{s \in Supporting} s.\mathrm{confidence}$
+\State $RegType \leftarrow \text{``dir''}$ \textbf{if} $\mathrm{HasPhysicalBinding}(Supporting)$
+       \textbf{else} $\text{``indir''}$
+\State $\beta_{\mathrm{dir}} \leftarrow 0.1$ \textbf{if} $RegType = \text{``dir''}$ \textbf{else} $0.0$
+\State $\beta_{\mathrm{rep}} \leftarrow 0.1$ \textbf{if} $|Supporting| > 1$ \textbf{else} $0.0$
+\State $S_{\mathrm{lit}} \leftarrow \min(AvgConf + \beta_{\mathrm{dir}} + \beta_{\mathrm{rep}},\; 1.0)$
+\State $Relationships \leftarrow \mathrm{SynthesizeConsensus}(Supporting)$
+       \Comment{activates, suppresses, or both}
+\State \Return $S_{\mathrm{lit}}$, $RegType$, $Relationships$
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}

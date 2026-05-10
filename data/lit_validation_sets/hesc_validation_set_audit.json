@@ -1,0 +1,325 @@
+{
+  "cell_type": "hESC",
+  "audit": [
+    {
+      "tf": "POU5F1",
+      "target": "NANOG",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 247,
+      "flag": ""
+    },
+    {
+      "tf": "SOX2",
+      "target": "NANOG",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 1646,
+      "flag": ""
+    },
+    {
+      "tf": "NANOG",
+      "target": "POU5F1",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 247,
+      "flag": ""
+    },
+    {
+      "tf": "POU5F1",
+      "target": "SOX2",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 246,
+      "flag": ""
+    },
+    {
+      "tf": "SOX2",
+      "target": "FGF4",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 44,
+      "flag": ""
+    },
+    {
+      "tf": "KLF4",
+      "target": "NANOG",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 573,
+      "flag": ""
+    },
+    {
+      "tf": "POU5F1",
+      "target": "ZFP42",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 11,
+      "flag": ""
+    },
+    {
+      "tf": "NANOG",
+      "target": "ESRRB",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 70,
+      "flag": ""
+    },
+    {
+      "tf": "MYC",
+      "target": "LIN28A",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 15,
+      "flag": ""
+    },
+    {
+      "tf": "SMAD2",
+      "target": "NANOG",
+      "set": "1",
+      "expected": "recall",
+      "ct_hits": 33,
+      "flag": ""
+    },
+    {
+      "tf": "CEBPA",
+      "target": "ALB",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "HNF4A",
+      "target": "APOB",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "MYOD1",
+      "target": "MYOG",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 3,
+      "flag": ""
+    },
+    {
+      "tf": "PPARG",
+      "target": "FABP4",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 2,
+      "flag": ""
+    },
+    {
+      "tf": "GATA1",
+      "target": "HBB",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 3,
+      "flag": ""
+    },
+    {
+      "tf": "RUNX2",
+      "target": "BGLAP",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 8,
+      "flag": ""
+    },
+    {
+      "tf": "TBX21",
+      "target": "IFNG",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "FOXP3",
+      "target": "IL2",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 9,
+      "flag": ""
+    },
+    {
+      "tf": "SREBF1",
+      "target": "FASN",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "PAX5",
+      "target": "CD79A",
+      "set": "2",
+      "expected": "wrong_cell_type",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "POU5F1",
+      "target": "MTRNR2L9",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "SOX2",
+      "target": "OR2T11",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "NANOG",
+      "target": "DEFB126",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "KLF4",
+      "target": "KRTAP4-12",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "MYC",
+      "target": "SPRR2D",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "ESRRB",
+      "target": "MUC7",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "TBX3",
+      "target": "AMELX",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "PRDM14",
+      "target": "KLK3",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "FAKEGENE1",
+      "target": "POU5F1",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "SOX2",
+      "target": "ZZZZQ7",
+      "set": "3",
+      "expected": "fake",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "GAPDH",
+      "target": "SOX2",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 6,
+      "flag": ""
+    },
+    {
+      "tf": "ACTB",
+      "target": "POU5F1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 2,
+      "flag": ""
+    },
+    {
+      "tf": "HBB",
+      "target": "POU5F1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "WNT3A",
+      "target": "POU5F1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 0,
+      "flag": ""
+    },
+    {
+      "tf": "DKK1",
+      "target": "POU5F1",
+      "set": "4",
+      "expected": "direction_reverse",
+      "ct_hits": 3,
+      "flag": ""
+    },
+    {
+      "tf": "KLF4",
+      "target": "CCND1",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 2,
+      "flag": ""
+    },
+    {
+      "tf": "MYC",
+      "target": "TP53",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 28,
+      "flag": ""
+    },
+    {
+      "tf": "NANOG",
+      "target": "CCNE1",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 1,
+      "flag": ""
+    },
+    {
+      "tf": "POU5F1",
+      "target": "BMP4",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 12,
+      "flag": ""
+    },
+    {
+      "tf": "SOX2",
+      "target": "DKK1",
+      "set": "5",
+      "expected": "indirect",
+      "ct_hits": 9,
+      "flag": ""
+    }
+  ]
+}

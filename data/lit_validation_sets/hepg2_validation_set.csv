@@ -1,0 +1,41 @@
+TF,Target,Confidence,Evidence,set,expected,note
+HNF4A,APOB,1.0,literature_canonical,1,recall,Master hepatocyte regulator ApoB
+SREBF2,LDLR,1.0,literature_canonical,1,recall,SREBP-2 SRE-mediated LDLR promoter activation
+HNF4A,APOA1,1.0,literature_canonical,1,recall,Lipoprotein ENCODE+functional
+HNF1A,ALB,1.0,literature_canonical,1,recall,HNF1 binding albumin promoter
+CEBPA,ALB,1.0,literature_canonical,1,recall,C/EBP-alpha hepatic differentiation
+SP1,LDLR,1.0,literature_canonical,1,recall,Sp1 binds LDLR promoter ChIP confirmed HepG2
+AHR,CYP1A1,1.0,literature_canonical,1,recall,XRE binding dioxin induction classic
+NR1I2,CYP3A4,1.0,literature_canonical,1,recall,PXR xenobiotic response drug metabolism
+SREBF1,FASN,1.0,literature_canonical,1,recall,Lipogenesis sterol regulation
+NFE2L2,NQO1,1.0,literature_canonical,1,recall,NRF2 oxidative stress ARE binding
+MYOD1,MYOG,1.0,literature_other_celltype,2,wrong_cell_type,Skeletal muscle not HepG2
+GATA1,HBB,1.0,literature_other_celltype,2,wrong_cell_type,Erythroid not HepG2
+SOX2,FGF4,1.0,literature_other_celltype,2,wrong_cell_type,hESC pluripotency not HepG2
+IRF8,ID2,1.0,literature_other_celltype,2,wrong_cell_type,Dendritic cell not HepG2
+RUNX1,CSF1R,1.0,literature_other_celltype,2,wrong_cell_type,HSC myeloid commitment not HepG2
+RUNX2,BGLAP,1.0,literature_other_celltype,2,wrong_cell_type,Osteoblast not HepG2
+TBX21,IFNG,1.0,literature_other_celltype,2,wrong_cell_type,Th1 cell not HepG2
+MEF2C,MYH7,1.0,literature_other_celltype,2,wrong_cell_type,Cardiomyocyte not HepG2
+OLIG2,PDGFRA,1.0,literature_other_celltype,2,wrong_cell_type,Oligodendrocyte not HepG2
+ATOH1,POU4F3,1.0,literature_other_celltype,2,wrong_cell_type,Inner ear hair cell not HepG2
+HNF4A,MTRNR2L9,0.0,no_known_relationship,3,fake,Mitochondrial pseudogene no link
+CEBPA,OR2T11,0.0,no_known_relationship,3,fake,Olfactory receptor no link
+AHR,DEFB126,0.0,no_known_relationship,3,fake,Defensin no AHR link
+SREBF1,KRTAP4-12,0.0,no_known_relationship,3,fake,Keratin-associated no link
+NR1I2,SPRR2D,0.0,no_known_relationship,3,fake,Skin proline-rich no link
+NFE2L2,AMELX,0.0,no_known_relationship,3,fake,Amelogenin tooth no link
+FOXA2,MUC7,0.0,no_known_relationship,3,fake,Salivary mucin no link
+USF1,KLK3,0.0,no_known_relationship,3,fake,PSA prostate no USF1 link
+FAKETF1,ALB,0.0,fabricated_TF,3,fake,Fabricated TF must return zero abstracts
+HNF4A,ZZZZQ7,0.0,fabricated_target,3,fake,Fabricated target must return zero abstracts
+APOB,HNF4A,0.0,direction_reversal,4,direction_reverse,APOB apolipoprotein cannot be TF
+ALB,HNF4A,0.0,direction_reversal,4,direction_reverse,ALB albumin cannot be TF
+GAPDH,HNF4A,0.0,direction_reversal,4,direction_reverse,GAPDH housekeeping cannot be TF
+ACTB,CEBPA,0.0,direction_reversal,4,direction_reverse,Beta-actin cytoskeleton cannot be TF
+TUBB,FOXA2,0.0,direction_reversal,4,direction_reverse,Tubulin structural cannot be TF
+HNF4A,INS,0.5,indirect_regulation,5,indirect,Insulin pathway broadly indirect
+CEBPA,CDKN1A,0.5,indirect_regulation,5,indirect,p21 indirect via p53/E2F
+SREBF1,INSR,0.5,indirect_regulation,5,indirect,Through metabolism not direct binding
+NR1I2,ABCB1,0.5,indirect_regulation,5,indirect,MDR1 indirect
+AHR,CYP2B6,0.5,indirect_regulation,5,indirect,Different from direct CYP1A1 weak XRE

@@ -1,0 +1,41 @@
+TF,Target,Exp_Confidence,Exp_Evidence,lit_score,avg_conf,reg_type,relationships,evidence_types,pmids,conflict_detected
+Pou5f1,Nanog,1.0,literature_canonical,1.0,0.9,dir,activates,"ChIP-seq, co-occupy, knockdown","20026622, 15860457, 18454139, 35022275, 23788624, 17196549",False
+Sox2,Nanog,1.0,literature_canonical,1.0,0.8786,dir,both,"CUT&RUN, ChIP-chip, ChIP-seq, Modelling, co-expression, knockdown","15860457, 25486255, 33031893, 24511468, 22745796, 25271810, 19582141, 26751055, 18441325, 19139101, 33503260, 18238855, 37542287, 20872845",True
+Nanog,Pou5f1,1.0,literature_canonical,1.0,0.9,dir,suppresses,"ChIP-seq, knockdown","20026622, 15860457, 18454139, 35022275, 23788624",False
+Pou5f1,Sox2,1.0,literature_canonical,1.0,0.86,dir,both,"ChIP-seq, EMSA, co-expression, functional screening, knockdown","19409607, 25754111, 15860457, 15988017, 16954384, 15557334, 30999923, 22311737, 23437007, 21185279",True
+Sox2,Fgf4,1.0,literature_canonical,1.0,0.88,dir,activates,"ChIP-seq, EMSA, knockdown, luciferase","19531481, 23939864, 15860457, 18238855, 15557334",False
+Klf4,Nanog,1.0,literature_canonical,1.0,0.88,dir,both,"ChIP-seq, EMSA, MeRIP-seq, knockdown, luciferase, overexpression, qRT-PCR","19522013, 20071344, 36100837, 32415999, 33783988, 22696497, 20064925, 26526723, 24040120, 29880481, 19571885, 21085182, 19544440, 30122536, 19816951",True
+Pou5f1,Zfp42,1.0,literature_canonical,0.0,0.0,none,none,,,False
+Esrrb,Nanog,1.0,literature_canonical,1.0,0.9,dir,activates,ChIP-seq,"23040477, 18957414, 19995984, 29910149",False
+Myc,Lin28a,1.0,literature_canonical,0.9333,0.8333,indir,activates,"co-expression, knockdown, luciferase","25479749, 21533284, 38455405",False
+Stat3,Klf4,1.0,literature_canonical,0.95,0.85,indir,activates,"ChIP assay, knockdown, luciferase","39062998, 36347300, 37321367, 35728661, 26202084, 19951688, 33437372, 33624208",False
+Cebpa,Alb,1.0,literature_other_celltype,0.9,0.8,dir,activates,ChIP-chip,19932685,False
+Hnf4a,Apob,1.0,literature_other_celltype,0.0,0.0,none,none,none,,False
+Myod1,Myog,1.0,literature_other_celltype,1.0,0.84,dir,activates,"ChIP-seq, EMSA, co-expression, knockdown","20466877, 32060262, 37174683, 31634638, 15501225",False
+Pparg,Fabp4,1.0,literature_other_celltype,1.0,0.9333,dir,activates,"ChIP-seq, luciferase","30336279, 41317938, 12417276",False
+Gata1,Hbb-b1,1.0,literature_other_celltype,0.0,0.0,none,none,none,,False
+Runx2,Bglap,1.0,literature_other_celltype,1.0,0.85,dir,activates,"ChIP-seq, Pull-down, knockdown, luciferase","16000305, 17042739, 35663324, 24106268, 33818278, 38622696",False
+Tbx21,Ifng,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Foxp3,Il2,1.0,literature_other_celltype,1.0,0.9,dir,activates,ChIP-seq,17182565,False
+Pax5,Cd79a,1.0,literature_other_celltype,0.0,0.0,none,none,,,False
+Mef2c,Myh7,1.0,literature_other_celltype,0.0,0.0,none,none,none,,False
+Pou5f1,mt-Nd1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Sox2,Olfr1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Nanog,Defb1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Klf4,Krtap4-1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Myc,Sprr2a3,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Esrrb,Muc20,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Tbx3,Amelx,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+Prdm14,Klk1,0.0,no_known_relationship,0.0,0.0,none,none,none,,False
+FAKEGENE1,Pou5f1,0.0,fabricated_TF,0.0,0.0,none,none,none,,False
+Sox2,ZZZZQ7,0.0,fabricated_target,0.0,0.0,none,none,none,,False
+Gapdh,Sox2,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+Actb,Pou5f1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+Hbb-b1,Pou5f1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+Wnt3a,Pou5f1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+Dkk1,Pou5f1,0.0,direction_reversal,0.0,0.0,none,none,none,,False
+Klf4,Ccnd1,0.5,indirect_regulation,0.0,0.0,none,none,,,False
+Myc,Trp53,0.5,indirect_regulation,1.0,0.86,dir,activates,"ChIP-seq, EMSA, knockdown, luciferase","19696787, 23589839, 34803166, 33462212, 38981022",False
+Nanog,Ccne1,0.5,indirect_regulation,0.0,0.0,none,none,none,,False
+Pou5f1,Bmp4,0.5,indirect_regulation,0.0,0.0,none,none,,,False
+Sox2,Dkk1,0.5,indirect_regulation,0.0,0.0,none,none,none,,False

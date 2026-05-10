@@ -1,0 +1,41 @@
+TF,Target,Confidence,Evidence,set,expected,note
+Pou5f1,Nanog,1.0,literature_canonical,1,recall,Core pluripotency triad mouse
+Sox2,Nanog,1.0,literature_canonical,1,recall,Sox2/Oct4 co-binding Nanog promoter
+Nanog,Pou5f1,1.0,literature_canonical,1,recall,Reciprocal autoregulatory loop
+Pou5f1,Sox2,1.0,literature_canonical,1,recall,Oct4-Sox2 mutual reinforcement
+Sox2,Fgf4,1.0,literature_canonical,1,recall,Yuan et al classic mESC ChIP
+Klf4,Nanog,1.0,literature_canonical,1,recall,Yamanaka factor target
+Pou5f1,Zfp42,1.0,literature_canonical,1,recall,Oct4 direct target Rex1
+Esrrb,Nanog,1.0,literature_canonical,1,recall,Naive pluripotency network
+Myc,Lin28a,1.0,literature_canonical,1,recall,mESC Myc target ChIP+functional
+Stat3,Klf4,1.0,literature_canonical,1,recall,LIF/STAT3 signaling in mESC
+Cebpa,Alb,1.0,literature_other_celltype,2,wrong_cell_type,Hepatocyte not mESC
+Hnf4a,Apob,1.0,literature_other_celltype,2,wrong_cell_type,Hepatocyte not mESC
+Myod1,Myog,1.0,literature_other_celltype,2,wrong_cell_type,Skeletal muscle not mESC
+Pparg,Fabp4,1.0,literature_other_celltype,2,wrong_cell_type,Adipocyte not mESC
+Gata1,Hbb-b1,1.0,literature_other_celltype,2,wrong_cell_type,Erythroid not mESC
+Runx2,Bglap,1.0,literature_other_celltype,2,wrong_cell_type,Osteoblast not mESC
+Tbx21,Ifng,1.0,literature_other_celltype,2,wrong_cell_type,Th1 cell not mESC
+Foxp3,Il2,1.0,literature_other_celltype,2,wrong_cell_type,Treg not mESC
+Pax5,Cd79a,1.0,literature_other_celltype,2,wrong_cell_type,B cell not mESC
+Mef2c,Myh7,1.0,literature_other_celltype,2,wrong_cell_type,Cardiomyocyte not mESC
+Pou5f1,mt-Nd1,0.0,no_known_relationship,3,fake,Mitochondrial no link
+Sox2,Olfr1,0.0,no_known_relationship,3,fake,Olfactory receptor no link
+Nanog,Defb1,0.0,no_known_relationship,3,fake,Defensin no Nanog link
+Klf4,Krtap4-1,0.0,no_known_relationship,3,fake,Keratin-associated no link
+Myc,Sprr2a3,0.0,no_known_relationship,3,fake,Skin proline-rich no link
+Esrrb,Muc20,0.0,no_known_relationship,3,fake,Mucin no link
+Tbx3,Amelx,0.0,no_known_relationship,3,fake,Amelogenin tooth no link
+Prdm14,Klk1,0.0,no_known_relationship,3,fake,Kallikrein no link
+FAKEGENE1,Pou5f1,0.0,fabricated_TF,3,fake,Fabricated TF must return zero abstracts
+Sox2,ZZZZQ7,0.0,fabricated_target,3,fake,Fabricated target must return zero abstracts
+Gapdh,Sox2,0.0,direction_reversal,4,direction_reverse,Gapdh housekeeping enzyme cannot be TF
+Actb,Pou5f1,0.0,direction_reversal,4,direction_reverse,Beta-actin cytoskeleton cannot be TF
+Hbb-b1,Pou5f1,0.0,direction_reversal,4,direction_reverse,Hemoglobin cannot be TF
+Wnt3a,Pou5f1,0.0,direction_reversal,4,direction_reverse,Wnt3a secreted ligand not TF
+Dkk1,Pou5f1,0.0,direction_reversal,4,direction_reverse,Dkk1 Wnt antagonist not TF
+Klf4,Ccnd1,0.5,indirect_regulation,5,indirect,Indirect via cell cycle network
+Myc,Trp53,0.5,indirect_regulation,5,indirect,Indirect via E2F1/Mdm2
+Nanog,Ccne1,0.5,indirect_regulation,5,indirect,Cell cycle indirect
+Pou5f1,Bmp4,0.5,indirect_regulation,5,indirect,Indirect downstream pathway
+Sox2,Dkk1,0.5,indirect_regulation,5,indirect,Wnt pathway indirect

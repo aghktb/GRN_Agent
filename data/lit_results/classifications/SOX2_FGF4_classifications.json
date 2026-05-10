@@ -1,0 +1,141 @@
+[
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "When PARP1 activity is inhibited or absent, poly(ADP-ribosyl)ation of Sox2 decreases and association of Sox2 with FGF4 enhancers increases, accompanied by an elevated level of Sox2 proteins and reduced expression of FGF4.",
+    "confidence": 0.9,
+    "pmid": "19531481",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "PARP1 poly(ADP-ribosyl)ates Sox2 to control Sox2 protein levels and FGF4 expression during embryonic stem cell differentiation.",
+      "Transcription factors Oct4 and Sox2 are key players in maintaining the pluripotent state of embryonic stem cells (ESCs).",
+      "However, it remains elusive how protein levels of Oct4 and Sox2 and expression of their target genes are precisely controlled in ESCs.",
+      "Interestingly, PARP1 deficiency does not affect undifferentiated ESCs but compromises cell survival and/or growth when ESCs are induced into differentiation.",
+      "Addition of FGF4 can partially rescue the phenotypes caused by PARP1 deficiency during ESC differentiation.",
+      "Taken together, this study uncovers new mechanisms through which Sox2 protein levels and FGF4 expression are dynamically regulated during ESC differentiation and adds a new member to the family of proteins regulating the properties of ESCs."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Our data indicate that Artd1-mediated PARylation of Sox2 favors its binding to the fibroblast growth factor 4 (Fgf4) enhancer, thereby activating Fgf4 expression.",
+    "confidence": 1.0,
+    "pmid": "23939864",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "The recently established reprogramming of somatic cells into induced pluripotent stem cells (iPSCs) by Takahashi and Yamanaka represents a valuable tool for future therapeutic applications.",
+      "In conclusion, our data clearly show that the interaction between Artd1 and Sox2 is crucial for the first steps of the reprogramming process and that early expression of Fgf4 (day 2 to day 4) is an essential component for the successful generation of iPSCs."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Electrophoretic mobility shift assays indicate that the Sox2-Oct4 heterodimer forms more efficiently on the composite element within Nanog than the similar element within Fgf4.",
+    "confidence": 0.9,
+    "pmid": "15860457",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Nanog, Sox2, and Oct4 are transcription factors all essential to maintaining the pluripotent embryonic stem cell phenotype.",
+      "Through a cooperative interaction, Sox2 and Oct4 have previously been described to drive pluripotent-specific expression of a number of genes.",
+      "A Nanog proximal promoter-EGFP (enhanced green fluorescent protein) reporter transgene recapitulates endogenous Nanog mRNA expression in embryonic stem cells and their differentiated derivatives.",
+      "Using chromatin immunoprecipitation, we show that Oct4 and Sox2 bind to the Nanog promoter in living mouse and human embryonic stem cells.",
+      "Furthermore, by specific knockdown of Oct4 and Sox2 mRNA by RNA interference in embryonic stem cells, we provide genetic evidence for a link between Oct4, Sox2, and the Nanog promoter."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "knockdown",
+    "relationship": "downregulates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Overexpression of Sox2 quickly downregulates several developmentally regulated genes, including Nanog, and a newly identified Sox2:Oct-3/4 target gene, Lefty1.",
+    "confidence": 0.9,
+    "pmid": "18238855",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Small increases in the level of Sox2 trigger the differentiation of mouse embryonic stem cells.",
+      "This finding led to the prediction that overexpression of Sox2 in ES cells would trigger their differentiation.",
+      "In the current study, we initially engineered mouse ES cells for inducible overexpression of Sox2.",
+      "Using this model system, we demonstrate that small increases (twofold or less) in Sox2 protein trigger the differentiation of ES cells into cells that exhibit markers for a wide range of differentiated cell types, including neuroectoderm, mesoderm, and trophectoderm but not endoderm.",
+      "Together, these data argue that the self-renewal of ES cells requires that Sox2 levels be maintained within narrow limits.",
+      "Thus, Sox2 appears to function as a molecular rheostat that controls the expression of a critical set of embryonic genes, as well as the self-renewal and differentiation of ES cells."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "EMSA",
+    "relationship": "binds",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Furthermore, we showed that Site 2B specifically binds to Oct-3/4 and Sox2 when ES-derived cell extracts were used, whereas Site 2A binds to a factor(s) present in both ES and NIH 3T3 cells.",
+    "confidence": 0.8,
+    "pmid": "15557334",
+    "evidence_grounded": true,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Oct-3/4 and Sox2 regulate Oct-3/4 gene in embryonic stem cells.",
+      "Previously, an upstream 3.3-kb distal enhancer (DE) fragment was identified to be responsible for the specific expression of mouse Oct-3/4 in the inner cell mass and ES cells.",
+      "Furthermore, we showed that the physiological level of Oct-3/4 in ES cells is required for Site 2B-mediated DE activity using the inducible knock-out system of Oct-3/4 in ES cells."
+    ],
+    "effective_support": true
+  },
+  {
+    "supports_interaction": false,
+    "evidence_type": "none",
+    "relationship": "unclear",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": true,
+    "evidence_sentence": "",
+    "confidence": 0.0,
+    "pmid": "18483421",
+    "evidence_grounded": false,
+    "mentions_cell_type": true,
+    "cell_type_sentences": [
+      "Tcf3 functions as a steady-state limiter of transcriptional programs of mouse embryonic stem cell self-renewal.",
+      "Three transcription factors, Nanog, Oct4, and Sox2, have been reported to form a feedforward circuit promoting pluripotent cell self-renewal in embryonic stem cells (ESC).",
+      "Previously, we found that a transcriptional repressor activity of Tcf3, a DNA-binding effector of Wnt signaling, reduced Nanog promoter activity and Nanog levels in mouse embryonic stem cells (mESC).",
+      "We show that Tcf3 acts broadly on a genome-wide scale to reduce the levels of several promoters of self-renewal (Nanog, Tcl1, Tbx3, Esrrb) while not affecting other ESC genes (Oct4, Sox2, Fgf4).",
+      "Interestingly, the effects of Tcf3 were more strongly correlated with Oct4 than with Nanog, despite the normal levels of Oct4 in TCF3-/- mESC.",
+      "The deranged gene expression allowed TCF3-/- mESC self-renewal even in the absence of leukemia inhibitory factor and delayed differentiation in embryoid bodies."
+    ],
+    "effective_support": false
+  },
+  {
+    "supports_interaction": true,
+    "evidence_type": "ChIP-seq",
+    "relationship": "activates",
+    "direction_correct": true,
+    "is_negated": false,
+    "is_speculative": false,
+    "evidence_sentence": "Z Sox2 initially promotes development of the primitive endoderm (PE) non cell-autonomously via FGF4",
+    "confidence": 0.9,
+    "pmid": "25340657",
+    "evidence_grounded": true,
+    "mentions_cell_type": false,
+    "cell_type_sentences": [],
+    "effective_support": false
+  }
+]
